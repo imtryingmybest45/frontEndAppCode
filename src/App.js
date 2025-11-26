@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {useState} from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 import {Link} from 'react-router-dom';
 import './App.css'
 
