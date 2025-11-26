@@ -1,9 +1,9 @@
 import Sinister from './pages/Sinister';
-import The_Autopsy_of_Jane_Doe from './pages/The_Autopsy_of_Jane_Doe';
-import The_Conjuring_4 from './pages/The_Conjuring_4';
-import The_Conjuring from './pages/The_Conjuring';
-import The_Conjuring_3 from './pages/The_Conjuring_3';
-import The_Conjuring_2 from './pages/The_Conjuring_2';
+import TheAutopsyofJaneDoe from './pages/TheAutopsyofJaneDoe';
+import TheConjuring4 from './pages/TheConjuring4';
+import TheConjuring from './pages/TheConjuring';
+import TheConjuring3 from './pages/TheConjuring3';
+import TheConjuring2 from './pages/TheConjuring_2';
 import Weapons from './pages/Weapons';
 import Home from './pages/Home';
 import {Routes as Routes} from 'react-router-dom';
@@ -30,11 +30,11 @@ function App(){
   }
   const linksData = [
     { id: 1, text: 'Weapons', to: '/Weapons' },
-    { id: 2, text: 'The Conjuring 2', to: '/The_Conjuring_2' },
-    { id: 3, text: 'The Conjuring 3', to: '/The_Conjuring_3' },
-    { id: 4, text: 'The Conjuring', to: '/The_Conjuring' },
-    { id: 5, text: 'The Conjuring 4', to: '/The_Conjuring_4' },
-    { id: 6, text: 'The Autopsy of Jane Doe', to: '/The_Autopsy_of_Jane_Doe' },
+    { id: 2, text: 'The Conjuring 2', to: '/TheConjuring2' },
+    { id: 3, text: 'The Conjuring 3', to: '/TheConjuring3' },
+    { id: 4, text: 'The Conjuring', to: '/TheConjuring' },
+    { id: 5, text: 'The Conjuring 4', to: '/TheConjuring4' },
+    { id: 6, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
     { id: 7, text: 'Sinister', to: '/Sinister' },
     ];
   return (
@@ -42,11 +42,11 @@ function App(){
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Weapons" element={<Weapons name = {stvar}/>} />
-        <Route path="/The_Conjuring_2" element={<The_Conjuring_2 name = {stvar}/>} />
-        <Route path="/The_Conjuring_3" element={<The_Conjuring_3 name = {stvar}/>} />
-        <Route path="/The_Conjuring" element={<The_Conjuring name = {stvar}/>} />
-        <Route path="/The_Conjuring_4" element={<The_Conjuring_4 name = {stvar}/>} />
-        <Route path="/The_Autopsy_of_Jane_Doe" element={<The_Autopsy_of_Jane_Doe name = {stvar}/>} />
+        <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
+        <Route path="/TheConjuring3" element={<TheConjuring3 name = {stvar}/>} />
+        <Route path="/TheConjuring" element={<TheConjuring name = {stvar}/>} />
+        <Route path="/TheConjuring4" element={<TheConjuring4 name = {stvar}/>} />
+        <Route path="/TheAutopsyofJane_Doe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
         <Route path="/Sinister" element={<Sinister name = {stvar}/>} />
       </Routes>
       <nav>

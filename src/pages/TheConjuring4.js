@@ -1,4 +1,4 @@
-function The_Conjuring_3(props){
+function TheConjuring4(props){
       const { name } = props; // Destructure the prop
       return (
         <div>
@@ -7,4 +7,4 @@ function The_Conjuring_3(props){
       );
     }
 
-export default The_Conjuring_3;
+export default TheConjuring4;
