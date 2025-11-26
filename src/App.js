@@ -3,7 +3,7 @@ import TheAutopsyofJaneDoe from './pages/TheAutopsyofJaneDoe';
 import TheConjuring4 from './pages/TheConjuring4';
 import TheConjuring from './pages/TheConjuring';
 import TheConjuring3 from './pages/TheConjuring3';
-import TheConjuring2 from './pages/TheConjuring_2';
+import TheConjuring2 from './pages/TheConjuring2';
 import Weapons from './pages/Weapons';
 import Home from './pages/Home';
 import {Routes as Routes} from 'react-router-dom';
@@ -46,7 +46,7 @@ function App(){
         <Route path="/TheConjuring3" element={<TheConjuring3 name = {stvar}/>} />
         <Route path="/TheConjuring" element={<TheConjuring name = {stvar}/>} />
         <Route path="/TheConjuring4" element={<TheConjuring4 name = {stvar}/>} />
-        <Route path="/TheAutopsyofJane_Doe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
+        <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
         <Route path="/Sinister" element={<Sinister name = {stvar}/>} />
       </Routes>
       <nav>
