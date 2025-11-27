@@ -20,6 +20,7 @@ function App(){
   const handleClick = (paramm) => {
     axios.post('http://localhost:8080/genericEndpoint',paramm)
     .then(response => setMess(response.data))
+    console.log("hello");
     //setMess("Welcome squidward welcome squidward welcome squidward123 123");
     setTF(tfvar=>!tfvar);
     setTFHome(tfvarhome => !tfvarhome);
