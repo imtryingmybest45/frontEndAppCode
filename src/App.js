@@ -21,7 +21,7 @@ function App(){
     //axios.post('http://localhost:8080/genericEndpoint123',paramm)
     //axios.get('http://localhost:8080/genericEndpoint')
     //axios.get('https://herewegoagain-csese7b2beanhwf3.eastus2-01.azurewebsites.net/genericEndpoint')
-    axios.post('https://herewegoagain-csese7b2beanhwf3.eastus2-01.azurewebsites.net/genericEndpoint123',paramm)
+    axios.post('https://helkkapifjo-g0gfe6dua4fndhag.eastus2-01.azurewebsites.net/genericEndpoint123',paramm)
     //axios.get('http://helphelphelphelp1234-cpdugbacf4fudycn.eastus-01.azurewebsites.net/genericEndpoint')
     .then(response => setMess(response.data))
     //console.log(stvar);
