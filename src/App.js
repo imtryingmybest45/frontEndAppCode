@@ -18,10 +18,13 @@ function App(){
   const [tfvar, setTF] = useState(true);
   const [tfvarhome, setTFHome] = useState(false);
   const handleClick = (paramm) => {
-    axios.post('http://localhost:8080/genericEndpoint',paramm)
+    //axios.post('http://localhost:8080/genericEndpoint123',paramm)
+    //axios.get('http://localhost:8080/genericEndpoint')
+    //axios.get('https://herewegoagain-csese7b2beanhwf3.eastus2-01.azurewebsites.net/genericEndpoint')
+    axios.post('https://herewegoagain-csese7b2beanhwf3.eastus2-01.azurewebsites.net/genericEndpoint123',paramm)
+    //axios.get('http://helphelphelphelp1234-cpdugbacf4fudycn.eastus-01.azurewebsites.net/genericEndpoint')
     .then(response => setMess(response.data))
-    console.log("hello");
-    //setMess("Welcome squidward welcome squidward welcome squidward123 123");
+    //console.log(stvar);
     setTF(tfvar=>!tfvar);
     setTFHome(tfvarhome => !tfvarhome);
   }
