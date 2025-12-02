@@ -19,12 +19,8 @@ function App(){
   const [tfvarhome, setTFHome] = useState(false);
   const handleClick = (paramm) => {
     //axios.post('http://localhost:8080/genericEndpoint123',paramm)
-    //axios.get('http://localhost:8080/genericEndpoint')
-    //axios.get('https://herewegoagain-csese7b2beanhwf3.eastus2-01.azurewebsites.net/genericEndpoint')
-    axios.post('https://helooooo-aefjhre2d0hseyby.eastus-01.azurewebsites.net/genericEndpoint123',paramm)
-    //axios.get('http://helphelphelphelp1234-cpdugbacf4fudycn.eastus-01.azurewebsites.net/genericEndpoint')
+    axios.post('tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/genericEndpoint123',paramm)
     .then(response => setMess(response.data))
-    //console.log(stvar);
     setTF(tfvar=>!tfvar);
     setTFHome(tfvarhome => !tfvarhome);
   }
