@@ -18,8 +18,9 @@ function App(){
   const [tfvar, setTF] = useState(true);
   const [tfvarhome, setTFHome] = useState(false);
   const handleClick = (paramm) => {
-    //axios.post('http://localhost:8080/genericEndpoint123',paramm)
-    axios.post('tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/genericEndpoint123',paramm)
+    //axios.post('http://localhost:8080/ftpEndpoint',paramm)
+    //axios.post('tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/ftpEndpoint',paramm)
+    axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/ftpEndpoint',paramm)
     .then(response => setMess(response.data))
     setTF(tfvar=>!tfvar);
     setTFHome(tfvarhome => !tfvarhome);
