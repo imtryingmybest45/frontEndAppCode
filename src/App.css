@@ -28,10 +28,15 @@
   color: #61dafb;
 }
 
-.top-right-div {
-  position: absolute;
-  top: 0;
-  left: 0;
+.top-left-div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.linkss {
+  display:flex;
+  flex-direction: column;
 }
 
 @keyframes App-logo-spin {
