@@ -1,5 +1,6 @@
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import SubmissionPage from './pages/SubmissionPage';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
@@ -22,6 +23,7 @@ function App(){
       <Routes>
         <Route path="*" element={<Home {...userData}/>} />
         <Route path ="/Admin" element={<Admin />}/>
+        <Route path ="/SubmissionPage" element={<SubmissionPage />}/>
       </Routes>
     </div>
   );
