@@ -3,7 +3,8 @@ import axios from 'axios';
 import "../App.css"
 
 function SubmissionPage(){
-    const [value, setValue] = useState('');
+    //const [value, setValue] = useState('');
+    const value = '';
     const inputRef = useRef(null);
 
     useLayoutEffect(() => {
