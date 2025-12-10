@@ -1,5 +1,4 @@
-function HelloHow(props){
-      const { name } = props; // Destructure the prop
+function HelloHow(){
       return (
         <div>
             <p style={{ whiteSpace: 'pre-wrap' }}>fdsalkfdlks</p>

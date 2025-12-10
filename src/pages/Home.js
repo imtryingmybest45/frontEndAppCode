@@ -43,7 +43,7 @@ function Home(props){
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
         <Route path="/Sinister" element={<Sinister name = {stvar}/>} />
         <Route path="/TheDescent" element={<TheDescent name = {stvar}/>} />
-        <Route path="/HelloHow" element={<HelloHow name = {stvar}/>} />
+        <Route path="/HelloHow" element={<HelloHow/>}/>
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none'}}>

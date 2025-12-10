@@ -1,8 +1,7 @@
-function NewFunc(props){
-      const { name } = props; // Destructure the prop
+function NewFunc(){
       return (
         <div>
-            <p style={{ whiteSpace: 'pre-wrap' }}>{name}</p>
+            <p style={{ whiteSpace: 'pre-wrap' }}>Insert shit here</p>
         </div>
       );
     }
