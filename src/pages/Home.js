@@ -31,7 +31,7 @@ function Home(props){
   { id: 8, text: 'The Descent', to: '/TheDescent' },
   { id: 9, text: 'Insidious', to: '/Insidious' },
   { id: 10, text: 'Bring Her Back', to: '/BringHerBack' },
-  { id: 11, text: 'Insidious2', to: '/Insidious2' },
+  { id: 11, text: 'Insidious 2', to: '/Insidious2' },
   ];
   return (
     <div>
@@ -49,7 +49,7 @@ function Home(props){
         <Route path="/TheDescent" element={<TheDescent name = {stvar}/>} />
         <Route path="/Insidious" element={<Insidious name = {stvar}/>} />
         <Route path="/BringHerBack" element={<BringHerBack name = {stvar}/>} />
-        <Route path="/Insidious 2" element={<Insidious2 name = {stvar}/>} />
+        <Route path="/Insidious2" element={<Insidious2 name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none'}}>
