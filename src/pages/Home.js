@@ -1,7 +1,3 @@
-import WowHellow from './WowHellow';
-import Jfdslai from './Jfdslai';
-import PleaseLetThisWork from './PleaseLetThisWork';
-import HelloHow from './HelloHow';
 import TheDescent from './TheDescent';
 import Sinister from './Sinister';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
@@ -30,10 +26,6 @@ function Home(props){
   { id: 6, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
   { id: 7, text: 'Sinister', to: '/Sinister' },
   { id: 8, text: 'The Descent', to: '/TheDescent' },
-  { id: 9, text: 'Hello How', to: '/HelloHow' },
-  { id: 10, text: 'Please Let This Work', to: '/PleaseLetThisWork' },
-  { id: 11, text: 'Jfdslai', to: '/Jfdslai' },
-  { id: 12, text: 'Wow Hellow', to: '/WowHellow' },
   ];
   return (
     <div>
@@ -49,10 +41,6 @@ function Home(props){
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
         <Route path="/Sinister" element={<Sinister name = {stvar}/>} />
         <Route path="/TheDescent" element={<TheDescent name = {stvar}/>} />
-        <Route path="/HelloHow" element={<HelloHow/>}/>
-        <Route path="/PleaseLetThisWork" element={<PleaseLetThisWork/>}/>
-        <Route path="/Jfdslai" element={<Jfdslai/>}/>
-        <Route path="/WowHellow" element={<WowHellow/>}/>
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none'}}>
