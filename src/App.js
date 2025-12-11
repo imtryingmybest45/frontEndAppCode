@@ -19,7 +19,7 @@ function App(){
 
   const handlePageLoad = () => {
     console.log(window.location.pathname);
-    if (window.location.pathname == "/" || window.location.pathname == "/*"){
+    if (window.location.pathname === "/" || window.location.pathname === "/*"){
       console.log("hello");
       settfVar(true);
     }
