@@ -1,3 +1,4 @@
+import TheConjuring3 from './TheConjuring3';
 import TheConjuring2 from './TheConjuring2';
 import TheConjuring from './TheConjuring';
 import {Routes} from 'react-router-dom';
@@ -14,6 +15,7 @@ function Home(props){
   const linksData = [
   { id: 1, text: 'The Conjuring', to: '/TheConjuring' },
   { id: 2, text: 'The Conjuring 2', to: '/TheConjuring2' },
+  { id: 3, text: 'The Conjuring 3', to: '/TheConjuring3' },
   ];
   return (
     <div>
@@ -23,6 +25,7 @@ function Home(props){
       <Routes>
         <Route path="/TheConjuring" element={<TheConjuring name = {stvar}/>} />
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
+        <Route path="/TheConjuring3" element={<TheConjuring3 name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
