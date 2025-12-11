@@ -36,28 +36,35 @@
 
 .linkss {
   display:flex;
-  width: 200px;
-  height: 60px;
+  /*width: 200px;*/
+  /*height: 60px;*/
+  width: 100vh;
+  height: 10vh;
   flex-direction: column;
 }
 
 .linkss2 {
   display:flex;
-  width: 900px;
-  height: 535px;
+  /*width: 900px;*/
+  width: 100vh;
+  /*height: 535px;*/
+  height: 30vh;
   flex-direction: column;
 }
 
 .custom-input {
   /* Set the desired height using standard CSS properties */
   /*height: 200px;*/
+  width: 50vh;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .customInp {
   /* Set the desired height using standard CSS properties */
-  height: 500px;
+  /*height: 500px;*/
+  width: 100vh;
+  height: 80%;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
