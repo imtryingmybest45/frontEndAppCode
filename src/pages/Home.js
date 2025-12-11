@@ -1,3 +1,4 @@
+import Up from './Up';
 import Grease from './Grease';
 import Oculus from './Oculus';
 import Insidious3 from './Insidious3';
@@ -38,6 +39,7 @@ function Home(props){
   { id: 12, text: 'Insidious 3', to: '/Insidious3' },
   { id: 13, text: 'Oculus', to: '/Oculus' },
   { id: 14, text: 'Grease', to: '/Grease' },
+  { id: 15, text: 'Up', to: '/Up' },
   ];
   return (
     <div>
@@ -59,6 +61,7 @@ function Home(props){
         <Route path="/Insidious3" element={<Insidious3 name = {stvar}/>} />
         <Route path="/Oculus" element={<Oculus name = {stvar}/>} />
         <Route path="/Grease" element={<Grease name = {stvar}/>} />
+        <Route path="/Up" element={<Up name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none'}}>
