@@ -24,10 +24,10 @@ function Admin(){
     <div>
       <h1>This is the admin page.</h1>
       <p>Here, if you are an admin, you can submit a review.</p>
-      <form onSubmit={handleSubmit}>
-      <label>
+      <form onSubmit={handleSubmit} className = "wow">
+      <label className = "wow">
         Enter Password:
-        <input
+        <input className = "wow"
           type="text"
           value={inputValue}
           onChange={handleChange}

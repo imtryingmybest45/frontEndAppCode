@@ -1,6 +1,7 @@
 function TheConjuring(props){
       return (
         <div>
+            <h1>The Conjuring</h1>
             <p style={{ whiteSpace: 'pre-wrap' }}>Release Date: 2013
 <br /> 
  <br />
