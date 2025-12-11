@@ -43,9 +43,23 @@
 
 .linkss2 {
   display:flex;
-  width: 800px;
-  height: 60px;
+  width: 900px;
+  height: 535px;
   flex-direction: column;
+}
+
+.custom-input {
+  /* Set the desired height using standard CSS properties */
+  /*height: 200px;*/
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.customInp {
+  /* Set the desired height using standard CSS properties */
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 

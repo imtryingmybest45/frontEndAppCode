@@ -6,6 +6,7 @@ function SubmissionPage(){
     //const [value, setValue] = useState('');
     const value = '';
     const inputRef = useRef(null);
+    const inputRef2 = useRef(null);
 
     useLayoutEffect(() => {
         if (inputRef.current) {
@@ -40,11 +41,11 @@ function SubmissionPage(){
             <form onSubmit={handleSubmit}>
                 <label className="linkss">
                     Movie Name:
-                    <textarea type="text" ref={inputRef} name="movieName" value={formData.movieName} onChange={handleChange} placeholder="MovieName" />
+                    <textarea className = "custom-input" type="text" ref={inputRef} name="movieName" value={formData.movieName} onChange={handleChange} placeholder="Input movie name" />
                 </label>
                 <label className="linkss2">
                     Movie Review:
-                    <textarea type="text" ref={inputRef} name="movieReview" value={formData.movieReview} onChange={handleChange} placeholder="MovieReview"/>
+                    <textarea className = "customInp" type="text" ref={inputRef2} name="movieReview" value={formData.movieReview} onChange={handleChange} placeholder="Write movie review here"/>
                 </label>
                 <button type="submit">Submit</button>
                 <p>{stvar}</p>
