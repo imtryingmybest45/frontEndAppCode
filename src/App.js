@@ -17,7 +17,7 @@ function App(){
     console.log("hello");
   }
 
-  const handlePageLoad = (event) => {
+  const handlePageLoad = () => {
     console.log(window.location.pathname);
     if (window.location.pathname == "/" || window.location.pathname == "/*"){
       console.log("hello");
