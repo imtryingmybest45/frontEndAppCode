@@ -37,7 +37,7 @@ function Home(props){
         <Route path="/BringHerBack" element={<BringHerBack name = {stvar}/>} />
       </Routes>
       <nav>
-        <ul style={{listStyleType: 'none',  padding: "5", margin: "0"}}>
+        <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
               {linksData.map((link) => (
               <li key={link.id}>
                   {tfVar&&<Link to={link.to} onClick = {()=>handleClick()}>{link.text}</Link>}
