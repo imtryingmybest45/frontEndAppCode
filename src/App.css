@@ -55,7 +55,7 @@
 .custom-input {
   /* Set the desired height using standard CSS properties */
   /*height: 200px;*/
-  width: 30vw;
+  width: 50vw;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
