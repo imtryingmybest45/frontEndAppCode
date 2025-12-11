@@ -21,11 +21,11 @@ function App(){
     console.log(window.location.pathname);
     if (window.location.pathname === "/" || window.location.pathname === "/*"){
       console.log("hello");
-      //settfVar(true);
+      settfVar(true);
     }
     else{
       console.log("goodbye");
-      //settfVar(false);
+      settfVar(false);
     }
   };
 
