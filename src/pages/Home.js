@@ -22,7 +22,7 @@ function Home(props){
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
       </Routes>
       <nav>
-        <ul style={{listStyleType: 'none'}}>
+        <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
               {linksData.map((link) => (
               <li key={link.id}>
                   {tfVar&&<Link to={link.to} onClick = {()=>handleClick()}>{link.text}</Link>}
