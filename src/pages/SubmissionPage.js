@@ -30,6 +30,7 @@ function SubmissionPage(){
     };
 
     const handleSubmit = (e) => {
+        setMess("Please wait, your review is loading.");
         e.preventDefault(); // Prevents default form submission behavior (page reload)
         axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/genericEndpoint123',formData)
         //axios.post('http://localhost:8080/genericEndpoint123',formData)
