@@ -25,7 +25,7 @@ function Home(props){
   { id: 5, text: 'Weapons', to: '/Weapons' },
   { id: 6, text: 'Bring Her Back', to: '/BringHerBack' },
   { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
-  { id: 8, text: 'The Autopsy of Jane Doe', to: '/TalkToMe' },
+  { id: 8, text: 'Talk To Me', to: '/TalkToMe' },
   ];
   return (
     <div>
