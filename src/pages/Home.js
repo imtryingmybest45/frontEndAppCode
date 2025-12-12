@@ -1,3 +1,4 @@
+import TheTakingOfDeborahLogan from './TheTakingOfDeborahLogan';
 import GraveEncounters from './GraveEncounters';
 import GraveEncounters2 from './GraveEncounters2';
 import HumanCentipede from './HumanCentipede';
@@ -36,6 +37,7 @@ function Home(props){
   { id: 11, text: 'Human Centipede', to: '/HumanCentipede' },
   { id: 12, text: 'Grave Encounters 2', to: '/GraveEncounters2' },
   { id: 13, text: 'Grave Encounters', to: '/GraveEncounters' },
+  { id: 14, text: 'The Taking of Deborah Logan', to: '/TheTakingOfDeborahLogan' },
   ];
   return (
     <div>
@@ -56,6 +58,7 @@ function Home(props){
         <Route path="/HumanCentipede" element={<HumanCentipede name = {stvar}/>} />
         <Route path="/GraveEncounters2" element={<GraveEncounters2 name = {stvar}/>} />
         <Route path="/GraveEncounters" element={<GraveEncounters name = {stvar}/>} />
+        <Route path="/TheTakingOfDeborahLogan" element={<TheTakingOfDeborahLogan name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
