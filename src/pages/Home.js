@@ -1,3 +1,4 @@
+import HumanCentipede from './HumanCentipede';
 import Oculus from './Oculus';
 import TheDescent from './TheDescent';
 import TalkToMe from './TalkToMe';
@@ -30,6 +31,7 @@ function Home(props){
   { id: 8, text: 'Talk To Me', to: '/TalkToMe' },
   { id: 9, text: 'The Descent', to: '/TheDescent' },
   { id: 10, text: 'Oculus', to: '/Oculus' },
+  { id: 11, text: 'Human Centipede', to: '/HumanCentipede' },
   ];
   return (
     <div>
@@ -47,6 +49,7 @@ function Home(props){
         <Route path="/TalkToMe" element={<TalkToMe name = {stvar}/>} />
         <Route path="/TheDescent" element={<TheDescent name = {stvar}/>} />
         <Route path="/Oculus" element={<Oculus name = {stvar}/>} />
+        <Route path="/HumanCentipede" element={<HumanCentipede name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
