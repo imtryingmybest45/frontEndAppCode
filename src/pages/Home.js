@@ -1,5 +1,5 @@
 import TalkToMe from './TalkToMe';
-import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
+import TheAutopsyOfJaneDoe from './TheAutopsyOfJaneDoe';
 import BringHerBack from './BringHerBack';
 import Weapons from './Weapons';
 import TheConjuring4 from './TheConjuring4';
@@ -24,7 +24,7 @@ function Home(props){
   { id: 4, text: 'The Conjuring 4', to: '/TheConjuring4' },
   { id: 5, text: 'Weapons', to: '/Weapons' },
   { id: 6, text: 'Bring Her Back', to: '/BringHerBack' },
-  { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
+  { id: 7, text: 'The Autopsy Of Jane Doe', to: '/TheAutopsyOfJaneDoe' },
   { id: 8, text: 'Talk To Me', to: '/TalkToMe' },
   ];
   return (
@@ -39,7 +39,7 @@ function Home(props){
         <Route path="/TheConjuring4" element={<TheConjuring4 name = {stvar}/>} />
         <Route path="/Weapons" element={<Weapons name = {stvar}/>} />
         <Route path="/BringHerBack" element={<BringHerBack name = {stvar}/>} />
-        <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
+        <Route path="/TheAutopsyOfJaneDoe" element={<TheAutopsyOfJaneDoe name = {stvar}/>} />
         <Route path="/TalkToMe" element={<TalkToMe name = {stvar}/>} />
       </Routes>
       <nav>

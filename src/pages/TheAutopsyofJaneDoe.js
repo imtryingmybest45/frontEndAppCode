@@ -1,4 +1,4 @@
-function TheAutopsyofJaneDoe(){
+function TheAutopsyOfJaneDoe(){
       return (
         <div>
             <h1>The Autopsy of Jane Doe</h1>
@@ -7,4 +7,4 @@ function TheAutopsyofJaneDoe(){
       );
     }
 
-export default TheAutopsyofJaneDoe;
+export default TheAutopsyOfJaneDoe;
