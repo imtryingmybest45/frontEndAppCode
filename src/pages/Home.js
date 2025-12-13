@@ -1,3 +1,4 @@
+import Areyouok from './Areyouok';
 import Abc from './Abc';
 import GraveEncounters from './GraveEncounters';
 import BringHerBack from './BringHerBack';
@@ -20,6 +21,7 @@ function Home(props){
   { id: 3, text: 'Bring Her Back', to: '/BringHerBack' },
   { id: 4, text: 'Grave Encounters', to: '/GraveEncounters' },
   { id: 5, text: 'Abc', to: '/Abc' },
+  { id: 6, text: 'Are you ok', to: '/Areyouok' },
   ];
   return (
     <div>
@@ -32,6 +34,7 @@ function Home(props){
         <Route path="/BringHerBack" element={<BringHerBack name = {stvar}/>} />
         <Route path="/GraveEncounters" element={<GraveEncounters name = {stvar}/>} />
         <Route path="/Abc" element={<Abc name = {stvar}/>} />
+        <Route path="/Areyouok" element={<Areyouok name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
