@@ -1,6 +1,8 @@
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import SubmissionPage from './pages/SubmissionPage';
+import DeletePage from './pages/DeletePage';
+import OptionsPage from './pages/OptionsPage';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
@@ -43,6 +45,8 @@ function App(){
         <Route path="*" element={<Home {...userData}/>} />
         <Route path ="/Admin" element={<Admin />}/>
         <Route path ="/SubmissionPage" element={<SubmissionPage />}/>
+        <Route path ="/OptionsPage" element={<OptionsPage />}/>
+        <Route path ="/DeletePage" element={<DeletePage />}/>
       </Routes>
     </div>
   );

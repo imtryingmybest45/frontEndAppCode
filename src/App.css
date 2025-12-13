@@ -74,6 +74,12 @@
   gap: 10px;
 }
 
+.bbuton {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 
 @keyframes App-logo-spin {
   from {
