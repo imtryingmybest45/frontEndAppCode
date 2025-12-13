@@ -43,7 +43,7 @@ function SubmissionPage(){
         //e.preventDefault(); // Prevents default form submission behavior (page reload)
         axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/genericEndpoint123',formData)
         //axios.post('http://localhost:8080/genericEndpoint123',formData)
-        then(response => setMess(response.data))
+        .then(response => setMess(response.data))
         }
     };
 
