@@ -1,9 +1,3 @@
-import GaveEncounters2 from './GaveEncounters2';
-import Areyouok from './Areyouok';
-import Abc from './Abc';
-import GraveEncounters from './GraveEncounters';
-import BringHerBack from './BringHerBack';
-import TalktoMe from './TalktoMe';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -18,12 +12,6 @@ function Home(props){
   const stvar = "hello";
   const linksData = [
   { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
-  { id: 2, text: 'Talk to Me', to: '/TalktoMe' },
-  { id: 3, text: 'Bring Her Back', to: '/BringHerBack' },
-  { id: 4, text: 'Grave Encounters', to: '/GraveEncounters' },
-  { id: 5, text: 'Abc', to: '/Abc' },
-  { id: 6, text: 'Are you ok', to: '/Areyouok' },
-  { id: 7, text: 'Gave Encounters 2', to: '/GaveEncounters2' },
   ];
   return (
     <div>
@@ -32,12 +20,6 @@ function Home(props){
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
-        <Route path="/TalktoMe" element={<TalktoMe name = {stvar}/>} />
-        <Route path="/BringHerBack" element={<BringHerBack name = {stvar}/>} />
-        <Route path="/GraveEncounters" element={<GraveEncounters name = {stvar}/>} />
-        <Route path="/Abc" element={<Abc name = {stvar}/>} />
-        <Route path="/Areyouok" element={<Areyouok name = {stvar}/>} />
-        <Route path="/GaveEncounters2" element={<GaveEncounters2 name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
