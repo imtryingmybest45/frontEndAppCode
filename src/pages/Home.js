@@ -1,3 +1,4 @@
+import Iamsosadthaturgone123 from './Iamsosadthaturgone123';
 import WhereAreUnowthatIneedu from './WhereAreUnowthatIneedu';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
@@ -14,6 +15,7 @@ function Home(props){
   const linksData = [
   { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
   { id: 2, text: 'Where Are U now that I need u', to: '/WhereAreUnowthatIneedu' },
+  { id: 3, text: 'I am so sad that u r gone 123', to: '/Iamsosadthaturgone123' },
   ];
   return (
     <div>
@@ -23,6 +25,7 @@ function Home(props){
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
         <Route path="/WhereAreUnowthatIneedu" element={<WhereAreUnowthatIneedu name = {stvar}/>} />
+        <Route path="/Iamsosadthaturgone123" element={<Iamsosadthaturgone123 name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
