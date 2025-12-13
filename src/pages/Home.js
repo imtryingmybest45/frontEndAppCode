@@ -1,3 +1,4 @@
+import TalktoMe from './TalktoMe';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -12,6 +13,7 @@ function Home(props){
   const stvar = "hello";
   const linksData = [
   { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
+  { id: 2, text: 'Talk to Me', to: '/TalktoMe' },
   ];
   return (
     <div>
@@ -20,6 +22,7 @@ function Home(props){
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
+        <Route path="/TalktoMe" element={<TalktoMe name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
