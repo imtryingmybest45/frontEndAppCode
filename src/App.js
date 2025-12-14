@@ -1,7 +1,6 @@
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import SubmissionPage from './pages/SubmissionPage';
-import DeletePage from './pages/DeletePage';
 import OptionsPage from './pages/OptionsPage';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -13,20 +12,16 @@ import './App.css'
 function App(){
   const [ranVar, settfVar] = useState(true);
   const userData = {name: ranVar, age: settfVar};
-  //const pathname = window.location.pathname; // e.g., '/products'
   const homeClick = () => {
     settfVar(true)
-    console.log("hello");
   }
 
   const handlePageLoad = () => {
     console.log(window.location.pathname);
     if (window.location.pathname === "/" || window.location.pathname === "/*"){
-      console.log("hello");
       settfVar(true);
     }
     else{
-      console.log("goodbye");
       settfVar(false);
     }
   };
@@ -46,7 +41,6 @@ function App(){
         <Route path ="/Admin" element={<Admin />}/>
         <Route path ="/SubmissionPage" element={<SubmissionPage />}/>
         <Route path ="/OptionsPage" element={<OptionsPage />}/>
-        <Route path ="/DeletePage" element={<DeletePage />}/>
       </Routes>
     </div>
   );

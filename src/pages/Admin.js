@@ -17,8 +17,6 @@ function Admin(){
     else{
       setPass(true);
     }
-    //console.log('Submitted value:', inputValue);
-    // You can send this value to an API or perform other actions here
   };
   return (
     <div>
@@ -28,7 +26,6 @@ function Admin(){
       <label className = "wow">
         Enter Password:
         <input type="password" className = "wow"
-          /*type="text"*/
           value={inputValue}
           onChange={handleChange}
         />
