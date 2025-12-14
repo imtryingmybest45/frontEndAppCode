@@ -21,13 +21,23 @@ function Home(props){
 
   const stvar = "hello";
 
-  const linksData = [
+  const linksData = useMemo(() => {
+    return [
+      { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
+      { id: 2, text: 'Bring Her Back', to: '/BringHerBack' },
+      { id: 3, text: 'Talk to Me', to: '/TalktoMe' },
+      { id: 4, text: 'Grave Encounters', to: '/GraveEncounters' },
+      { id: 5, text: 'Grave Encounters 2', to: '/GraveEncounters2' },
+    ];
+  }, []); // <-- Empty array ensures it's created only once
+
+  /*const linksData = [
   { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
   { id: 2, text: 'Bring Her Back', to: '/BringHerBack' },
   { id: 3, text: 'Talk to Me', to: '/TalktoMe' },
   { id: 4, text: 'Grave Encounters', to: '/GraveEncounters' },
   { id: 5, text: 'Grave Encounters 2', to: '/GraveEncounters2' },
-  ];
+  ];*/
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
