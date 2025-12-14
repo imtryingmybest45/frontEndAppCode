@@ -1,23 +1,26 @@
 import {useState} from 'react';
+import {useEffect} from 'react';
 import axios from 'axios';
 
-const DeletePage=({linksData})=>{
+function DeletePage(props){
+    let {linksData} = props;
     const [tfTitle,setTFTitle] = useState(false);
     const [tfButton,setTFButton] = useState(false);
     const [movieName, setMovieName] = useState('');
     const [mess,setMess] = useState('');
-    const handleClick = (parram) => {
+    const handleClick = (movieName,setMovieName) => {
         setTFTitle(true);
         setTFButton(true);
-        setMess("Are you sure you want to delete "+parram+"?");
-        setMovieName(parram);
+        setMess("Are you sure you want to delete "+movieName+"?");
+        setMovieName(movieName);
     }
 
     const yesClick = () => {
         setTFButton(false);
         setMess("Please wait, your request is pending.");
-         axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/deleteEndpoint',movieName)
-        .then(response => setMess(response.data))
+        //axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/deleteEndpoint',movieName)
+        axios.post('http://localhost:8080/deleteEndpoint',movieName)
+        //.then(response => setMess(response.data))
     }
 
     const noClick = () => {
@@ -33,7 +36,7 @@ const DeletePage=({linksData})=>{
                 <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
                     {linksData.map((link) => (
                     <li key={link.id}>
-                        <button onClick = {()=>handleClick(link.text)}>{link.text}</button>
+                        <button onClick = {()=>handleClick(link.text, setMovieName)}>{link.text}</button>
                     </li>
                     ))}
                 </ul>
