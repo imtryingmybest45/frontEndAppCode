@@ -32,7 +32,7 @@ function Home(props){
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setLinks(linksData);
-  },[]);
+  },[linksData, setLinks]);
 
   return (
     <div>
