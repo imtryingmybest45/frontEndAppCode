@@ -1,4 +1,4 @@
-function GaveEncounters2(){
+function GraveEncounters2(){
       return (
         <div>
             <h1>Gave Encounters 2</h1>
@@ -10,4 +10,4 @@ Workmen</p>
       );
     }
 
-export default GaveEncounters2;
+export default GraveEncounters2;
