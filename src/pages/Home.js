@@ -2,7 +2,7 @@ import DeletePage from './DeletePage';
 import TheConjuring2 from './TheConjuring2';
 import BringHerBack from './BringHerBack';
 import TalktoMe from './TalktoMe';
-import GraveEncounters from '.GraveEncounters'
+import GraveEncounters from './GraveEncounters'
 import GraveEncounters2 from './GraveEncounters2';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
