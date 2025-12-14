@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import {useEffect} from 'react';
 import axios from 'axios';
 
 function DeletePage(props){
@@ -18,9 +17,9 @@ function DeletePage(props){
     const yesClick = () => {
         setTFButton(false);
         setMess("Please wait, your request is pending.");
-        //axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/deleteEndpoint',movieName)
-        axios.post('http://localhost:8080/deleteEndpoint',movieName)
-        //.then(response => setMess(response.data))
+        axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/deleteEndpoint',movieName)
+        //axios.post('http://localhost:8080/deleteEndpoint',movieName)
+        .then(response => setMess(response.data))
     }
 
     const noClick = () => {

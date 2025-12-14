@@ -29,8 +29,9 @@ function Home(props){
   { id: 5, text: 'Grave Encounters 2', to: '/GraveEncounters2' },
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-      setLinks(linksData);
+    setLinks(linksData);
   },[]);
 
   return (
