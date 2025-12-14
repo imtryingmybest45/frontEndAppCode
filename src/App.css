@@ -80,6 +80,12 @@
   gap: 10px;
 }
 
+.delStuff {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 @keyframes App-logo-spin {
   from {

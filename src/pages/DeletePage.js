@@ -32,7 +32,7 @@ function DeletePage(props){
             {!tfTitle && <h1>This is the delete page.</h1>}
             {!tfTitle && <p>Pick a movie to delete.</p>}
             {!tfTitle && <nav>
-                <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
+                <ul className = "delStuff" style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
                     {linksData.map((link) => (
                     <li key={link.id}>
                         <button onClick = {()=>handleClick(link.text, setMovieName)}>{link.text}</button>
