@@ -1,5 +1,4 @@
 import TheConjuring2 from './TheConjuring2';
-import BringHerBack from './BringHerBack';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
@@ -22,13 +21,11 @@ function Home(props){
   const linksData = useMemo(() => {
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
-      { id: 2, text: 'Bring Her Back', to: '/BringHerBack' },
     ];
   }, []); // <-- Empty array ensures it's created only once
 
   /*const linksData = [
   { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
-  { id: 2, text: 'Bring Her Back', to: '/BringHerBack' },
   ];*/
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -43,7 +40,6 @@ function Home(props){
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
-        <Route path="/BringHerBack" element={<BringHerBack name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
