@@ -1,5 +1,4 @@
 import Insidious3 from './Insidious3';
-import Insidious from './Insidious';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
@@ -23,7 +22,6 @@ function Home(props){
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
       { id: 2, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
-      { id: 3, text: 'Insidious', to: '/Insidious' },
       { id: 4, text: 'Insidious 3', to: '/Insidious3' },
     ];
   }, []); // <-- Empty array ensures it's created only once
@@ -40,7 +38,6 @@ function Home(props){
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
-        <Route path="/Insidious" element={<Insidious name = {stvar}/>} />
         <Route path="/Insidious3" element={<Insidious3 name = {stvar}/>} />
       </Routes>
       <nav>
