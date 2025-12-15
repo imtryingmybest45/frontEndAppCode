@@ -1,3 +1,4 @@
+import CanYouSeeThis from './CanYouSeeThis';
 import CanYouSeeThisLinkLexi from './CanYouSeeThisLinkLexi';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
@@ -21,6 +22,7 @@ function Home(props){
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
       { id: 2, text: 'Can You See This Link Lexi', to: '/CanYouSeeThisLinkLexi' },
+      { id: 3, text: 'Can You See This', to: '/CanYouSeeThis' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   const stvar = "hello";
@@ -36,6 +38,7 @@ function Home(props){
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
         <Route path="/CanYouSeeThisLinkLexi" element={<CanYouSeeThisLinkLexi name = {stvar}/>} />
+        <Route path="/CanYouSeeThis" element={<CanYouSeeThis name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
