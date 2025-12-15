@@ -1,4 +1,3 @@
-import IKnowWhatYouDidLastSummer3 from './IKnowWhatYouDidLastSummer3';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -20,7 +19,6 @@ function Home(props){
   const linksData = useMemo(() => {
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
-      { id: 6, text: 'I Know What You Did Last Summer 3', to: '/IKnowWhatYouDidLastSummer3' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   const stvar = "hello";
@@ -35,7 +33,6 @@ function Home(props){
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
-        <Route path="/IKnowWhatYouDidLastSummer3" element={<IKnowWhatYouDidLastSummer3 name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
