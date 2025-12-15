@@ -1,3 +1,4 @@
+import IKnowWhatYouDidLastSummer3 from './IKnowWhatYouDidLastSummer3';
 import Insidious from './Insidious';
 import Insidious3 from './Insidious3';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
@@ -25,6 +26,7 @@ function Home(props){
       { id: 2, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
       { id: 4, text: 'Insidious 3', to: '/Insidious3' },
       { id: 5, text: 'Insidious', to: '/Insidious' },
+      { id: 6, text: 'I Know What You Did Last Summer 3', to: '/IKnowWhatYouDidLastSummer3' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   const stvar = "hello";
@@ -42,6 +44,7 @@ function Home(props){
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {stvar}/>} />
         <Route path="/Insidious3" element={<Insidious3 name = {stvar}/>} />
         <Route path="/Insidious" element={<Insidious name = {stvar}/>} />
+        <Route path="/IKnowWhatYouDidLastSummer3" element={<IKnowWhatYouDidLastSummer3 name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
