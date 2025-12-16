@@ -1,6 +1,5 @@
 import CollinIsLame from './CollinIsLame';
 import Weapons from './Weapons';
-import Insidious2 from './Insidious2';
 import Insidious from './Insidious';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
@@ -24,7 +23,6 @@ function Home(props){
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
       { id: 2, text: 'Insidious', to: '/Insidious' },
-      { id: 3, text: 'Insidious 2', to: '/Insidious2' },
       { id: 4, text: 'Weapons', to: '/Weapons' },
       { id: 5, text: 'Collin Is Lame', to: '/CollinIsLame' },
     ];
@@ -42,7 +40,6 @@ function Home(props){
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
         <Route path="/Insidious" element={<Insidious name = {stvar}/>} />
-        <Route path="/Insidious2" element={<Insidious2 name = {stvar}/>} />
         <Route path="/Weapons" element={<Weapons name = {stvar}/>} />
         <Route path="/CollinIsLame" element={<CollinIsLame name = {stvar}/>} />
       </Routes>
