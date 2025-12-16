@@ -1,3 +1,4 @@
+import CollinIsLame from './CollinIsLame';
 import Weapons from './Weapons';
 import Insidious2 from './Insidious2';
 import Insidious from './Insidious';
@@ -25,6 +26,7 @@ function Home(props){
       { id: 2, text: 'Insidious', to: '/Insidious' },
       { id: 3, text: 'Insidious 2', to: '/Insidious2' },
       { id: 4, text: 'Weapons', to: '/Weapons' },
+      { id: 5, text: 'Collin Is Lame', to: '/CollinIsLame' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   const stvar = "hello";
@@ -42,6 +44,7 @@ function Home(props){
         <Route path="/Insidious" element={<Insidious name = {stvar}/>} />
         <Route path="/Insidious2" element={<Insidious2 name = {stvar}/>} />
         <Route path="/Weapons" element={<Weapons name = {stvar}/>} />
+        <Route path="/CollinIsLame" element={<CollinIsLame name = {stvar}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
