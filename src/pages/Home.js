@@ -1,9 +1,3 @@
-import TheDescent from './TheDescent';
-import Insidiousthe2 from './Insidiousthe2';
-import Insidiousthe from './Insidiousthe';
-import InsidiousChapter2 from './InsidiousChapter2';
-import InsidiousChapter4 from './InsidiousChapter4';
-import InsidiousChapter3 from './InsidiousChapter3';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
@@ -27,12 +21,6 @@ function Home(props){
   const linksData = useMemo(() => {
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
-      { id: 4, text: 'Insidious Chapter 3', to: '/InsidiousChapter3' },
-      { id: 5, text: 'Insidious Chapter 4', to: '/InsidiousChapter' },
-      { id: 6, text: 'Insidious Chapter 2', to: '/InsidiousChapter2' },
-      { id: 7, text: 'Insidious the', to: '/Insidiousthe' },
-      { id: 8, text: 'Insidious the 2', to: '/Insidiousthe2' },
-      { id: 9, text: 'The Descent', to: '/TheDescent' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   //const stvar = "hello";
@@ -47,12 +35,6 @@ function Home(props){
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
         <Route path="/TheConjuring2" element={<TheConjuring2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/InsidiousChapter3" element={<InsidiousChapter3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/InsidiousChapter4" element={<InsidiousChapter4 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/InsidiousChapter2" element={<InsidiousChapter2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Insidiousthe" element={<Insidiousthe name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Insidiousthe2" element={<Insidiousthe2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheDescent" element={<TheDescent name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
