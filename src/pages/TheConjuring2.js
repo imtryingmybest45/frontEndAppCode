@@ -68,6 +68,7 @@ function TheConjuring2(props){
         }
     };
 
+   useEffect(() => {
     const handlePageLoad = () => {
         if (prevPath === "/EditPage"){
             setVarVar(false);
@@ -77,10 +78,9 @@ function TheConjuring2(props){
         }
     };
 
-  useEffect((handlePageLoad) => {
     handlePageLoad();
-  },[handlePageLoad]); // The empty dependency array ensures this runs only once
-
+  },[]); // The empty dependency array ensures this runs only once
+  
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
