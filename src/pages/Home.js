@@ -24,7 +24,7 @@ function Home(props){
     return [
       { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
       { id: 2, text: 'Insidious', to: '/Insidious' },
-      { id: 3, text: 'InsidiousChapter2 Chapter 2', to: '/Insidious' },
+      { id: 3, text: 'Insidious Chapter 2', to: '/InsidiousChapter2' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   //const stvar = "hello";
