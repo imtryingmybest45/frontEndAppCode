@@ -62,8 +62,8 @@ function TheConjuring2(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        //axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/editEndpoint',formData)
-        axios.post('http://localhost:8080/editEndpoint',formData)
+        axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/editEndpoint',formData)
+        //axios.post('http://localhost:8080/editEndpoint',formData)
         .then(response => setMess(response.data))
         }
     };
@@ -79,7 +79,7 @@ function TheConjuring2(props){
 
   useEffect(() => {
     handlePageLoad();
-  },[]); // The empty dependency array ensures this runs only once
+  },[handlePageLoad]); // The empty dependency array ensures this runs only once
 
     return(
         <div>
