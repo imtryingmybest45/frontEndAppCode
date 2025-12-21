@@ -16,11 +16,11 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function InsidiousChapter3(props){
+function InsidiousChapter2(props){
 
     const origMovName = props.origMovName;
-    const movName = "Insidious Chapter 3";
-    const movVal = "I hope this works. Insidious chapter 3.";
+    const movName = "Insidious Chapter 2";
+    const movVal = "This is the review for insidious, the second chapter.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -101,4 +101,4 @@ function InsidiousChapter3(props){
     )
 }
 
-export default InsidiousChapter3;
+export default InsidiousChapter2;

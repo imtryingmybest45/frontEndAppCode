@@ -20,7 +20,7 @@ function Insidious(props){
 
     const origMovName = props.origMovName;
     const movName = "Insidious";
-    const movVal = "This is the review for insidious, the first chapter.";
+    const movVal = "I hope this works. Insidious chapter 1.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
