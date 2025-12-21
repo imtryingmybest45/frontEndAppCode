@@ -68,17 +68,8 @@ function NewFunc(props){
         }
     };
 
-   /* const handlePageLoad = () => {
-        if (prevPath === "/EditPage"){
-            setVarVar(false);
-        }
-        else{
-            setVarVar(true);
-        }
-    };*/
-
-  useEffect(() => {
-    const handlePageLoad = () => {
+     useEffect(() => {
+    const handlePageLoad = (prevPath) => {
         if (prevPath === "/EditPage"){
             setVarVar(false);
         }
@@ -86,8 +77,9 @@ function NewFunc(props){
             setVarVar(true);
         }
     };
-    handlePageLoad();
-  },[handlePageLoad]); // The empty dependency array ensures this runs only once
+
+    handlePageLoad(prevPath);
+  },[prevPath]); // The empty dependency array ensures this runs only once
 
     return(
         <div>
