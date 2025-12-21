@@ -19,8 +19,8 @@ function usePersistedState(key, defaultValue) {
 function InsidiousChapter2(props){
 
     const origMovName = props.origMovName;
-    const movName = "Insidious Chapter 2";
-    const movVal = "This is the review for insidious, the second chapter.";
+    const movName = "Insidious";
+    const movVal = "This is the review for insidious, the first chapter.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
