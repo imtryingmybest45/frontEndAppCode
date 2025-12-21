@@ -68,7 +68,6 @@ function Insidious(props){
         }
     };
 
-  useEffect(() => {
     const handlePageLoad = () => {
         if (prevPath === "/EditPage"){
             setVarVar(false);
@@ -77,6 +76,8 @@ function Insidious(props){
             setVarVar(true);
         }
     };
+
+  useEffect((handlePageLoad) => {
     handlePageLoad();
   },[handlePageLoad]); // The empty dependency array ensures this runs only once
 
