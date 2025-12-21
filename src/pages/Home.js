@@ -1,5 +1,5 @@
 import InsidiousChapter3 from './InsidiousChapter3';
-import InsidiousChapter2 from './Insidious';
+import Insidious from './Insidious';
 import TheConjuring2 from './TheConjuring2';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
