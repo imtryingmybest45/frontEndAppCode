@@ -1,8 +1,23 @@
-import {useState,useLayoutEffect,useRef} from 'react';
+import {useState,useLayoutEffect,useRef,useEffect} from 'react';
 import axios from 'axios';
 import "../App.css"
 
-function SubmissionPage(){
+function usePersistedState(key, defaultValue) {
+  // Initialize state with value from localStorage if available
+  const [state, setState] = useState(() => {
+    const storedValue = sessionStorage.getItem(key);
+    return storedValue ? JSON.parse(storedValue) : defaultValue;
+  });
+
+  // Update localStorage whenever the state changes
+  useEffect(() => {
+    sessionStorage.setItem(key, JSON.stringify(state));
+  }, [key, state]);
+  return [state, setState];
+}
+
+function SubmissionPage(props){
+    
     const value = '';
     const inputRef = useRef(null);
     const inputRef2 = useRef(null);
@@ -16,7 +31,7 @@ function SubmissionPage(){
     }, [value]); // Re-run when the value changes
 
     const [stvar, setMess] = useState('');
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = usePersistedState("submitMovInfo",{
         movieName: '',
         movieReview: '',
     })
@@ -39,8 +54,8 @@ function SubmissionPage(){
         }
         else{
         setMess("Please wait, your review is loading.");
-        axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/genericEndpoint123',formData)
-        //axios.post('http://localhost:8080/genericEndpoint123',formData)
+        //axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/genericEndpoint123',formData)
+        axios.post('http://localhost:8080/submitEndpoint',formData)
         .then(response => setMess(response.data))
         }
     };

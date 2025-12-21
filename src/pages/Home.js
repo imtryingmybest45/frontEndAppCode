@@ -10,10 +10,12 @@ function Home(props){
 
   let tfVar = props.name;
   let setTFVar = props.age;
-
+  let origMovName = props.origMovName;
+  let setPrevPath = props.setPrevPath;
   const setLinks = props.linksStuff;
 
   const handleClick = () => {
+    setPrevPath(window.location.pathname);
     setTFVar(false);
   }
 
@@ -23,7 +25,7 @@ function Home(props){
       { id: 2, text: 'Insidious', to: '/Insidious' },
     ];
   }, []); // <-- Empty array ensures it's created only once
-  const stvar = "hello";
+  //const stvar = "hello";
   useEffect(() => {
     setLinks(linksData);
   },[linksData, setLinks]);
@@ -34,8 +36,8 @@ function Home(props){
       {tfVar&&<p>This is where I review horror movies.</p>}
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
-        <Route path="/TheConjuring2" element={<TheConjuring2 name = {stvar}/>} />
-        <Route path="/Insidious" element={<Insidious name = {stvar}/>} />
+        <Route path="/TheConjuring2" element={<TheConjuring2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Insidious" element={<Insidious name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>

@@ -1,5 +1,6 @@
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import EditPage from './pages/EditPage';
 import SubmissionPage from './pages/SubmissionPage';
 import OptionsPage from './pages/OptionsPage';
 import DeletePage from './pages/DeletePage';
@@ -26,14 +27,23 @@ function usePersistedState(key, defaultValue) {
 }
 
 function App(){
+
   const [ranVar, settfVar] = useState(true);
-
+  const [prevPath, setPrevPath] = usePersistedState('pathname',window.location.pathname);
   const [links, setLinks] = usePersistedState('linkNames',[{id: "hello"},{id: "goodbye"}]);
+  const [origMovName, setOrigMovName] = useState('');
 
-  const userData = {name: ranVar, age: settfVar};
+  const userData = {name: ranVar, age: settfVar, prevPath: prevPath, setPrevPath: setPrevPath};
 
   const homeClick = () => {
+    sessionStorage.removeItem('movInfo')
+    sessionStorage.removeItem('submitMovInfo')
     settfVar(true)
+  }
+
+  const adminClick = () => {
+    sessionStorage.removeItem('movInfo')
+    sessionStorage.removeItem('submitMovInfo')
   }
 
   const handlePageLoad = () => {
@@ -53,13 +63,14 @@ function App(){
     <div>
       <nav className="top-left-div">
         <Link to='*' onClick={homeClick}>Home</Link>
-        <Link to='/Admin'>Admin</Link>
+        <Link to='/Admin' onClick={adminClick}>Admin</Link>
       </nav>
       <Routes>
-        <Route path="*" element={<Home {...userData} linksStuff={setLinks}/>} />
+        <Route path="*" element={<Home {...userData} linksStuff={setLinks} origMovName={origMovName}/>} />
         <Route path ="/Admin" element={<Admin />}/>
         <Route path ="/SubmissionPage" element={<SubmissionPage />}/>
         <Route path ="/DeletePage" element={<DeletePage linksData={links}/>}/>
+        <Route path ="/EditPage" element={<EditPage {...userData} linksData={links} setOrigMovName={setOrigMovName}/>}/>
         <Route path ="/OptionsPage" element={<OptionsPage />}/>
       </Routes>
     </div>
