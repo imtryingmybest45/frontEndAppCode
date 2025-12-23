@@ -7,6 +7,7 @@ import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import {useEffect} from 'react';
 import {useMemo} from 'react';
+import boo from './boo.png';
 
 function Home(props){
 
@@ -37,6 +38,7 @@ function Home(props){
   return (
     <div>
       {tfVar&&<h1>Welcome to my website.</h1>}
+      {tfVar&&<img src={boo} alt="Description of the image" />}
       {tfVar&&<p>This is where I review horror movies.</p>}
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
