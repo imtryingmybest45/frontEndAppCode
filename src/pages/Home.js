@@ -38,7 +38,7 @@ function Home(props){
   return (
     <div>
       {tfVar&&<h1>Welcome to my website.</h1>}
-      {tfVar&&<img src={boo} alt="Description of the image" />}
+      {tfVar&&<img src={boo} />}
       {tfVar&&<p>This is where I review horror movies.</p>}
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
