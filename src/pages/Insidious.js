@@ -84,6 +84,7 @@ function Insidious(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMTYyOTAxMDA0OF5BMl5BanBnXkFtZTcwNzgwNTc1NA@@._V1_SX300.jpg'} alt="This is the movie poster for insidious"/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
