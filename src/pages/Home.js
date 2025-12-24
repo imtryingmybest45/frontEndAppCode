@@ -38,6 +38,10 @@ function Home(props){
       { id: 9, text: 'Polaroid', to: '/Polaroid', name: "Poloaroid" },
       { id: 10, text: 'The Human Centipede', to: '/TheHumanCentipede', name: "The Human Centipede" },
     ];
+  const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
+      return a.name.localeCompare(b.name);
+  });
+  return linksDataSorted;
   }, []); // <-- Empty array ensures it's created only once
   //const stvar = "hello";
 
