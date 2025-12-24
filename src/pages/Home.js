@@ -1,6 +1,5 @@
 import ISawtheTVGlow from './ISawtheTVGlow';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
-import Saw from './Saw';
 import InsidiousChapter2 from './InsidiousChapter2';
 import TheDescent from './TheDescent';
 import Insidious from './Insidious';
@@ -31,7 +30,6 @@ function Home(props){
       { id: 2, text: 'Insidious', to: '/Insidious' },
       { id: 3, text: 'The Descent', to: '/TheDescent' },
       { id: 5, text: 'Insidious Chapter 2', to: '/InsidiousChapter2' },
-      { id: 6, text: 'Saw', to: '/Saw' },
       { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
       { id: 8, text: 'I Saw the TV Glow', to: '/ISawtheTVGlow' },
     ];
@@ -52,7 +50,6 @@ function Home(props){
         <Route path="/Insidious" element={<Insidious name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheDescent" element={<TheDescent name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/InsidiousChapter2" element={<InsidiousChapter2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Saw" element={<Saw name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ISawtheTVGlow" element={<ISawtheTVGlow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
