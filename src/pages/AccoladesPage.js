@@ -7,6 +7,7 @@ function Accolades(){
         <p>"You really put all the bells and whistles on it, didn't you, April?" &nbsp;~Chloe</p>
         <p>"Hahahaha I love it!" &nbsp;~Miranda</p>
         <p>*middle finger emoji* &nbsp;~Jenna</p>
+        <p>This place is the posterior of the global network otherwise known as, in layman's terms, "the internet." &nbsp;~Collin</p>
     </div>
   );
 }
