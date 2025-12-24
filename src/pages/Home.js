@@ -1,4 +1,3 @@
-import ThisMovieDoesntExist from './ThisMovieDoesntExist';
 import ISawtheTVGlow from './ISawtheTVGlow';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
 import InsidiousChapter2 from './InsidiousChapter2';
@@ -33,7 +32,6 @@ function Home(props){
       { id: 5, text: 'Insidious Chapter 2', to: '/InsidiousChapter2' },
       { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
       { id: 8, text: 'I Saw the TV Glow', to: '/ISawtheTVGlow' },
-      { id: 9, text: 'This Movie Doesnt Exist', to: '/ThisMovieDoesntExist' },
     ];
   }, []); // <-- Empty array ensures it's created only once
   //const stvar = "hello";
@@ -54,7 +52,6 @@ function Home(props){
         <Route path="/InsidiousChapter2" element={<InsidiousChapter2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ISawtheTVGlow" element={<ISawtheTVGlow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/ThisMovieDoesntExist" element={<ThisMovieDoesntExist name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
