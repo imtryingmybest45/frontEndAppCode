@@ -4,7 +4,7 @@ import EditPage from './pages/EditPage';
 import SubmissionPage from './pages/SubmissionPage';
 import OptionsPage from './pages/OptionsPage';
 import DeletePage from './pages/DeletePage';
-import AccoladesPage from './pages/AccoladesPage';
+import Accolades from './pages/AccoladesPage';
 import {Routes} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
