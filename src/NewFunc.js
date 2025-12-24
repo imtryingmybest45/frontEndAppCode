@@ -84,7 +84,7 @@ function NewFunc(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'Insert Movie Poster Here'} alt="This is the movie poster for this movie"/>}
+            {varVar && <img src={'Insert Movie Poster Here'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">

@@ -27,18 +27,24 @@ function Home(props){
   }
 
   const linksData = useMemo(() => {
-    return [
-      { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2' },
-      { id: 2, text: 'Insidious', to: '/Insidious' },
-      { id: 3, text: 'The Descent', to: '/TheDescent' },
-      { id: 5, text: 'Insidious Chapter 2', to: '/InsidiousChapter2' },
-      { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe' },
-      { id: 8, text: 'I Saw the TV Glow', to: '/ISawtheTVGlow' },
-      { id: 9, text: 'Polaroid', to: '/Polaroid' },
-      { id: 10, text: 'The Human Centipede', to: '/TheHumanCentipede' },
+    
+    const linksDataUnsorted = [
+      { id: 1, text: 'The Conjuring 2', to: '/TheConjuring2', name: "The Conjuring 2" },
+      { id: 2, text: 'Insidious', to: '/Insidious', name: "Insidious" },
+      { id: 3, text: 'The Descent', to: '/TheDescent', name: "The Descent" },
+      { id: 5, text: 'Insidious Chapter 2', to: '/InsidiousChapter2', name: "Insidious Chapter 2" },
+      { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe', name: "The Autopsy of Jane Doe" },
+      { id: 8, text: 'I Saw the TV Glow', to: '/ISawtheTVGlow', name: "I Saw the TV Glow" },
+      { id: 9, text: 'Polaroid', to: '/Polaroid', name: "Poloaroid" },
+      { id: 10, text: 'The Human Centipede', to: '/TheHumanCentipede', name: "The Human Centipede" },
     ];
+    const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
+      return a.name.localeCompare(b.name);
+  });
+  return linksDataSorted;
   }, []); // <-- Empty array ensures it's created only once
   //const stvar = "hello";
+
   useEffect(() => {
     setLinks(linksData);
   },[linksData, setLinks]);
