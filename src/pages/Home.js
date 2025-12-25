@@ -1,6 +1,5 @@
 import BringHerBack from './BringHerBack';
 import Annabelle from './Annabelle';
-import TheHumanCentipede from './TheHumanCentipede';
 import Polaroid from './Polaroid';
 import ISawtheTVGlow from './ISawtheTVGlow';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
@@ -38,7 +37,6 @@ function Home(props){
       { id: 7, text: 'The Autopsy of Jane Doe', to: '/TheAutopsyofJaneDoe', name: "The Autopsy of Jane Doe" },
       { id: 8, text: 'I Saw the TV Glow', to: '/ISawtheTVGlow', name: "I Saw the TV Glow" },
       { id: 9, text: 'Polaroid', to: '/Polaroid', name: "Poloaroid" },
-      { id: 10, text: 'The Human Centipede', to: '/TheHumanCentipede', name: "The Human Centipede" },
       { id: 11, text: 'Annabelle', to: '/Annabelle', name: "Annabelle" },
       { id: 13, text: 'Bring Her Back', to: '/BringHerBack', name: "Bring Her Back" },
     ];
@@ -67,7 +65,6 @@ function Home(props){
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ISawtheTVGlow" element={<ISawtheTVGlow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Polaroid" element={<Polaroid name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheHumanCentipede" element={<TheHumanCentipede name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Annabelle" element={<Annabelle name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/BringHerBack" element={<BringHerBack name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
