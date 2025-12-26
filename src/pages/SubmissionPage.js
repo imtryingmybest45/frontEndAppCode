@@ -54,7 +54,8 @@ function SubmissionPage(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/submitEndpoint',formData)
+        //axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/submitEndpoint',formData)
+        axios.post('helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/submitEndpoint',formData)
         //axios.post('http://localhost:8080/submitEndpoint',formData)
         .then(response => setMess(response.data))
         }
