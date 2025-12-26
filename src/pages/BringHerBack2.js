@@ -16,11 +16,11 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function BringHerBack(props){
+function BringHerBack2(props){
 
     const origMovName = props.origMovName;
-    const movName = "Bring Her Back";
-    const movVal = "Release Date: 2025\n\nRating: 7/10\n\nNo notes, this was a great movie. Kind of gory at times, but whatever.";
+    const movName = "Bring Her Back 2";
+    const movVal = "Jk, I wish this movie existed. I'm just checking the \"edit review\" function of my website.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -84,7 +84,7 @@ function BringHerBack(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BZTlhYTk1ZTEtOWY3NC00NWQ5LTlkOTctNjQ3ZDYyZGE5ZWNlXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'error'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -102,4 +102,4 @@ function BringHerBack(props){
     )
 }
 
-export default BringHerBack;
+export default BringHerBack2;
