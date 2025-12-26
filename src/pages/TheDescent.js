@@ -63,7 +63,7 @@ function TheDescent(props){
         else{
         setMess("Please wait, your review is loading.");
         //axios.post('https://tryingthisagain-e6f8d0gqfmgsevft.eastus2-01.azurewebsites.net/editEndpoint',formData)
-        axios.post('helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/editEndpoint',formData)
+        axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/editEndpoint',formData)
         //axios.post('http://localhost:8080/editEndpoint',formData)
         .then(response => setMess(response.data))
         }
