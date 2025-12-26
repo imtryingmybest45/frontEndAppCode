@@ -1,7 +1,3 @@
-import PhantomoftheOpera from './PhantomoftheOpera';
-import TheThing from './TheThing';
-import ToyStory from './ToyStory';
-import BringHerBack from './BringHerBack';
 import Terrifier3 from './Terrifier3';
 import InsidiousChapter2 from './InsidiousChapter2';
 import TheDescent from './TheDescent';
@@ -35,10 +31,6 @@ function Home(props){
       { id: 3, text: 'The Descent', to: '/TheDescent', name: "The Descent" },
       { id: 5, text: 'Insidious Chapter 2', to: '/InsidiousChapter2', name: "Insidious Chapter 2" },
       { id: 6, text: 'Terrifier 3', to: '/Terrifier3', name: "Terrifier 3" },
-      { id: 7, text: 'Bring Her Back', to: '/BringHerBack', name: "Bring Her Back" },
-      { id: 8, text: 'Toy Story', to: '/ToyStory', name: "Toy Story" },
-      { id: 9, text: 'The Thing', to: '/TheThing', name: "The Thing" },
-      { id: 10, text: 'Phantom of the Opera', to: '/PhantomoftheOpera', name: "Phantom of the Opera" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -63,10 +55,6 @@ function Home(props){
         <Route path="/TheDescent" element={<TheDescent name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/InsidiousChapter2" element={<InsidiousChapter2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Terrifier3" element={<Terrifier3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/BringHerBack" element={<BringHerBack name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/ToyStory" element={<ToyStory name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheThing" element={<TheThing name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/PhantomoftheOpera" element={<PhantomoftheOpera name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
