@@ -31,7 +31,6 @@ function Home(props){
       { id: 3, text: 'The Descent', to: '/TheDescent', name: "The Descent" },
       { id: 5, text: 'Insidious Chapter 2', to: '/InsidiousChapter2', name: "Insidious Chapter 2" },
       { id: 6, text: 'Terrifier 3', to: '/Terrifier3', name: "Terrifier 3" },
-      { id: 7, text: 'Terrifier 3', to: '/Terrifier3', name: "Terrifier 3" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
