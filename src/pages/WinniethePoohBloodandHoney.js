@@ -20,7 +20,7 @@ function WinniethePoohBloodandHoney(props){
 
     const origMovName = props.origMovName;
     const movName = "Winnie the Pooh Blood and Honey";
-    const movVal = "I have no idea if this movie actually exists.";
+    const movVal = "Release date: Not soon enough\n\nRating: 1000/10\n\n10/10 movie, no notes. A must watch.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
