@@ -20,7 +20,7 @@ function Terrifier(props){
 
     const origMovName = props.origMovName;
     const movName = "Terrifier";
-    const movVal = "This won’t work";
+    const movVal = "Release Date: 2016\n\nRating: 8/10\n\nPretty good debut of the Terrifier franchise.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
