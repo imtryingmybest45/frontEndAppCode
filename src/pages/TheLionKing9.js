@@ -16,11 +16,11 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function TheLionKing(props){
+function TheLionKing9(props){
 
     const origMovName = props.origMovName;
-    const movName = "The Lion King";
-    const movVal = "This was the original Lion King. It, unfortunately, was not as good as the Lion King 1 1/2.";
+    const movName = "The Lion King 9";
+    const movVal = "This was the original Lion King 9. jk";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -80,7 +80,7 @@ function TheLionKing(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'error'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -98,4 +98,4 @@ function TheLionKing(props){
     )
 }
 
-export default TheLionKing;
+export default TheLionKing9;
