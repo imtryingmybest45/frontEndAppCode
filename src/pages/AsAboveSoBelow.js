@@ -19,8 +19,8 @@ function usePersistedState(key, defaultValue) {
 function AsAboveSoBelow(props){
 
     const origMovName = props.origMovName;
-    const movName = "As Above, So Below";
-    const movVal = "this was an S tier movie";
+    const movName = "As Above So Below";
+    const movVal = "this was an A tier movie";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;

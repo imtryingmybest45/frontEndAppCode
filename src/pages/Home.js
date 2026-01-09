@@ -38,7 +38,7 @@ function Home(props){
       { id: 7, text: "Annabelle", to: "/Annabelle", name: "Annabelle" },
       { id: 8, text: "Annabelle Creation", to: "/AnnabelleCreation", name: "Annabelle Creation" },
       { id: 10, text: "The Lion King 9", to: "/TheLionKing9", name: "The Lion King 9" },
-      { id: 11, text: "As Above, So Below", to: "/AsAboveSoBelow", name: "As Above, So Below" },
+      { id: 11, text: "As Above So Below", to: "/AsAboveSoBelow", name: "As Above So Below" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
