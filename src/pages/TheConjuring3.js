@@ -16,10 +16,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function TheConjuring(props){
+function TheConjuring3(props){
 
     const origMovName = props.origMovName;
-    const movName = "The Conjuring";
+    const movName = "The Conjuring 3";
     const movVal = "A tier movie";
 
     const [varVar, setVarVar] = useState(true);
@@ -80,7 +80,7 @@ function TheConjuring(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'error'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -98,4 +98,4 @@ function TheConjuring(props){
     )
 }
 
-export default TheConjuring;
+export default TheConjuring3;

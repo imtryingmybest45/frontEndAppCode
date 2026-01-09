@@ -1,5 +1,5 @@
 import TheConjuringTheDevilMadeMeDoIt from './TheConjuringTheDevilMadeMeDoIt';
-import TheConjuring from './TheConjuring';
+import TheConjuring3 from './TheConjuring3';
 import BitinList from './BitinList';
 import AnnabelleCreation from './AnnabelleCreation';
 import Annabelle from './Annabelle';
@@ -39,7 +39,7 @@ function Home(props){
       { id: 7, text: "Annabelle", to: "/Annabelle", name: "Annabelle" },
       { id: 8, text: "Annabelle Creation", to: "/AnnabelleCreation", name: "Annabelle Creation" },
       { id: 13, text: "Bitin List", to: "/BitinList", name: "Bitin List" },
-      { id: 14, text: "The Conjuring", to: "/TheConjuring", name: "The Conjuring" },
+      { id: 14, text: "The Conjuring 3", to: "/TheConjuring3", name: "The Conjuring 3" },
       { id: 15, text: "The Conjuring: The Devil Made Me Do It", to: "/TheConjuringTheDevilMadeMeDoIt", name: "The Conjuring: The Devil Made Me Do It" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
@@ -68,7 +68,7 @@ function Home(props){
         <Route path="/Annabelle" element={<Annabelle name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/AnnabelleCreation" element={<AnnabelleCreation name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/BitinList" element={<BitinList name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheConjuring" element={<TheConjuring name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheConjuring3" element={<TheConjuring3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheConjuringTheDevilMadeMeDoIt" element={<TheConjuringTheDevilMadeMeDoIt name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
