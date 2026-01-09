@@ -19,8 +19,8 @@ function usePersistedState(key, defaultValue) {
 function BitinList(props){
 
     const origMovName = props.origMovName;
-    const movName = "Bitin' List'";
-    const movVal = "Yep, the bitin' List. this is a Tyler Childers song";
+    const movName = "Bitin List'";
+    const movVal = "Yep, the bitin' ";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;

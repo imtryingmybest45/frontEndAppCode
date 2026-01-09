@@ -40,7 +40,7 @@ function Home(props){
       { id: 8, text: "Annabelle Creation", to: "/AnnabelleCreation", name: "Annabelle Creation" },
       { id: 11, text: "As Above So Below", to: "/AsAboveSoBelow", name: "As Above So Below" },
       { id: 12, text: "I've Been Alone...", to: "/IveBeenAlone", name: "I've Been Alone..." },
-      { id: 13, text: "Bitin' List'", to: "/BitinList", name: "Bitin' List'" },
+      { id: 13, text: "Bitin List'", to: "/BitinList", name: "Bitin List'" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
