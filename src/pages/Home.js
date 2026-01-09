@@ -1,5 +1,4 @@
 import TheConjuring3 from './TheConjuring3';
-import BitinList from './BitinList';
 import AnnabelleCreation from './AnnabelleCreation';
 import Annabelle from './Annabelle';
 import Terrifier3 from './Terrifier3';
@@ -37,7 +36,6 @@ function Home(props){
       { id: 6, text: "Terrifier 3", to: "/Terrifier3", name: "Terrifier 3" },
       { id: 7, text: "Annabelle", to: "/Annabelle", name: "Annabelle" },
       { id: 8, text: "Annabelle Creation", to: "/AnnabelleCreation", name: "Annabelle Creation" },
-      { id: 13, text: "Bitin List", to: "/BitinList", name: "Bitin List" },
       { id: 14, text: "The Conjuring 3", to: "/TheConjuring3", name: "The Conjuring 3" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
@@ -65,7 +63,6 @@ function Home(props){
         <Route path="/Terrifier3" element={<Terrifier3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Annabelle" element={<Annabelle name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/AnnabelleCreation" element={<AnnabelleCreation name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/BitinList" element={<BitinList name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheConjuring3" element={<TheConjuring3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
