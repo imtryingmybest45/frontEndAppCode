@@ -21,7 +21,6 @@ function SubmissionPage(props){
     const value = '';
     const inputRef = useRef(null);
     const inputRef2 = useRef(null);
-    const specialCharsRegex = /[^a-zA-Z0-9\s]/;
 
     useLayoutEffect(() => {
         if (inputRef.current) {
@@ -46,10 +45,7 @@ function SubmissionPage(props){
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default form submission behavior (page reload)
-        if (specialCharsRegex.test(formData.movieName)){
-            setMess("Movie name cannot contain non-alphanumeric characters.")
-        }
-        else if(/^[a-z]/.test(formData.movieName)){
+        if(/^[a-z]/.test(formData.movieName)){
             setMess("First word of movie name must be uppercase.")
         }
         else{
