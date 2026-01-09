@@ -37,7 +37,7 @@ function Home(props){
       { id: 5, text: "Insidious Chapter 2", to: "/InsidiousChapter2", name: "Insidious Chapter 2" },
       { id: 6, text: "Terrifier 3", to: "/Terrifier3", name: "Terrifier 3" },
       { id: 7, text: "Annabelle", to: "/Annabelle", name: "Annabelle" },
-      { id: 8, text: "Annabelle: Creation", to: "/AnnabelleCreation", name: "Annabelle: Creation" },
+      { id: 8, text: "Annabelle Creation", to: "/AnnabelleCreation", name: "Annabelle Creation" },
       { id: 9, text: "The Lion King 2", to: "/TheLionKing2", name: "The Lion King 2" },
       { id: 10, text: "The Lion King", to: "/TheLionKing", name: "The Lion King" },
       { id: 11, text: "The Lion King 3", to: "/TheLionKing3", name: "The Lion King 3" },
