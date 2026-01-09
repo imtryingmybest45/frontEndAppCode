@@ -20,7 +20,7 @@ function TheLionKing3(props){
 
     const origMovName = props.origMovName;
     const movName = "The Lion King 3";
-    const movVal = "I have no freaking clue why they needed to make a third one of these.";
+    const movVal = "I have no freaking clue why they needed to make a third one of these.\n\nEdit: never mind, this is the lion king 1 1/2, the greatest movie of all time. Carry on.";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
