@@ -10,7 +10,7 @@ import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import {useEffect} from 'react';
 import {useMemo} from 'react';
-import boo from './boo.png';
+import boolizardprev12 from './boolizardprev12.png';
 
 function Home(props){
 
@@ -50,7 +50,7 @@ function Home(props){
   return (
     <div>
       {tfVar&&<h1>Welcome to my website.</h1>}
-      {tfVar&&<img src={boo} alt="This is a ghost that says BOO" />}
+      {tfVar&&<img src={boolizardprev12} alt="This is a lizard that says BOO" />}
       {tfVar&&<p>This is where I review horror movies.</p>}
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>
