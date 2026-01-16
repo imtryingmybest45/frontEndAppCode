@@ -20,7 +20,7 @@ function AnnabelleComesHome(props){
 
     const origMovName = props.origMovName;
     const movName = "Annabelle Comes Home";
-    const movVal = "Release Date: 2021\n\nRating: 5/10\n\nWell, ladies and gentleman, while Annabelle Comes Home doesn't have much else to write home about, it at least claims the title of this website's first negative review.";
+    const movVal = "Release Date: 2021\n\nRating: 5/10\n\nWell, ladies and gentleman, while Annabelle Comes Home doesn't have much else to write home about, it at least claims the title of this website's first negative review.\n\nI will say that the part at the end where Judy tries to put Annabelle back in the case and the demon's hand pushes it closed from behind is terrifying, but they fucking ruined it when they showed the rest of the demon and had it sucking the soul out of Judy's face. Like, come on, really?";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
