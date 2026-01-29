@@ -1,3 +1,4 @@
+import TheBlackPhone2 from './TheBlackPhone2';
 import GoodBoy from './GoodBoy';
 import AnnabelleComesHome from './AnnabelleComesHome';
 import AnnabelleCreation from './AnnabelleCreation';
@@ -39,6 +40,7 @@ function Home(props){
       { id: 8, text: "Annabelle: Creation", to: "/AnnabelleCreation", name: "Annabelle: Creation" },
       { id: 9, text: "Annabelle Comes Home", to: "/AnnabelleComesHome", name: "Annabelle Comes Home" },
       { id: 10, text: "Good Boy", to: "/GoodBoy", name: "Good Boy" },
+      { id: 11, text: "The Black Phone 2", to: "/TheBlackPhone2", name: "The Black Phone 2" },
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -67,6 +69,7 @@ function Home(props){
         <Route path="/AnnabelleCreation" element={<AnnabelleCreation name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/AnnabelleComesHome" element={<AnnabelleComesHome name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/GoodBoy" element={<GoodBoy name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheBlackPhone2" element={<TheBlackPhone2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
