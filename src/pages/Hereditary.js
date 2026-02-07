@@ -20,7 +20,7 @@ function Hereditary(props){
 
     const origMovName = props.origMovName;
     const movName = "Hereditary";
-    const movVal = "Release Date: 2017\n\nRating: 9/10\n\nAwesome, awesome movie. One of Ari's best hits. Rest of review coming soon!";
+    const movVal = "Release Date: 2018\n\nRating: 9/10\n\nAwesome, awesome movie. One of Ari's best hits. Rest of review coming soon!";
     const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
