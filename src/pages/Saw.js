@@ -21,7 +21,7 @@ function Saw(props){
     const origMovName = props.origMovName;
     const movName = "Saw";
     const movVal = "Release Date: 2004\n\nRating: 9/10\n\nClassic torture porn mixed with a bit of mystery/psychological thriller. Rest of review coming soon!";
-    const movTier = "A";
+    const movTier = "B";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
