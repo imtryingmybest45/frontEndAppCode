@@ -16,12 +16,12 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function ToyStory(props){
+function ToyStory2(props){
 
     const origMovName = props.origMovName;
-    const movName = "Toy Story";
-    const movVal = "gerat mofjd";
-    const movTier = "S";
+    const movName = "Toy Story 2";
+    const movVal = "gerat mofjd\n\nRAting: 6/10";
+    const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -83,7 +83,7 @@ function ToyStory(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BNzVmODlhMDEtY2YxZi00OTVjLTlkNTktN2Q2OTRlM2I4M2FhXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -105,4 +105,4 @@ function ToyStory(props){
     )
 }
 
-export default ToyStory;
+export default ToyStory2;
