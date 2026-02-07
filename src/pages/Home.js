@@ -13,7 +13,7 @@ import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import {useEffect} from 'react';
 import {useMemo} from 'react';
-import stoplizard from './stoplizard.png';
+import boolizardprev12 from './boolizardprev12.png';
 
 function Home(props){
 
@@ -56,9 +56,7 @@ function Home(props){
   return (
     <div>
       {tfVar&&<h1>Welcome to my website.</h1>}
-      {tfVar&&<img src={stoplizard} alt="This is a lizard that says STOP" />}
-      {tfVar&&<h1 className="parStyl">ALERT: This is the scratch version of my website</h1>}
-      {tfVar&&<h1 className="parStyl2">For the real version, go to <a href = "https://aprilshorrorcorner.com">aprilshorrorcorner.com</a></h1>}
+      {tfVar&&<img src={boolizardprev12} alt="This is a lizard that says BOO" />}
       {tfVar&&<p>This is where I review horror movies.</p>}
       {tfVar&&<p>Click on a movie name to see the review.</p>}
       <Routes>

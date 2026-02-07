@@ -52,7 +52,7 @@ function SubmissionPage(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        axios.post('https://testhelpme-cfh4afcpdreacnh8.canadacentral-01.azurewebsites.net/submitEndpoint',formData)
+        axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/submitEndpoint',formData)
         //axios.post('http://localhost:8080/submitEndpoint',formData)
         .then(response => setMess(response.data))
         }

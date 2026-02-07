@@ -61,7 +61,7 @@ function AnnabelleComesHome(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        axios.post('https://testhelpme-cfh4afcpdreacnh8.canadacentral-01.azurewebsites.net/editEndpoint',formData)
+        axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/editEndpoint',formData)
         //axios.post('http://localhost:8080/editEndpoint',formData)
         .then(response => setMess(response.data))
         }
