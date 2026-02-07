@@ -1,5 +1,4 @@
 import ToyStory from './ToyStory';
-import ToyStory3 from './ToyStory3';
 import TheHumanCentipedeSecondSequence from './TheHumanCentipedeSecondSequence';
 import TheNun from './TheNun';
 import TheExorcismofGod from './TheExorcismofGod';
@@ -49,7 +48,6 @@ function Home(props){
       { id: 12, text: "The Exorcism of God", to: "/TheExorcismofGod", name: "The Exorcism of God", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F'},
       { id: 13, text: "The Nun", to: "/TheNun", name: "The Nun", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_SX300.jpg', tier: 'D'},
       { id: 14, text: "The Human Centipede (Second Sequence)", to: "/TheHumanCentipedeSecondSequence", name: "The Human Centipede (Second Sequence)", moviePoster: 'error', tier: 'N'},
-      { id: 16, text: "Toy Story 3", to: "/ToyStory3", name: "Toy Story 3", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX300.jpg', tier: 'D'},
       { id: 17, text: "Toy Story", to: "/ToyStory", name: "Toy Story", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
@@ -83,7 +81,6 @@ function Home(props){
         <Route path="/TheExorcismofGod" element={<TheExorcismofGod name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheNun" element={<TheNun name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheHumanCentipedeSecondSequence" element={<TheHumanCentipedeSecondSequence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/ToyStory3" element={<ToyStory3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ToyStory" element={<ToyStory name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
