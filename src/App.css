@@ -93,6 +93,243 @@
   word-wrap: break-word;
 }
 
+.parStyl {
+  font-size:x-large;
+  font-family:'Times New Roman', Times, serif;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color:red;
+}
+
+.parStyl2 {
+  font-size:x-large;
+  font-family:'Times New Roman', Times, serif;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.tierList {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 21vh;
+  margin-top: 1vh;
+  flex: 1;
+  flex-direction: wrap;
+}
+
+.largeTierList{
+  display: flex;
+  flex-direction: column;
+}
+
+.sTier {
+  display: flex;
+  background-color:rgb(255, 0, 153);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.aTier {
+  display: flex;
+  background-color:rgb(179, 0, 255);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.bTier {
+  display: flex;
+  background-color:rgb(255, 0, 153);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.cTier {
+  display: flex;
+  background-color:rgb(179, 0, 255);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.dTier {
+  display: flex;
+  background-color:rgb(255, 0, 153);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.fTier {
+  display: flex;
+  background-color:rgb(179, 0, 255);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.noTier {
+  display: flex;
+  background-color:rgb(130, 13, 132);
+  width: 10vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.sTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color: rgb(253, 184, 237);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.aTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color: rgb(238, 179, 253);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.bTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color: rgb(253, 184, 237);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.cTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color: rgb(238, 179, 253);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.dTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color: rgb(253, 184, 237);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.fTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color: rgb(238, 179, 253);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.noTierList{
+  display: flex;
+  width: 80vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  background-color:rgb(130, 74, 131);
+  flex-wrap: wrap; /* This property makes items wrap to the next line */
+}
+
+.sTierList img{
+  /* Optional: ensures images fit within their container */
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.aTierList img{
+ /* Optional: ensures images fit within their container */
+  /*max-width: 10%;*/
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.bTierList img{
+  /* Optional: ensures images fit within their container */
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.cTierList img{
+ /* Optional: ensures images fit within their container */
+  /*max-width: 10%;*/
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.dTierList img{
+ /* Optional: ensures images fit within their container */
+  /*max-width: 10%;*/
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.fTierList img{
+ /* Optional: ensures images fit within their container */
+  /*max-width: 10%;*/
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.noTierList img{
+ /* Optional: ensures images fit within their container */
+  /*max-width: 10%;*/
+  max-width: 100%;
+  max-height: auto;
+  width: 100px;
+  height: auto;
+}
+
+.theTierFont{
+  font-size:3cap;
+  color:rgb(255, 255, 255);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.theNoTierFont{
+  font-size:3cap;
+  color:rgb(255, 255, 255);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
 
 @keyframes App-logo-spin {
   from {

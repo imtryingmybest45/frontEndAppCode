@@ -21,6 +21,7 @@ function NewFunc(props){
     const origMovName = props.origMovName;
     const movName = "Insert movie name here";
     const movVal = "Insert movie review here";
+    const movTier = "Insert Movie Tier here";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -28,6 +29,7 @@ function NewFunc(props){
     const value = '';
     const inputRef = useRef(null);
     const inputRef2 = useRef(null);
+    const inputRef3 = useRef(null);
 
     useLayoutEffect(() => {
         if (inputRef.current) {
@@ -41,6 +43,7 @@ function NewFunc(props){
         movieName: movName,
         movieReview: movVal,
         origMovName: origMovName,
+        movieTier: movTier
     });
 
     const handleChange = (e) => {
@@ -58,7 +61,7 @@ function NewFunc(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/editEndpoint',formData)
+        axios.post('https://testhelpme-cfh4afcpdreacnh8.canadacentral-01.azurewebsites.net/editEndpoint',formData)
         //axios.post('http://localhost:8080/editEndpoint',formData)
         .then(response => setMess(response.data))
         }
@@ -86,6 +89,10 @@ function NewFunc(props){
                 <label className="linkss">
                     Movie Name:
                     <textarea className = "custom-input" type="text" ref={inputRef} name="movieName" value={formData.movieName} onChange={handleChange} placeholder="Input movie name" />
+                </label>
+                <label className="linkss">
+                    Tier:
+                    <textarea className = "custom-input" type="text" ref={inputRef3} name="movieTier" value={formData.movieTier} onChange={handleChange} placeholder="Input movie tier" />
                 </label>
                 <label className="linkss2">
                     Movie Review:

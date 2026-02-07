@@ -21,6 +21,7 @@ function SubmissionPage(props){
     const value = '';
     const inputRef = useRef(null);
     const inputRef2 = useRef(null);
+    const inputRef3 = useRef(null);
 
     useLayoutEffect(() => {
         if (inputRef.current) {
@@ -33,6 +34,7 @@ function SubmissionPage(props){
     const [formData, setFormData] = usePersistedState("submitMovInfo",{
         movieName: '',
         movieReview: '',
+        movieTier: ''
     })
 
     const handleChange = (e) => {
@@ -50,7 +52,7 @@ function SubmissionPage(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/submitEndpoint',formData)
+        axios.post('https://testhelpme-cfh4afcpdreacnh8.canadacentral-01.azurewebsites.net/submitEndpoint',formData)
         //axios.post('http://localhost:8080/submitEndpoint',formData)
         .then(response => setMess(response.data))
         }
@@ -62,6 +64,10 @@ function SubmissionPage(props){
                 <label className="linkss">
                     Movie Name:
                     <textarea className = "custom-input" type="text" ref={inputRef} name="movieName" value={formData.movieName} onChange={handleChange} placeholder="Input movie name" />
+                </label>
+                <label className="linkss">
+                    Tier:
+                    <textarea className = "custom-input" type="text" ref={inputRef3} name="movieTier" value={formData.movieTier} onChange={handleChange} placeholder="Input movie tier" />
                 </label>
                 <label className="linkss2">
                     Movie Review:
