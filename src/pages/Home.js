@@ -1,4 +1,3 @@
-import ToyStory from './ToyStory';
 import TheHumanCentipedeFirstSequence from './TheHumanCentipedeFirstSequence';
 import TheNun from './TheNun';
 import TheExorcismofGod from './TheExorcismofGod';
@@ -47,8 +46,7 @@ function Home(props){
       { id: 11, text: "Black Phone 2", to: "/BlackPhone2", name: "Black Phone 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTVjMzNmZGYtOWU5NS00NDYzLThhZTktZGNlODIwYWVhMDRmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
       { id: 12, text: "The Exorcism of God", to: "/TheExorcismofGod", name: "The Exorcism of God", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F'},
       { id: 13, text: "The Nun", to: "/TheNun", name: "The Nun", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_SX300.jpg', tier: 'D'},
-      { id: 14, text: "The Human Centipede (First Sequence)", to: "/TheHumanCentipedeFirstSequence", name: "The Human Centipede (First Sequence)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', tier: 'F'},
-      { id: 15, text: "The Human Centipede (First Sequence)", to: "/ToyStory", name: "The Human Centipede (First Sequence)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'N'},
+      { id: 14, text: "The Human Centipede (First Sequence", to: "/TheHumanCentipedeFirstSequence", name: "The Human Centipede (First Sequence", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', tier: 'F'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -81,7 +79,6 @@ function Home(props){
         <Route path="/TheExorcismofGod" element={<TheExorcismofGod name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheNun" element={<TheNun name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheHumanCentipedeFirstSequence" element={<TheHumanCentipedeFirstSequence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/ToyStory" element={<ToyStory name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
