@@ -20,8 +20,8 @@ function Nope(props){
 
     const origMovName = props.origMovName;
     const movName = "Nope";
-    const movVal = "Release Date: 2020\n\nRating: 6/10\n\nThis movie was kinda weird, not Peele’s best. Rest of review coming soon!";
-    const movTier = "C";
+    const movVal = "Release Date: 2022\n\nRating: 6/10\n\nThis movie was kinda weird, not Peele’s best. Rest of review coming soon!";
+    const movTier = "B";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
