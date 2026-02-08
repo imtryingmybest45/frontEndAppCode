@@ -1,5 +1,4 @@
 import SawIV from './SawIV';
-import Collinisapoorloser from './Collinisapoorloser';
 import TheSubstance from './TheSubstance';
 import Nope from './Nope';
 import Scream from './Scream';
@@ -97,7 +96,6 @@ function Home(props){
       { id: 37, text: "Scream", to: "/Scream", name: "Scream", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjA2NjU5MTg5OF5BMl5BanBnXkFtZTgwOTkyMzQxMDE@._V1_SX300.jpg', tier: 'A'},
       { id: 38, text: "Nope", to: "/Nope", name: "Nope", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 39, text: "The Substance", to: "/TheSubstance", name: "The Substance", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A'},
-      { id: 40, text: "Collin is a poor loser", to: "/Collinisapoorloser", name: "Collin is a poor loser", moviePoster: 'error', tier: 'S'},
       { id: 41, text: "Saw IV", to: "/SawIV", name: "Saw IV", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjc0NjUyNzg3MF5BMl5BanBnXkFtZTYwODMxOTM3._V1_SX300.jpg', tier: 'C'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
@@ -155,7 +153,6 @@ function Home(props){
         <Route path="/Scream" element={<Scream name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Nope" element={<Nope name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheSubstance" element={<TheSubstance name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Collinisapoorloser" element={<Collinisapoorloser name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/SawIV" element={<SawIV name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
