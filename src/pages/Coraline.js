@@ -21,7 +21,7 @@ function Coraline(props){
     const origMovName = props.origMovName;
     const movName = "Coraline";
     const movVal = "Release Date: 2009\n\nRating: 10/10\n\nA classic children's horror movie. Still freaks me out to this day. Rest of review coming soon!";
-    const movTier = "S";
+    const movTier = "NO";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
