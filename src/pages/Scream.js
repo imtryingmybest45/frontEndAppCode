@@ -20,7 +20,7 @@ function Scream(props){
 
     const origMovName = props.origMovName;
     const movName = "Scream";
-    const movVal = "Best 90 s movie";
+    const movVal = "Release Date: 1996\n\nRating: 8/10\n\nPerfect mix of camp and horror. Absolutely love, 8/10. Rest of review coming soon!";
     const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
