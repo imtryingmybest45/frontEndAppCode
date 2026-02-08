@@ -21,7 +21,7 @@ function TheHumanCentipedeFirstSequence(props){
     const origMovName = props.origMovName;
     const movName = "The Human Centipede (First Sequence)";
     const movVal = "Release Date: 2009\n\nRating: 0/10\n\nThis movie is cursed. Do not watch this.";
-    const movTier = "NO";
+    const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
