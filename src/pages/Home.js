@@ -1,3 +1,4 @@
+import TheGirlNextDoor2007 from './TheGirlNextDoor2007';
 import TheJackintheBox from './TheJackintheBox';
 import IntheTallGrass from './IntheTallGrass';
 import SawIV from './SawIV';
@@ -101,6 +102,7 @@ function Home(props){
       { id: 41, text: "Saw IV", to: "/SawIV", name: "Saw IV", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjc0NjUyNzg3MF5BMl5BanBnXkFtZTYwODMxOTM3._V1_SX300.jpg', tier: 'C'},
       { id: 42, text: "In the Tall Grass", to: "/IntheTallGrass", name: "In the Tall Grass", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
       { id: 43, text: "The Jack in the Box", to: "/TheJackintheBox", name: "The Jack in the Box", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2Y1YzI2MzMtNmFmMS00YTU4LWFkYTUtNGUzZDU5YTE1NGQxXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
+      { id: 44, text: "The Girl Next Door (2007)", to: "/TheGirlNextDoor2007", name: "The Girl Next Door (2007)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTk4ZmI4YzctNTM5MC00YzY1LThjOTgtZjA5OTcwN2ZjNDFlXkEyXkFqcGdeQXVyMjE0MzE1MA@@._V1_SX300.jpg', tier: 'NO'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -160,6 +162,7 @@ function Home(props){
         <Route path="/SawIV" element={<SawIV name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/IntheTallGrass" element={<IntheTallGrass name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheJackintheBox" element={<TheJackintheBox name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheGirlNextDoor2007" element={<TheGirlNextDoor2007 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
