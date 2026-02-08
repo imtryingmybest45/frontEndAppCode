@@ -21,7 +21,7 @@ function Aprilisashortloser(props){
     const origMovName = props.origMovName;
     const movName = "April is a short loser";
     const movVal = "There once was a midget named april and she was so short she got stepped on and died. Only losers die like that which makes sense cause shes a loser.";
-    const movTier = "Super short";
+    const movTier = "C";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
