@@ -1,3 +1,4 @@
+import CollinsucksmorethanIdo from './CollinsucksmorethanIdo';
 import Collinisapoorloser from './Collinisapoorloser';
 import TheSubstance from './TheSubstance';
 import Nope from './Nope';
@@ -97,6 +98,7 @@ function Home(props){
       { id: 38, text: "Nope", to: "/Nope", name: "Nope", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 39, text: "The Substance", to: "/TheSubstance", name: "The Substance", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A'},
       { id: 40, text: "Collin is a poor loser", to: "/Collinisapoorloser", name: "Collin is a poor loser", moviePoster: 'error', tier: 'S'},
+      { id: 41, text: "Collin sucks more than I do", to: "/CollinsucksmorethanIdo", name: "Collin sucks more than I do", moviePoster: 'error', tier: 'B'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -154,6 +156,7 @@ function Home(props){
         <Route path="/Nope" element={<Nope name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheSubstance" element={<TheSubstance name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Collinisapoorloser" element={<Collinisapoorloser name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/CollinsucksmorethanIdo" element={<CollinsucksmorethanIdo name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
