@@ -1,4 +1,3 @@
-import CollinsucksmorethanIdo from './CollinsucksmorethanIdo';
 import Nope from './Nope';
 import Scream from './Scream';
 import Presence from './Presence';
@@ -94,9 +93,6 @@ function Home(props){
       { id: 36, text: "Presence", to: "/Presence", name: "Presence", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZWRmNzM1YjktM2YyMi00M2YwLWE2YjMtNjgwNTQ3MGU3MzczXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
       { id: 37, text: "Scream", to: "/Scream", name: "Scream", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjA2NjU5MTg5OF5BMl5BanBnXkFtZTgwOTkyMzQxMDE@._V1_SX300.jpg', tier: 'A'},
       { id: 38, text: "Nope", to: "/Nope", name: "Nope", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
-      { id: 39, text: "Collin sucks more than I do
-", to: "/CollinsucksmorethanIdo", name: "Collin sucks more than I do
-", moviePoster: 'error', tier: 'S'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -152,7 +148,6 @@ function Home(props){
         <Route path="/Presence" element={<Presence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Scream" element={<Scream name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Nope" element={<Nope name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/CollinsucksmorethanIdo" element={<CollinsucksmorethanIdo name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
