@@ -21,7 +21,7 @@ function TheExorcismofGod(props){
     const origMovName = props.origMovName;
     const movName = "The Exorcism of God";
     const movVal = "Release Date: 2022\n\nRating: 1/10\n\nThis movie was truly, truly terrible. I refuse to rewatch.";
-    const movTier = "S";
+    const movTier = "NO";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
