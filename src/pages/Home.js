@@ -1,4 +1,3 @@
-import Very from './Very';
 import Ghostland from './Ghostland';
 import MonstersUniversity from './MonstersUniversity';
 import GraveEncounters2 from './GraveEncounters2';
@@ -112,7 +111,6 @@ function Home(props){
       { id: 46, text: "Grave Encounters 2", to: "/GraveEncounters2", name: "Grave Encounters 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTM2NTIzMDQ0NV5BMl5BanBnXkFtZTcwOTQ3NTM0OA@@._V1_SX300.jpg', tier: 'S'},
       { id: 48, text: "Monsters University", to: "/MonstersUniversity", name: "Monsters University", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUyODgwMDU3M15BMl5BanBnXkFtZTcwOTM4MjcxOQ@@._V1_SX300.jpg', tier: 'A'},
       { id: 49, text: "Ghostland", to: "/Ghostland", name: "Ghostland", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYmQzNzMxYTQtMTllOS00MTRiLWE3NWMtOGZmNDcwYjg1YzE3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A'},
-      { id: 50, text: "Very", to: "/Very", name: "Very", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTY3MmY3ODktZWJmNy00NTQ3LWIzNzYtNGNhZmQ5YjI2NGRjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -177,7 +175,6 @@ function Home(props){
         <Route path="/GraveEncounters2" element={<GraveEncounters2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/MonstersUniversity" element={<MonstersUniversity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Ghostland" element={<Ghostland name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Very" element={<Very name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
