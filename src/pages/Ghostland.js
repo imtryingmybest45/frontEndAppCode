@@ -16,10 +16,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function GhostLand(props){
+function Ghostland(props){
 
     const origMovName = props.origMovName;
-    const movName = "Ghost Land";
+    const movName = "Ghostland";
     const movVal = "Release Date: 2018\n\nRating: 8/10\n\nReally fucked up movie. Rest of review coming soon!";
     const movTier = "A";
 
@@ -87,7 +87,7 @@ function GhostLand(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjBiY2NhN2EtODRjOC00NGEwLWFjODAtZmI3Y2YzNzJjNTcyXkEyXkFqcGdeQXVyMjgzNDk1Ng@@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BYmQzNzMxYTQtMTllOS00MTRiLWE3NWMtOGZmNDcwYjg1YzE3XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -109,4 +109,4 @@ function GhostLand(props){
     )
 }
 
-export default GhostLand;
+export default Ghostland;
