@@ -1,3 +1,4 @@
+import TheConjuringLastRites from './TheConjuringLastRites';
 import TheRuleofJennyPen from './TheRuleofJennyPen';
 import TheJackintheBox from './TheJackintheBox';
 import IntheTallGrass from './IntheTallGrass';
@@ -103,6 +104,7 @@ function Home(props){
       { id: 42, text: "In the Tall Grass", to: "/IntheTallGrass", name: "In the Tall Grass", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
       { id: 43, text: "The Jack in the Box", to: "/TheJackintheBox", name: "The Jack in the Box", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2Y1YzI2MzMtNmFmMS00YTU4LWFkYTUtNGUzZDU5YTE1NGQxXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 44, text: "The Rule of Jenny Pen", to: "/TheRuleofJennyPen", name: "The Rule of Jenny Pen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTJiMzg2ODgtNDhhMi00YmE3LWI3ZmEtOGUwYjFlOTFjYTZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
+      { id: 45, text: "The Conjuring: Last Rites", to: "/TheConjuringLastRites", name: "The Conjuring: Last Rites", moviePoster: 'https://m.media-amazon.com/images/M/MV5BM2VmMzRkYzgtMzg2ZC00OTFkLTkwMTYtNTMxNjM2YzI1MjgyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -163,6 +165,7 @@ function Home(props){
         <Route path="/IntheTallGrass" element={<IntheTallGrass name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheJackintheBox" element={<TheJackintheBox name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheRuleofJennyPen" element={<TheRuleofJennyPen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheConjuringLastRites" element={<TheConjuringLastRites name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
