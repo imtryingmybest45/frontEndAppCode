@@ -110,7 +110,7 @@ function Home(props){
       { id: 44, text: "The Rule of Jenny Pen", to: "/TheRuleofJennyPen", name: "The Rule of Jenny Pen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTJiMzg2ODgtNDhhMi00YmE3LWI3ZmEtOGUwYjFlOTFjYTZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 45, text: "The Conjuring: Last Rites", to: "/TheConjuringLastRites", name: "The Conjuring: Last Rites", moviePoster: 'https://m.media-amazon.com/images/M/MV5BM2VmMzRkYzgtMzg2ZC00OTFkLTkwMTYtNTMxNjM2YzI1MjgyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 46, text: "Grave Encounters 2", to: "/GraveEncounters2", name: "Grave Encounters 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTM2NTIzMDQ0NV5BMl5BanBnXkFtZTcwOTQ3NTM0OA@@._V1_SX300.jpg', tier: 'S'},
-      { id: 48, text: "Monsters University", to: "/MonstersUniversity", name: "Monsters University", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUyODgwMDU3M15BMl5BanBnXkFtZTcwOTM4MjcxOQ@@._V1_SX300.jpg', tier: 'A'},
+      { id: 48, text: "Monsters University", to: "/MonstersUniversity", name: "Monsters University", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUyODgwMDU3M15BMl5BanBnXkFtZTcwOTM4MjcxOQ@@._V1_SX300.jpg', tier: 'NO'},
       { id: 49, text: "Ghostland", to: "/Ghostland", name: "Ghostland", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYmQzNzMxYTQtMTllOS00MTRiLWE3NWMtOGZmNDcwYjg1YzE3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A'},
       { id: 50, text: "Saw V", to: "/SawV", name: "Saw V", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNWViYzg3YzItYzQxNS00MTE1LWJkNTMtMTM3OGI4ODAxOTMwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'F'},
     ];
