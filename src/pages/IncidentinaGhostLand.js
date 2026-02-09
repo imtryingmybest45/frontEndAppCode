@@ -16,11 +16,11 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function Howdy(props){
+function IncidentinaGhostLand(props){
 
     const origMovName = props.origMovName;
-    const movName = "Howdy";
-    const movVal = "sfkdl";
+    const movName = "Incident in a Ghost Land";
+    const movVal = "Release Date: 2018\n\nRating: 8/10\n\nReally fucked up movie. Rest of review coming soon!";
     const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
@@ -87,7 +87,7 @@ function Howdy(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'N/A'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'error'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -109,4 +109,4 @@ function Howdy(props){
     )
 }
 
-export default Howdy;
+export default IncidentinaGhostLand;
