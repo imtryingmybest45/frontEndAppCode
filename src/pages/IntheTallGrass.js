@@ -21,7 +21,7 @@ function IntheTallGrass(props){
     const origMovName = props.origMovName;
     const movName = "In the Tall Grass";
     const movVal = "Release Date: 2019\n\nRating: 8/10\n\nPatrick Wilson stars in another horror banger. Rest of review coming soon!";
-    const movTier = "B";
+    const movTier = "C";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
