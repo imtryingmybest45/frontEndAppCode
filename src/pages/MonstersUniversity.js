@@ -21,7 +21,7 @@ function MonstersUniversity(props){
     const origMovName = props.origMovName;
     const movName = "Monsters University";
     const movVal = "A fine movie";
-    const movTier = "NO";
+    const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
