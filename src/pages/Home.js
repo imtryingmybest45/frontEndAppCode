@@ -1,4 +1,4 @@
-import IncidentinaGhostLand from './IncidentinaGhostLand';
+import GhostLand from './GhostLand';
 import MonstersUniversity from './MonstersUniversity';
 import GraveEncounters2 from './GraveEncounters2';
 import TheConjuringLastRites from './TheConjuringLastRites';
@@ -110,7 +110,7 @@ function Home(props){
       { id: 45, text: "The Conjuring: Last Rites", to: "/TheConjuringLastRites", name: "The Conjuring: Last Rites", moviePoster: 'https://m.media-amazon.com/images/M/MV5BM2VmMzRkYzgtMzg2ZC00OTFkLTkwMTYtNTMxNjM2YzI1MjgyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 46, text: "Grave Encounters 2", to: "/GraveEncounters2", name: "Grave Encounters 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTM2NTIzMDQ0NV5BMl5BanBnXkFtZTcwOTQ3NTM0OA@@._V1_SX300.jpg', tier: 'S'},
       { id: 48, text: "Monsters University", to: "/MonstersUniversity", name: "Monsters University", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUyODgwMDU3M15BMl5BanBnXkFtZTcwOTM4MjcxOQ@@._V1_SX300.jpg', tier: 'A'},
-      { id: 49, text: "Incident in a Ghost Land", to: "/IncidentinaGhostLand", name: "Incident in a Ghost Land", moviePoster: 'error', tier: 'A'},
+      { id: 49, text: "Ghost Land", to: "/GhostLand", name: "Ghost Land", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjBiY2NhN2EtODRjOC00NGEwLWFjODAtZmI3Y2YzNzJjNTcyXkEyXkFqcGdeQXVyMjgzNDk1Ng@@._V1_SX300.jpg', tier: 'A'},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -174,7 +174,7 @@ function Home(props){
         <Route path="/TheConjuringLastRites" element={<TheConjuringLastRites name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/GraveEncounters2" element={<GraveEncounters2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/MonstersUniversity" element={<MonstersUniversity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/IncidentinaGhostLand" element={<IncidentinaGhostLand name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/GhostLand" element={<GhostLand name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
