@@ -1,6 +1,7 @@
 import {useEffect} from 'react';
 import {useState,useLayoutEffect,useRef} from 'react';
 import axios from 'axios';
+import boo from './boo.png';
 
 function usePersistedState(key, defaultValue) {
   // Initialize state with value from localStorage if available
@@ -87,8 +88,9 @@ function NewFunc(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'Insert Movie Poster Here'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={ImgPoster} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
+            {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
                     Movie Name:

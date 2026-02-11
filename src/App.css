@@ -252,7 +252,7 @@
   width: 80vw;
   margin-left: 1vw;
   margin-top: 1vw;
-  background-color:rgb(130, 74, 131);
+  background-color:rgb(149, 85, 150);
   flex-wrap: wrap; /* This property makes items wrap to the next line */
 }
 
@@ -327,6 +327,18 @@
   font-size:3cap;
   color:rgb(255, 255, 255);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.longReview1{
+  border: 4px solid rgb(255, 0, 153);
+}
+
+.longReview2{
+  border: 4px solid rgb(179, 0, 255);
+}
+
+.longReview{
+  border: 4px solid rgb(253, 184, 237);
 }
 
 
