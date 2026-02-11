@@ -21,8 +21,8 @@ function TheRuleofJennyPen(props){
 
     const origMovName = props.origMovName;
     const movName = "The Rule of Jenny Pen";
-    const movVal = "Fine movie, its alrightr, I wouldnt give it more than a C";
-    const movTier = "NO";
+    const movVal = "Release Date: 2024\n\nRating: 6/10\n\nThis movie was really disturbing. I truthfully don't know what to think of it.";
+    const movTier = "C";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
