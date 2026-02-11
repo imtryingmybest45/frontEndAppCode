@@ -1,3 +1,4 @@
+import ToyStoryX from './ToyStoryX';
 import ToyStory3 from './ToyStory3';
 import ToyStory from './ToyStory';
 import ToyStory2 from './ToyStory2';
@@ -56,6 +57,7 @@ function Home(props){
       { id: 16, text: "Toy Story 2", to: "/ToyStory2", name: "Toy Story 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzVmODlhMDEtY2YxZi00OTVjLTlkNTktN2Q2OTRlM2I4M2FhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 17, text: "Toy Story", to: "/ToyStory", name: "Toy Story", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'Y',},
       { id: 18, text: "Toy Story 3", to: "/ToyStory3", name: "Toy Story 3", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
+      { id: 19, text: "Toy Story X", to: "/ToyStoryX", name: "Toy Story X", moviePoster: boo, tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -93,6 +95,7 @@ function Home(props){
         <Route path="/ToyStory2" element={<ToyStory2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ToyStory" element={<ToyStory name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ToyStory3" element={<ToyStory3 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/ToyStoryX" element={<ToyStoryX name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
