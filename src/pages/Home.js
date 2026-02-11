@@ -1,3 +1,4 @@
+import Sinister from './Sinister';
 import TheThing2011 from './TheThing2011';
 import UnknownMovie from './UnknownMovie';
 import GraveEncounters from './GraveEncounters';
@@ -64,6 +65,7 @@ function Home(props){
       { id: 22, text: "Grave Encounters", to: "/GraveEncounters", name: "Grave Encounters", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjQ0NjQxOTM5N15BMl5BanBnXkFtZTcwNzUwMzMwNg@@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 23, text: "Unknown Movie", to: "/UnknownMovie", name: "Unknown Movie", moviePoster: boo, tier: 'A', longReview: 'N',},
       { id: 24, text: "The Thing (2011)", to: "/TheThing2011", name: "The Thing (2011)", moviePoster: boo, tier: 'D', longReview: 'N',},
+      { id: 25, text: "Sinister", to: "/Sinister", name: "Sinister", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_SX300.jpg', tier: 'S', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -105,6 +107,7 @@ function Home(props){
         <Route path="/GraveEncounters" element={<GraveEncounters name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/UnknownMovie" element={<UnknownMovie name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheThing2011" element={<TheThing2011 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Sinister" element={<Sinister name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
