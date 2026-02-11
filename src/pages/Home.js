@@ -31,7 +31,7 @@ import Sinister from './Sinister';
 import TheAutopsyofJaneDoe from './TheAutopsyofJaneDoe';
 import TheHumanCentipedeFirstSequence from './TheHumanCentipedeFirstSequence';
 import TheNun from './TheNun';
-import TheExorcismofGod from './TheExorcismofGod';
+import TheExorcismofMyself from './TheExorcismofMyself';
 import BlackPhone2 from './BlackPhone2';
 import GoodBoy from './GoodBoy';
 import AnnabelleComesHome from './AnnabelleComesHome';
@@ -75,7 +75,7 @@ function Home(props){
       { id: 9, text: "Annabelle Comes Home", to: "/AnnabelleComesHome", name: "Annabelle Comes Home", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjRjYmQ5NTQtYzIyNi00MmNlLTlmNjYtNjQ3NzRlZmY3YjFlXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C'},
       { id: 10, text: "Good Boy", to: "/GoodBoy", name: "Good Boy", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODJhM2JhYjktN2JlMC00YzVjLWI3NjctMTgzYjhhZDk3ZjU2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
       { id: 11, text: "Black Phone 2", to: "/BlackPhone2", name: "Black Phone 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTVjMzNmZGYtOWU5NS00NDYzLThhZTktZGNlODIwYWVhMDRmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B'},
-      { id: 12, text: "The Exorcism of God", to: "/TheExorcismofGod", name: "The Exorcism of God", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F'},
+      { id: 12, text: "The Exorcism of Myself", to: "/TheExorcismofMyself", name: "The Exorcism of Myself", moviePoster: 'error', tier: 'NO'},
       { id: 13, text: "The Nun", to: "/TheNun", name: "The Nun", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_SX300.jpg', tier: 'D'},
       { id: 14, text: "The Human Centipede (First Sequence)", to: "/TheHumanCentipedeFirstSequence", name: "The Human Centipede (First Sequence)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', tier: 'NO'},
       { id: 15, text: "The Autopsy of Jane Doe", to: "/TheAutopsyofJaneDoe", name: "The Autopsy of Jane Doe", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjA2MTEzMzkzM15BMl5BanBnXkFtZTgwMjM2MTM5MDI@._V1_SX300.jpg', tier: 'S'},
@@ -138,7 +138,7 @@ function Home(props){
         <Route path="/AnnabelleComesHome" element={<AnnabelleComesHome name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/GoodBoy" element={<GoodBoy name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/BlackPhone2" element={<BlackPhone2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheExorcismofGod" element={<TheExorcismofGod name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheExorcismofMyself" element={<TheExorcismofMyself name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheNun" element={<TheNun name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheHumanCentipedeFirstSequence" element={<TheHumanCentipedeFirstSequence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheAutopsyofJaneDoe" element={<TheAutopsyofJaneDoe name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
