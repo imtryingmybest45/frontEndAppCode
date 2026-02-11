@@ -1,3 +1,4 @@
+import Scream from './Scream';
 import ChildsPlay from './ChildsPlay';
 import Martyrs from './Martyrs';
 import AllHallowsEve from './AllHallowsEve';
@@ -106,6 +107,7 @@ function Home(props){
       { id: 46, text: "All Hallows' Eve", to: "/AllHallowsEve", name: "All Hallows' Eve", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDc5ZTk4ZjUtNWRkNS00ZDg2LThkY2YtNjIyNGMwZWI4MmRiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 47, text: "Martyrs", to: "/Martyrs", name: "Martyrs", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2Q5MWQ0OWYtMTUzMC00ZmU3LWEyNDAtZjg1NjE2ZjVkM2I3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 48, text: "Child's Play", to: "/ChildsPlay", name: "Child's Play", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2VjYWRmZTUtYTk1ZS00NDdmLTk1ZWUtNTg1YTYxZWZmODFiXkEyXkFqcGdeQXVyMTI2NjEzOTg@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
+      { id: 49, text: "Scream", to: "/Scream", name: "Scream", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjA2NjU5MTg5OF5BMl5BanBnXkFtZTgwOTkyMzQxMDE@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -169,6 +171,7 @@ function Home(props){
         <Route path="/AllHallowsEve" element={<AllHallowsEve name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Martyrs" element={<Martyrs name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ChildsPlay" element={<ChildsPlay name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Scream" element={<Scream name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
