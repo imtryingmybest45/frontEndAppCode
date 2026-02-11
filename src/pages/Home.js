@@ -1,6 +1,5 @@
 import GraveEncounters from './GraveEncounters';
 import TheThing from './TheThing';
-import TheThing2011 from './TheThing2011';
 import TheConjuring from './TheConjuring';
 import Smile from './Smile';
 import Fridaythe13th from './Fridaythe13th';
@@ -59,7 +58,6 @@ function Home(props){
       { id: 17, text: "Friday the 13th", to: "/Fridaythe13th", name: "Friday the 13th", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZjEwOTY5MjMtMTkzMi00Zjk1LThkM2QtZGZhMzQ3MzI3NDNhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 18, text: "Smile", to: "/Smile", name: "Smile", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjFhMzBlNzktMjE2Ni00YTMyLWI2YWUtYmM1N2QxMDQwZmZhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 19, text: "The Conjuring", to: "/TheConjuring", name: "The Conjuring", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
-      { id: 20, text: "The Thing (2011)", to: "/TheThing2011", name: "The Thing (2011)", moviePoster: 'N/A', tier: 'D', longReview: 'N',},
       { id: 21, text: "The Thing", to: "/TheThing", name: "The Thing", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTA3NDU5MWEtNTk4Yy00ZDNkLThmZTQtMjU3ZGVhYzAyMzU4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 22, text: "Grave Encounters", to: "/GraveEncounters", name: "Grave Encounters", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjQ0NjQxOTM5N15BMl5BanBnXkFtZTcwNzUwMzMwNg@@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
@@ -99,7 +97,6 @@ function Home(props){
         <Route path="/Fridaythe13th" element={<Fridaythe13th name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Smile" element={<Smile name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheConjuring" element={<TheConjuring name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheThing2011" element={<TheThing2011 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheThing" element={<TheThing name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/GraveEncounters" element={<GraveEncounters name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
