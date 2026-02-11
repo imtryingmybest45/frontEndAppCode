@@ -1,5 +1,4 @@
 import WrongTurn2021 from './WrongTurn2021';
-import WrongTurn2021 from './WrongTurn2021';
 import ACureforWellness from './ACureforWellness';
 import Hereditary from './Hereditary';
 import Midsommar from './Midsommar';
@@ -97,7 +96,6 @@ function Home(props){
       { id: 39, text: "Hereditary", to: "/Hereditary", name: "Hereditary", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTEyZGQwODctYWJjZi00NjFmLTg3YmEtMzlhNjljOGZhMWMyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 40, text: "A Cure for Wellness", to: "/ACureforWellness", name: "A Cure for Wellness", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTg5Njg1MzIwNl5BMl5BanBnXkFtZTgwNDU1NjczMDI@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 41, text: "Wrong Turn (2021)", to: "/WrongTurn2021", name: "Wrong Turn (2021)", moviePoster: boo, tier: 'A', longReview: 'N',},
-      { id: 42, text: "Wrong Turn (2021)", to: "/WrongTurn2021", name: "Wrong Turn (2021)", moviePoster: boo, tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -154,7 +152,6 @@ function Home(props){
         <Route path="/Midsommar" element={<Midsommar name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Hereditary" element={<Hereditary name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ACureforWellness" element={<ACureforWellness name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/WrongTurn2021" element={<WrongTurn2021 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/WrongTurn2021" element={<WrongTurn2021 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
