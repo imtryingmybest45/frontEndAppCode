@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function Oculus2(props){
+function Oculus(props){
 
     const origMovName = props.origMovName;
-    const movName = "Oculus 2";
+    const movName = "Oculus";
     const movVal = "Release Date: 2013\n\nRating: 8/10";
     const movTier = "A";
 
@@ -92,7 +92,7 @@ function Oculus2(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMzE1NzM4MjEyNV5BMl5BanBnXkFtZTgwMjYzMjMzMTE@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -115,4 +115,4 @@ function Oculus2(props){
     )
 }
 
-export default Oculus2;
+export default Oculus;
