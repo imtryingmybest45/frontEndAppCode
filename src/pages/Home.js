@@ -1,3 +1,4 @@
+import AsAboveSoBelow2 from './AsAboveSoBelow2';
 import AsAboveSoBelow from './AsAboveSoBelow';
 import TheRuleofJennyPen from './TheRuleofJennyPen';
 import TheHumanCentipedeFirstSequence from './TheHumanCentipedeFirstSequence';
@@ -48,6 +49,7 @@ function Home(props){
       { id: 12, text: "The Human Centipede (First Sequence)", to: "/TheHumanCentipedeFirstSequence", name: "The Human Centipede (First Sequence)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', tier: 'F', longReview: 'Y',},
       { id: 13, text: "The Rule of Jenny Pen", to: "/TheRuleofJennyPen", name: "The Rule of Jenny Pen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTJiMzg2ODgtNDhhMi00YmE3LWI3ZmEtOGUwYjFlOTFjYTZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'NO', longReview: 'Y',},
       { id: 14, text: "As Above, So Below", to: "/AsAboveSoBelow", name: "As Above, So Below", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_SX300.jpg', tier: 'S', longReview: 'N',},
+      { id: 15, text: "As Above, So Below 2", to: "/AsAboveSoBelow2", name: "As Above, So Below 2", moviePoster: boo, tier: 'D', longReview: 'Y',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -81,6 +83,7 @@ function Home(props){
         <Route path="/TheHumanCentipedeFirstSequence" element={<TheHumanCentipedeFirstSequence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheRuleofJennyPen" element={<TheRuleofJennyPen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/AsAboveSoBelow" element={<AsAboveSoBelow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/AsAboveSoBelow2" element={<AsAboveSoBelow2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
