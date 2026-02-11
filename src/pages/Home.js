@@ -1,3 +1,4 @@
+import ToyStory2 from './ToyStory2';
 import AsAboveSoBelow2 from './AsAboveSoBelow2';
 import AsAboveSoBelow from './AsAboveSoBelow';
 import TheRuleofJennyPen from './TheRuleofJennyPen';
@@ -50,6 +51,7 @@ function Home(props){
       { id: 13, text: "The Rule of Jenny Pen", to: "/TheRuleofJennyPen", name: "The Rule of Jenny Pen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTJiMzg2ODgtNDhhMi00YmE3LWI3ZmEtOGUwYjFlOTFjYTZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'NO', longReview: 'Y',},
       { id: 14, text: "As Above, So Below", to: "/AsAboveSoBelow", name: "As Above, So Below", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_SX300.jpg', tier: 'S', longReview: 'N',},
       { id: 15, text: "As Above, So Below 2", to: "/AsAboveSoBelow2", name: "As Above, So Below 2", moviePoster: boo, tier: 'D', longReview: 'Y',},
+      { id: 16, text: "Toy Story 2", to: "/ToyStory2", name: "Toy Story 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzVmODlhMDEtY2YxZi00OTVjLTlkNTktN2Q2OTRlM2I4M2FhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -84,6 +86,7 @@ function Home(props){
         <Route path="/TheRuleofJennyPen" element={<TheRuleofJennyPen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/AsAboveSoBelow" element={<AsAboveSoBelow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/AsAboveSoBelow2" element={<AsAboveSoBelow2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/ToyStory2" element={<ToyStory2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
