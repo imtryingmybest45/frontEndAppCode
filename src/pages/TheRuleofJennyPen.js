@@ -85,6 +85,10 @@ function TheRuleofJennyPen(props){
     handlePageLoad(prevPath);
   },[prevPath]); // The empty dependency array ensures this runs only once
 
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  },[]); // The empty dependency array ensures this runs only once
+
     return(
         <div>
             {varVar && <h1>{movName}</h1>}

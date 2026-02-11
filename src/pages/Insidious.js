@@ -71,7 +71,7 @@ function Insidious(props){
         }
     };
 
-     useEffect(() => {
+    useEffect(() => {
     const handlePageLoad = (prevPath) => {
         if (prevPath === "/EditPage"){
             setVarVar(false);
@@ -83,6 +83,10 @@ function Insidious(props){
 
     handlePageLoad(prevPath);
   },[prevPath]); // The empty dependency array ensures this runs only once
+
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  },[]); // The empty dependency array ensures this runs only once
 
     return(
         <div>
