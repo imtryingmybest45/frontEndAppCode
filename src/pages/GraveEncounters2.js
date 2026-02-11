@@ -16,12 +16,12 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function IntheTallGrass(props){
+function GraveEncounters2(props){
 
     const origMovName = props.origMovName;
-    const movName = "In the Tall Grass";
-    const movVal = "Release Date: 2019\n\nRating: 8/10\n\nPatrick Wilson stars in another horror banger. Rest of review coming soon!";
-    const movTier = "C";
+    const movName = "Grave Encounters 2";
+    const movVal = "Release Date: 2012\n\nRating: 1000/10\n\nThis movie was brilliant...absolutely a masterpiece. Featuring our favorite ghost-hunter, Lance Preston! We're so happy he came back. Rest of review coming soon!";
+    const movTier = "S";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -87,7 +87,7 @@ function IntheTallGrass(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMTM2NTIzMDQ0NV5BMl5BanBnXkFtZTcwOTQ3NTM0OA@@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -109,4 +109,4 @@ function IntheTallGrass(props){
     )
 }
 
-export default IntheTallGrass;
+export default GraveEncounters2;

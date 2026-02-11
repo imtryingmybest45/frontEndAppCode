@@ -16,11 +16,11 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function IntheTallGrass(props){
+function TheConjuringLastRites(props){
 
     const origMovName = props.origMovName;
-    const movName = "In the Tall Grass";
-    const movVal = "Release Date: 2019\n\nRating: 8/10\n\nPatrick Wilson stars in another horror banger. Rest of review coming soon!";
+    const movName = "The Conjuring: Last Rites";
+    const movVal = "Release Date: 2025\n\nRating: 6/10\n\nThis movie was another pretty mid installment of the Conjuring franchise. Rest of review coming soon!";
     const movTier = "C";
 
     const [varVar, setVarVar] = useState(true);
@@ -87,7 +87,7 @@ function IntheTallGrass(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BM2VmMzRkYzgtMzg2ZC00OTFkLTkwMTYtNTMxNjM2YzI1MjgyXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -109,4 +109,4 @@ function IntheTallGrass(props){
     )
 }
 
-export default IntheTallGrass;
+export default TheConjuringLastRites;
