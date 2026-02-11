@@ -21,7 +21,7 @@ function Sinister2(props){
 
     const origMovName = props.origMovName;
     const movName = "Sinister 2";
-    const movVal = "Release Date: 2002\n\nRating: 8/10";
+    const movVal = "Release Date: 2015\n\nRating: 8/10";
     const movTier = "S";
 
     const [varVar, setVarVar] = useState(true);
