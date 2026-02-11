@@ -1,3 +1,4 @@
+import Fridaythe13th from './Fridaythe13th';
 import TheBay from './TheBay';
 import Terrifier from './Terrifier';
 import ACureforWellness from './ACureforWellness';
@@ -50,6 +51,7 @@ function Home(props){
       { id: 14, text: "A Cure for Wellness", to: "/ACureforWellness", name: "A Cure for Wellness", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTg5Njg1MzIwNl5BMl5BanBnXkFtZTgwNDU1NjczMDI@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 15, text: "Terrifier", to: "/Terrifier", name: "Terrifier", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2M5MzJlYzctNmZhOC00MTFmLWIxZmUtN2I4NzY5MTlmNDdmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 16, text: "The Bay", to: "/TheBay", name: "The Bay", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDEzMWU2YWUtOWVkMy00OTg0LTkyMjctMDA3MDc2NGViYjU5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 17, text: "Friday the 13th", to: "/Fridaythe13th", name: "Friday the 13th", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZjEwOTY5MjMtMTkzMi00Zjk1LThkM2QtZGZhMzQ3MzI3NDNhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -84,6 +86,7 @@ function Home(props){
         <Route path="/ACureforWellness" element={<ACureforWellness name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Terrifier" element={<Terrifier name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheBay" element={<TheBay name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Fridaythe13th" element={<Fridaythe13th name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
