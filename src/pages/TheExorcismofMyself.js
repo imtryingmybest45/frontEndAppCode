@@ -16,12 +16,12 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function TheExorcismofGod(props){
+function TheExorcismofMyself(props){
 
     const origMovName = props.origMovName;
-    const movName = "The Exorcism of God";
-    const movVal = "Release Date: 2022\n\nRating: 1/10\n\nThis movie was truly, truly terrible. I refuse to rewatch.";
-    const movTier = "F";
+    const movName = "The Exorcism of Myself";
+    const movVal = "bad movie";
+    const movTier = "NO";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -87,7 +87,7 @@ function TheExorcismofGod(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'error'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">
@@ -109,4 +109,4 @@ function TheExorcismofGod(props){
     )
 }
 
-export default TheExorcismofGod;
+export default TheExorcismofMyself;
