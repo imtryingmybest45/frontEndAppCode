@@ -21,7 +21,7 @@ function Oculus(props){
 
     const origMovName = props.origMovName;
     const movName = "Oculus";
-    const movVal = "Release Date: 2013\n\nRating: 8/10";
+    const movVal = "Release Date: 2013\n\nRating: 8.5/10";
     const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
