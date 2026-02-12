@@ -1,3 +1,4 @@
+import AsAboveSoBelow from './AsAboveSoBelow';
 import ChildsPlay2019 from './ChildsPlay2019';
 import TheVisit from './TheVisit';
 import TheBoy from './TheBoy';
@@ -138,6 +139,7 @@ function Home(props){
       { id: 63, text: "The Boy", to: "/TheBoy", name: "The Boy", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTc1MjcxNzcwMV5BMl5BanBnXkFtZTgwMTE0NTE2NzE@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 64, text: "The Visit", to: "/TheVisit", name: "The Visit", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTg3OTM2OTc5MV5BMl5BanBnXkFtZTgwMjMxNDM0NTE@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 65, text: "Child’s Play (2019)", to: "/ChildsPlay2019", name: "Child’s Play (2019)", moviePoster: boo, tier: 'B', longReview: 'N',},
+      { id: 66, text: "As Above, So Below", to: "/AsAboveSoBelow", name: "As Above, So Below", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -217,6 +219,7 @@ function Home(props){
         <Route path="/TheBoy" element={<TheBoy name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheVisit" element={<TheVisit name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ChildsPlay2019" element={<ChildsPlay2019 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/AsAboveSoBelow" element={<AsAboveSoBelow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
