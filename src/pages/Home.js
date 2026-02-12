@@ -133,7 +133,7 @@ function Home(props){
       { id: 59, text: "The Jack in the Box: Awakening", to: "/TheJackintheBoxAwakening", name: "The Jack in the Box: Awakening", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNWVlYTc0OTYtYzM3MS00ZDMwLWI5NzctZjRjY2JiYTUwY2ZjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 60, text: "Hidden", to: "/Hidden", name: "Hidden", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDZkZjE3NGEtZmIzZC00MWUyLWJlN2ItNTc4ODcwMDY2ZmQ1XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 61, text: "Caveat", to: "/Caveat", name: "Caveat", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDRjNzA2YjktNTk1OC00NTM1LTg1ZDgtYjRhM2Y4MGI5ODhkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
-      { id: 62, text: "Thanksgiving", to: "/Thanksgiving", name: "Thanksgiving", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYzhiZTkyM2UtNjU2MC00MjcxLWJhZGYtODQ0MDViN2UxMzAwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 62, text: "Thanksgiving", to: "/Thanksgiving", name: "Thanksgiving", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYzhiZTkyM2UtNjU2MC00MjcxLWJhZGYtODQ0MDViN2UxMzAwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 63, text: "The Boy", to: "/TheBoy", name: "The Boy", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTc1MjcxNzcwMV5BMl5BanBnXkFtZTgwMTE0NTE2NzE@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 64, text: "The Visit", to: "/TheVisit", name: "The Visit", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTg3OTM2OTc5MV5BMl5BanBnXkFtZTgwMjMxNDM0NTE@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];

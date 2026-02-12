@@ -22,7 +22,7 @@ function Thanksgiving(props){
     const origMovName = props.origMovName;
     const movName = "Thanksgiving";
     const movVal = "Release Date: 2023\n\nRating: 9/10\n\nI rated this movie as B tier when I first saw it, but it deserves to be in A tier. THERE WILL BE NO LEFTOVERS!!!";
-    const movTier = "B";
+    const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
