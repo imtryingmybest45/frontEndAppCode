@@ -21,7 +21,7 @@ function ChildsPlay(props){
 
     const origMovName = props.origMovName;
     const movName = "Child's Play";
-    const movVal = "Review here";
+    const movVal = "Release Date: 1988\n\nRating: 8/10";
     const movTier = "A";
 
     const [varVar, setVarVar] = useState(true);
@@ -92,7 +92,7 @@ function ChildsPlay(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BN2VjYWRmZTUtYTk1ZS00NDdmLTk1ZWUtNTg1YTYxZWZmODFiXkEyXkFqcGdeQXVyMTI2NjEzOTg@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
