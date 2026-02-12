@@ -1,3 +1,4 @@
+import Saw from './Saw';
 import HellHouseLLC from './HellHouseLLC';
 import GoodnightMommy from './GoodnightMommy';
 import Tarot from './Tarot';
@@ -146,6 +147,7 @@ function Home(props){
       { id: 67, text: "Tarot", to: "/Tarot", name: "Tarot", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjY3NTkxMjQtZWNjNy00NGU2LTlhOTMtMmRhZGEwNzRmMDcyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 68, text: "Goodnight Mommy", to: "/GoodnightMommy", name: "Goodnight Mommy", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjAyMDU2NjU4OF5BMl5BanBnXkFtZTgwNDg5ODc0NjE@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 69, text: "Hell House LLC", to: "/HellHouseLLC", name: "Hell House LLC", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDU2YTZhZTEtNjQ2Mi00ZTlkLWFhNTctNDAyNGNjNTVlYzdkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 70, text: "Saw", to: "/Saw", name: "Saw", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTE5MzFlMTktMzBkOC00ZjMxLThmOTAtOGU3ZGEwZGRlNDdjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -229,6 +231,7 @@ function Home(props){
         <Route path="/Tarot" element={<Tarot name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/GoodnightMommy" element={<GoodnightMommy name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/HellHouseLLC" element={<HellHouseLLC name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Saw" element={<Saw name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
