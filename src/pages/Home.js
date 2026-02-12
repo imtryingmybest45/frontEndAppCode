@@ -1,3 +1,4 @@
+import TheVillage from './TheVillage';
 import ChildsPlay from './ChildsPlay';
 import GetOut from './GetOut';
 import Old from './Old';
@@ -114,6 +115,7 @@ function Home(props){
       { id: 51, text: "Old", to: "/Old", name: "Old", moviePoster: 'https://m.media-amazon.com/images/M/MV5BM2JkZjI5MjktNmQwZC00ZmYxLTg0OTYtYmVhNGFkMGZlMGYyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 52, text: "Get Out", to: "/GetOut", name: "Get Out", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 53, text: "Child's Play", to: "/ChildsPlay", name: "Child's Play", moviePoster: boo, tier: 'A', longReview: 'N',},
+      { id: 54, text: "The Village", to: "/TheVillage", name: "The Village", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZWI1MjE4YmYtMjJhMS00YmJhLTg1NjMtYjM5ZWE0YjM2MGFiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -181,6 +183,7 @@ function Home(props){
         <Route path="/Old" element={<Old name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/GetOut" element={<GetOut name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ChildsPlay" element={<ChildsPlay name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheVillage" element={<TheVillage name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
