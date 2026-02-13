@@ -1,3 +1,4 @@
+import TheWickerMan2006 from './TheWickerMan2006';
 import Martyrs2015 from './Martyrs2015';
 import Exhuma from './Exhuma';
 import LastShift from './LastShift';
@@ -184,6 +185,7 @@ function Home(props){
       { id: 86, text: "Last Shift", to: "/LastShift", name: "Last Shift", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2IyOTc2NWQtNzZhMC00ZGE1LTg1MDAtNGE2NWFmOWRiOTVjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 87, text: "Exhuma", to: "/Exhuma", name: "Exhuma", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTA1OTY1NTYtNDEzZS00OTgyLWI1NWEtNDI5NjBhOTIwNzIyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 88, text: "Martyrs (2015)", to: "/Martyrs2015", name: "Martyrs (2015)", moviePoster: boo, tier: 'B', longReview: 'N',},
+      { id: 89, text: "The Wicker Man (2006)", to: "/TheWickerMan2006", name: "The Wicker Man (2006)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTk5YWUxODAtZjc1NS00ZjNiLThlYmYtNDM3MWU2OGI3ZTljXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -286,6 +288,7 @@ function Home(props){
         <Route path="/LastShift" element={<LastShift name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Exhuma" element={<Exhuma name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Martyrs2015" element={<Martyrs2015 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheWickerMan2006" element={<TheWickerMan2006 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
