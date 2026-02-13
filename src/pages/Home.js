@@ -1,3 +1,4 @@
+import GonjiamHauntedAsylum from './GonjiamHauntedAsylum';
 import Companion from './Companion';
 import TheSixthSense from './TheSixthSense';
 import Smile2 from './Smile2';
@@ -174,6 +175,7 @@ function Home(props){
       { id: 81, text: "Smile 2", to: "/Smile2", name: "Smile 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTg5OTMyMGMtYzMwNC00NDMyLWE0OGUtMTQ1ODcwM2FjOTM4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 82, text: "The Sixth Sense", to: "/TheSixthSense", name: "The Sixth Sense", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZWQ2OTY0M2UtMTQxNC00MmIzLTllNDQtNDQ0MTQyYzI2M2ZiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 83, text: "Companion", to: "/Companion", name: "Companion", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjkyZTA5NzAtYWU3Zi00MWM4LTgxNzAtNDQxY2JmNjMwYjk4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 84, text: "Gonjiam: Haunted Asylum", to: "/GonjiamHauntedAsylum", name: "Gonjiam: Haunted Asylum", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOWI1Yjk5ZWEtZjcyNS00NmZkLWFkNzUtMDA5YmNhODA1ZDVhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -271,6 +273,7 @@ function Home(props){
         <Route path="/Smile2" element={<Smile2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheSixthSense" element={<TheSixthSense name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Companion" element={<Companion name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/GonjiamHauntedAsylum" element={<GonjiamHauntedAsylum name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
