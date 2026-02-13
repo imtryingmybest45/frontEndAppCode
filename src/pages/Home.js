@@ -1,3 +1,4 @@
+import TheBlairWitchProject from './TheBlairWitchProject';
 import InsidiousTheLastKey from './InsidiousTheLastKey';
 import Hostel from './Hostel';
 import HellHouseLLCIITheAbaddonHotel from './HellHouseLLCIITheAbaddonHotel';
@@ -260,6 +261,7 @@ function Home(props){
       { id: 124, text: "Hell House LLC II: The Abaddon Hotel", to: "/HellHouseLLCIITheAbaddonHotel", name: "Hell House LLC II: The Abaddon Hotel", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTdjNzU4ZDAtZDIyNi00OGM2LTgzMGItZDQzYmY4ZThjZTBiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 125, text: "Hostel", to: "/Hostel", name: "Hostel", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY1NDA3ODM1OV5BMl5BanBnXkFtZTcwMDM5NzEzMQ@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 126, text: "Insidious: The Last Key", to: "/InsidiousTheLastKey", name: "Insidious: The Last Key", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUxODU0NjQ2Nl5BMl5BanBnXkFtZTgwMTc4NDQ0MzI@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 127, text: "The Blair Witch Project", to: "/TheBlairWitchProject", name: "The Blair Witch Project", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGFmYzA5NzktOTc1Ni00YTIxLWJiZTEtNmEyZjBjNDM2MjRlXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -400,6 +402,7 @@ function Home(props){
         <Route path="/HellHouseLLCIITheAbaddonHotel" element={<HellHouseLLCIITheAbaddonHotel name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Hostel" element={<Hostel name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/InsidiousTheLastKey" element={<InsidiousTheLastKey name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheBlairWitchProject" element={<TheBlairWitchProject name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
