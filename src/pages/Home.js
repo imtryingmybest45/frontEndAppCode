@@ -1,3 +1,4 @@
+import Unsane from './Unsane';
 import DragMetoHell from './DragMetoHell';
 import TheOddity from './TheOddity';
 import TheFirstOmen from './TheFirstOmen';
@@ -158,6 +159,7 @@ function Home(props){
       { id: 73, text: "The First Omen", to: "/TheFirstOmen", name: "The First Omen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNWU0ZjM1YjYtMGZkZi00NTBiLTgxMGItMzVhZDgyZTkyY2ZhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 74, text: "The Oddity", to: "/TheOddity", name: "The Oddity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDgyYjAxYTctMzJhMS00OWNkLTlhMjctMDA5MjMxNzBiZTI2XkEyXkFqcGdeQXVyOTcxMjE1NTQ@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 75, text: "Drag Me to Hell", to: "/DragMetoHell", name: "Drag Me to Hell", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTQwNTMyNjc5Ml5BMl5BanBnXkFtZTcwOTI2MTQ0Mg@@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 76, text: "Unsane", to: "/Unsane", name: "Unsane", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTYzMDYzMzA1MV5BMl5BanBnXkFtZTgwODUzODg2NDM@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -247,6 +249,7 @@ function Home(props){
         <Route path="/TheFirstOmen" element={<TheFirstOmen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheOddity" element={<TheOddity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/DragMetoHell" element={<DragMetoHell name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Unsane" element={<Unsane name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
