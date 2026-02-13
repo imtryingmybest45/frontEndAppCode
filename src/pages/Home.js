@@ -1,3 +1,4 @@
+import InsidiousTheRedDoor from './InsidiousTheRedDoor';
 import Apollo18 from './Apollo18';
 import LateNightwiththeDevil from './LateNightwiththeDevil';
 import X from './X';
@@ -230,6 +231,7 @@ function Home(props){
       { id: 109, text: "X", to: "/X", name: "X", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODUwYTNhMTMtYWQ5Ny00YTdmLWIxOTAtNDczNzVlYzg2NDFkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 110, text: "Late Night with the Devil", to: "/LateNightwiththeDevil", name: "Late Night with the Devil", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTRiNWZlNGMtOTUwZi00ZjE4LWE1ZjEtNWE4MGQ2ZGU5NDliXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 111, text: "Apollo 18", to: "/Apollo18", name: "Apollo 18", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTk5MTk3OTk3OV5BMl5BanBnXkFtZTcwMzg4MzgxNg@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 112, text: "Insidious: The Red Door", to: "/InsidiousTheRedDoor", name: "Insidious: The Red Door", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYWMwMmY2MzUtZDc1Ni00MDlmLThhOWUtYjVlNmQzMGFkMzZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -355,6 +357,7 @@ function Home(props){
         <Route path="/X" element={<X name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/LateNightwiththeDevil" element={<LateNightwiththeDevil name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Apollo18" element={<Apollo18 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/InsidiousTheRedDoor" element={<InsidiousTheRedDoor name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
