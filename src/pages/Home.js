@@ -1,3 +1,4 @@
+import ItChapterTwo from './ItChapterTwo';
 import Poltergeist2015 from './Poltergeist2015';
 import Nope from './Nope';
 import Viral from './Viral';
@@ -218,6 +219,7 @@ function Home(props){
       { id: 103, text: "Viral", to: "/Viral", name: "Viral", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTYzNjM4NTAzMV5BMl5BanBnXkFtZTgwMTE5ODIxOTE@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 104, text: "Nope", to: "/Nope", name: "Nope", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 105, text: "Poltergeist (2015)", to: "/Poltergeist2015", name: "Poltergeist (2015)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYzY1ZWIwZDAtYzhjNi00NWFmLTgzM2QtMjk5ZDVjOWNkMTljXkEyXkFqcGdeQXVyNDQyOTMwNzI@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 106, text: "It Chapter Two", to: "/ItChapterTwo", name: "It Chapter Two", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -337,6 +339,7 @@ function Home(props){
         <Route path="/Viral" element={<Viral name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Nope" element={<Nope name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Poltergeist2015" element={<Poltergeist2015 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/ItChapterTwo" element={<ItChapterTwo name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
