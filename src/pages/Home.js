@@ -1,3 +1,4 @@
+import Psycho from './Psycho';
 import RosemarysBaby from './RosemarysBaby';
 import TheTexasChainsawMassacre from './TheTexasChainsawMassacre';
 import Identity from './Identity';
@@ -192,6 +193,7 @@ function Home(props){
       { id: 90, text: "Identity", to: "/Identity", name: "Identity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTg1YWUyODktMWY5MC00ZjliLTg3YmUtZDliMGZhZDZmMzU5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 91, text: "The Texas Chainsaw Massacre", to: "/TheTexasChainsawMassacre", name: "The Texas Chainsaw Massacre", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzY0MDQwMTctYzQ1Mi00ODIwLThlMWQtODQ0NzA2ZTg3ZDFhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 92, text: "Rosemary’s Baby", to: "/RosemarysBaby", name: "Rosemary’s Baby", moviePoster: boo, tier: 'B', longReview: 'N',},
+      { id: 93, text: "Psycho", to: "/Psycho", name: "Psycho", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjZhMzFiZjItODA3ZC00MmRhLWIzMGYtMmVjOWUwYTA3MTRjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -298,6 +300,7 @@ function Home(props){
         <Route path="/Identity" element={<Identity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheTexasChainsawMassacre" element={<TheTexasChainsawMassacre name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/RosemarysBaby" element={<RosemarysBaby name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Psycho" element={<Psycho name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
