@@ -1,3 +1,4 @@
+import HellHouseLLCIIILakeofFire from './HellHouseLLCIIILakeofFire';
 import TheShining from './TheShining';
 import TheExorcist from './TheExorcist';
 import TheGrudge from './TheGrudge';
@@ -252,6 +253,7 @@ function Home(props){
       { id: 120, text: "The Grudge", to: "/TheGrudge", name: "The Grudge", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjIxODg1Nzc3NF5BMl5BanBnXkFtZTcwMjM0MjEzMw@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 121, text: "The Exorcist", to: "/TheExorcist", name: "The Exorcist", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 122, text: "The Shining", to: "/TheShining", name: "The Shining", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNmM5ZThhY2ItOGRjOS00NzZiLWEwYTItNDgyMjFkOTgxMmRiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 123, text: "Hell House LLC III: Lake of Fire", to: "/HellHouseLLCIIILakeofFire", name: "Hell House LLC III: Lake of Fire", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDk1YmY1NDEtNTgxMy00MDJjLWIwMjctYmU4YTJmMDEyZGFjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -388,6 +390,7 @@ function Home(props){
         <Route path="/TheGrudge" element={<TheGrudge name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheExorcist" element={<TheExorcist name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheShining" element={<TheShining name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/HellHouseLLCIIILakeofFire" element={<HellHouseLLCIIILakeofFire name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
