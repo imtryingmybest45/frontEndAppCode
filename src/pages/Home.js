@@ -1,3 +1,4 @@
+import GretelHansel from './GretelHansel';
 import SawIV from './SawIV';
 import BlairWitch from './BlairWitch';
 import TheBlairWitchProject from './TheBlairWitchProject';
@@ -266,6 +267,7 @@ function Home(props){
       { id: 127, text: "The Blair Witch Project", to: "/TheBlairWitchProject", name: "The Blair Witch Project", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGFmYzA5NzktOTc1Ni00YTIxLWJiZTEtNmEyZjBjNDM2MjRlXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 128, text: "Blair Witch", to: "/BlairWitch", name: "Blair Witch", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjI0NTEyMjA3NV5BMl5BanBnXkFtZTgwODk5OTU4OTE@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 129, text: "Saw IV", to: "/SawIV", name: "Saw IV", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjc0NjUyNzg3MF5BMl5BanBnXkFtZTYwODMxOTM3._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 130, text: "Gretel & Hansel", to: "/GretelHansel", name: "Gretel & Hansel", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGU1NTQwNzQtNDU1YS00YWVkLWJlZDYtODlhZjFkNjI3ODBiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -409,6 +411,7 @@ function Home(props){
         <Route path="/TheBlairWitchProject" element={<TheBlairWitchProject name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/BlairWitch" element={<BlairWitch name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/SawIV" element={<SawIV name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/GretelHansel" element={<GretelHansel name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
