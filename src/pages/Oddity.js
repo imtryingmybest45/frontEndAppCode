@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function TheOddity(props){
+function Oddity(props){
 
     const origMovName = props.origMovName;
-    const movName = "The Oddity";
+    const movName = "Oddity";
     const movVal = "Release Date: 2024\n\nRating: 7.5/10";
     const movTier = "B";
 
@@ -92,7 +92,7 @@ function TheOddity(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BNDgyYjAxYTctMzJhMS00OWNkLTlhMjctMDA5MjMxNzBiZTI2XkEyXkFqcGdeQXVyOTcxMjE1NTQ@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMWU5Yjc0N2MtZjhlYS00MTM3LWI5YWUtZDg5MzcxZjEyZWJmXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -115,4 +115,4 @@ function TheOddity(props){
     )
 }
 
-export default TheOddity;
+export default Oddity;
