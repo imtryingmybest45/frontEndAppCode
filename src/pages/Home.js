@@ -188,7 +188,7 @@ function Home(props){
       { id: 86, text: "Last Shift", to: "/LastShift", name: "Last Shift", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2IyOTc2NWQtNzZhMC00ZGE1LTg1MDAtNGE2NWFmOWRiOTVjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 87, text: "Exhuma", to: "/Exhuma", name: "Exhuma", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTA1OTY1NTYtNDEzZS00OTgyLWI1NWEtNDI5NjBhOTIwNzIyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 88, text: "Martyrs (2015)", to: "/Martyrs2015", name: "Martyrs (2015)", moviePoster: boo, tier: 'B', longReview: 'N',},
-      { id: 89, text: "The Wicker Man (2006)", to: "/TheWickerMan2006", name: "The Wicker Man (2006)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTk5YWUxODAtZjc1NS00ZjNiLThlYmYtNDM3MWU2OGI3ZTljXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 89, text: "The Wicker Man (2006)", to: "/TheWickerMan2006", name: "The Wicker Man (2006)", moviePoster: boo, tier: 'B', longReview: 'N',},
       { id: 90, text: "Identity", to: "/Identity", name: "Identity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTg1YWUyODktMWY5MC00ZjliLTg3YmUtZDliMGZhZDZmMzU5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 91, text: "The Texas Chainsaw Massacre", to: "/TheTexasChainsawMassacre", name: "The Texas Chainsaw Massacre", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzY0MDQwMTctYzQ1Mi00ODIwLThlMWQtODQ0NzA2ZTg3ZDFhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 92, text: "Rosemary’s Baby", to: "/RosemarysBaby", name: "Rosemary’s Baby", moviePoster: boo, tier: 'B', longReview: 'N',},
