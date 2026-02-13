@@ -1,3 +1,4 @@
+import Nope from './Nope';
 import Viral from './Viral';
 import EvilDeadRise from './EvilDeadRise';
 import Krampus from './Krampus';
@@ -214,6 +215,7 @@ function Home(props){
       { id: 101, text: "Krampus", to: "/Krampus", name: "Krampus", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjk0MjMzMTI3NV5BMl5BanBnXkFtZTgwODEyODkxNzE@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 102, text: "Evil Dead Rise", to: "/EvilDeadRise", name: "Evil Dead Rise", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 103, text: "Viral", to: "/Viral", name: "Viral", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTYzNjM4NTAzMV5BMl5BanBnXkFtZTgwMTE5ODIxOTE@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 104, text: "Nope", to: "/Nope", name: "Nope", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -331,6 +333,7 @@ function Home(props){
         <Route path="/Krampus" element={<Krampus name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/EvilDeadRise" element={<EvilDeadRise name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Viral" element={<Viral name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Nope" element={<Nope name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
