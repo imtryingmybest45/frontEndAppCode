@@ -1,3 +1,4 @@
+import TheEmptyMan from './TheEmptyMan';
 import TheHauntinginConnecticut from './TheHauntinginConnecticut';
 import Immaculate from './Immaculate';
 import Underground2011 from './Underground2011';
@@ -240,6 +241,7 @@ function Home(props){
       { id: 114, text: "Underground (2011)", to: "/Underground2011", name: "Underground (2011)", moviePoster: boo, tier: 'C', longReview: 'N',},
       { id: 115, text: "Immaculate", to: "/Immaculate", name: "Immaculate", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMWEzYjYyMjQtNTJjYi00ZDQ5LWE4N2MtNWY2ZTgxODNhYWM4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 116, text: "The Haunting in Connecticut", to: "/TheHauntinginConnecticut", name: "The Haunting in Connecticut", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZmE4Mjk4YjQtZTYzOS00OWYxLWEwMTItMzJmZThhNjQ1OWNjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 117, text: "The Empty Man", to: "/TheEmptyMan", name: "The Empty Man", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMzI3OWYwNTQtOWM1Yi00Zjc1LWJmOGItN2UzMTNmNmJmZjE3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -370,6 +372,7 @@ function Home(props){
         <Route path="/Underground2011" element={<Underground2011 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Immaculate" element={<Immaculate name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheHauntinginConnecticut" element={<TheHauntinginConnecticut name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheEmptyMan" element={<TheEmptyMan name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
