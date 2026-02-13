@@ -1,3 +1,4 @@
+import IntheTallGrass from './IntheTallGrass';
 import Thesis from './Thesis';
 import Unsane from './Unsane';
 import DragMetoHell from './DragMetoHell';
@@ -162,6 +163,7 @@ function Home(props){
       { id: 75, text: "Drag Me to Hell", to: "/DragMetoHell", name: "Drag Me to Hell", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTQwNTMyNjc5Ml5BMl5BanBnXkFtZTcwOTI2MTQ0Mg@@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 76, text: "Unsane", to: "/Unsane", name: "Unsane", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTYzMDYzMzA1MV5BMl5BanBnXkFtZTgwODUzODg2NDM@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 77, text: "Thesis", to: "/Thesis", name: "Thesis", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGQwZWU4YTItMjZjYi00ZjNlLWI1ODctMjg2NzBhOGIwODAwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 78, text: "In the Tall Grass", to: "/IntheTallGrass", name: "In the Tall Grass", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -253,6 +255,7 @@ function Home(props){
         <Route path="/DragMetoHell" element={<DragMetoHell name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Unsane" element={<Unsane name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Thesis" element={<Thesis name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/IntheTallGrass" element={<IntheTallGrass name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
