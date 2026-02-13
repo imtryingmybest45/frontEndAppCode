@@ -1,3 +1,4 @@
+import TheOddity from './TheOddity';
 import TheFirstOmen from './TheFirstOmen';
 import TheOmen2006 from './TheOmen2006';
 import Mama from './Mama';
@@ -154,6 +155,7 @@ function Home(props){
       { id: 71, text: "Mama", to: "/Mama", name: "Mama", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTM5MjIwNDAwMl5BMl5BanBnXkFtZTcwNzQyOTY0OA@@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 72, text: "The Omen (2006)", to: "/TheOmen2006", name: "The Omen (2006)", moviePoster: boo, tier: 'B', longReview: 'N',},
       { id: 73, text: "The First Omen", to: "/TheFirstOmen", name: "The First Omen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNWU0ZjM1YjYtMGZkZi00NTBiLTgxMGItMzVhZDgyZTkyY2ZhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 74, text: "The Oddity", to: "/TheOddity", name: "The Oddity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDgyYjAxYTctMzJhMS00OWNkLTlhMjctMDA5MjMxNzBiZTI2XkEyXkFqcGdeQXVyOTcxMjE1NTQ@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -241,6 +243,7 @@ function Home(props){
         <Route path="/Mama" element={<Mama name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheOmen2006" element={<TheOmen2006 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheFirstOmen" element={<TheFirstOmen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheOddity" element={<TheOddity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
