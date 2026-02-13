@@ -21,7 +21,7 @@ function KnockattheCabin(props){
 
     const origMovName = props.origMovName;
     const movName = "Knock at the Cabin";
-    const movVal = "Release Date: 2023\n\nRating: 7.5/10\n\nAnother solid movie from M. Knight.";
+    const movVal = "Release Date: 2023\n\nRating: 7.5/10\n\nAnother solid movie from M. Night.";
     const movTier = "B";
 
     const [varVar, setVarVar] = useState(true);
