@@ -21,9 +21,9 @@ function Presence(props){
 
     const origMovName = props.origMovName;
     const movName = "Presence";
-    const movVal = "Release Date: 2025\n\nRating: 7.5/10";
+    const movVal = "Release Date: 2024\n\nRating: 7.5/10";
     const movTier = "B";
-    const movYear = "2025";
+    const movYear = "2024";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -95,7 +95,7 @@ function Presence(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMDdiOGM0MTQtMjgyYi00NjY2LWI3NGUtNzVkZTAyMDI5YzE4XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BZWRmNzM1YjktM2YyMi00M2YwLWE2YjMtNjgwNTQ3MGU3MzczXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
