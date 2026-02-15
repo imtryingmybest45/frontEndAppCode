@@ -1,3 +1,4 @@
+import AQuietPlaceDayOne from './AQuietPlaceDayOne';
 import TheEmptyMan from './TheEmptyMan';
 import TheHauntinginConnecticut from './TheHauntinginConnecticut';
 import Immaculate from './Immaculate';
@@ -248,6 +249,7 @@ function Home(props){
       { id: 117, text: "Immaculate", to: "/Immaculate", name: "Immaculate", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMWEzYjYyMjQtNTJjYi00ZDQ5LWE4N2MtNWY2ZTgxODNhYWM4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 118, text: "The Haunting in Connecticut", to: "/TheHauntinginConnecticut", name: "The Haunting in Connecticut", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZmE4Mjk4YjQtZTYzOS00OWYxLWEwMTItMzJmZThhNjQ1OWNjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 119, text: "The Empty Man", to: "/TheEmptyMan", name: "The Empty Man", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMzI3OWYwNTQtOWM1Yi00Zjc1LWJmOGItN2UzMTNmNmJmZjE3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 120, text: "A Quiet Place: Day One", to: "/AQuietPlaceDayOne", name: "A Quiet Place: Day One", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMDdjZTljZWMtMDIwNi00MTA5LTkxZmItNmY0NDA3ZDM0N2M2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -381,6 +383,7 @@ function Home(props){
         <Route path="/Immaculate" element={<Immaculate name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheHauntinginConnecticut" element={<TheHauntinginConnecticut name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheEmptyMan" element={<TheEmptyMan name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/AQuietPlaceDayOne" element={<AQuietPlaceDayOne name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
