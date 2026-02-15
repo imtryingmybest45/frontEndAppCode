@@ -21,9 +21,9 @@ function TheBlackPhone(props){
 
     const origMovName = props.origMovName;
     const movName = "The Black Phone";
-    const movVal = "Release Date: 2022\n\nRating: 7.5/10";
+    const movVal = "Release Date: 2021\n\nRating: 7.5/10";
     const movTier = "B";
-    const movYear = "2022";
+    const movYear = "2021";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -95,7 +95,7 @@ function TheBlackPhone(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjFhZTcxOTktMzllMS00MzIzLWJhODEtZDU5YTFkNzRjZWQyXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
