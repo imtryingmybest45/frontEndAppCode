@@ -58,6 +58,10 @@ function It(props){
             }));
     };
 
+    const handleError = (e) => {
+        e.currentTarget.src = boo;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default form submission behavior (page reload)
         const allowedStrings = ['S', 'A', 'B', 'C', 'D', 'F', 'NO'];
