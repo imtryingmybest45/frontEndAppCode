@@ -1,3 +1,4 @@
+import KnockattheCabin from './KnockattheCabin';
 import Longlegs from './Longlegs';
 import InTheTallGrass from './InTheTallGrass';
 import Terrifier from './Terrifier';
@@ -166,6 +167,7 @@ function Home(props){
       { id: 72, text: "Terrifier", to: "/Terrifier", name: "Terrifier", moviePoster: boo, tier: 'B', longReview: 'N',},
       { id: 73, text: "In The Tall Grass", to: "/InTheTallGrass", name: "In The Tall Grass", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 74, text: "Longlegs", to: "/Longlegs", name: "Longlegs", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMmJkNGNiNjgtMzFlYy00ZDI5LWI2YzktZGVjYjI5MjQyMGU3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 75, text: "Knock at the Cabin", to: "/KnockattheCabin", name: "Knock at the Cabin", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMzU1ODIzYjAtNjUzNi00YmNjLWI5ZDAtNDgzOWY3MDU1OThlXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -258,6 +260,7 @@ function Home(props){
         <Route path="/Terrifier" element={<Terrifier name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/InTheTallGrass" element={<InTheTallGrass name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Longlegs" element={<Longlegs name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/KnockattheCabin" element={<KnockattheCabin name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
