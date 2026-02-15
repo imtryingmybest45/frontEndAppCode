@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function TheWickerMan(props){
+function TheWickerMan2006(props){
 
     const origMovName = props.origMovName;
-    const movName = "The Wicker Man";
+    const movName = "The Wicker Man (2006)";
     const movVal = "Release Date: 2006\n\nRating: 7/10";
     const movTier = "B";
     const movYear = "2006";
@@ -126,4 +126,4 @@ function TheWickerMan(props){
     )
 }
 
-export default TheWickerMan;
+export default TheWickerMan2006;

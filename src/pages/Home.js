@@ -10,7 +10,7 @@ import Psycho from './Psycho';
 import TheTexasChainSawMassacre from './TheTexasChainSawMassacre';
 import Identity from './Identity';
 import Fridaythe13th from './Fridaythe13th';
-import TheWickerMan from './TheWickerMan';
+import TheWickerMan2006 from './TheWickerMan2006';
 import Exhuma from './Exhuma';
 import LastShift from './LastShift';
 import Pearl from './Pearl';
@@ -193,7 +193,7 @@ function Home(props){
       { id: 81, text: "Pearl", to: "/Pearl", name: "Pearl", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzk0Y2RlZjItZDUzYi00Y2JhLTk5MzMtNjgzYWFmZmUxN2FmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 82, text: "Last Shift", to: "/LastShift", name: "Last Shift", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2IyOTc2NWQtNzZhMC00ZGE1LTg1MDAtNGE2NWFmOWRiOTVjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 83, text: "Exhuma", to: "/Exhuma", name: "Exhuma", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTA1OTY1NTYtNDEzZS00OTgyLWI1NWEtNDI5NjBhOTIwNzIyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
-      { id: 85, text: "The Wicker Man", to: "/TheWickerMan", name: "The Wicker Man", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOWM1MjYzM2MtY2RmNS00OGUxLTlkNGItZjM3YjdmMTk1YjQ4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 85, text: "The Wicker Man (2006)", to: "/TheWickerMan2006", name: "The Wicker Man (2006)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOWM1MjYzM2MtY2RmNS00OGUxLTlkNGItZjM3YjdmMTk1YjQ4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 86, text: "Friday the 13th", to: "/Fridaythe13th", name: "Friday the 13th", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZjEwOTY5MjMtMTkzMi00Zjk1LThkM2QtZGZhMzQ3MzI3NDNhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 87, text: "Identity", to: "/Identity", name: "Identity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTg1YWUyODktMWY5MC00ZjliLTg3YmUtZDliMGZhZDZmMzU5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 88, text: "The Texas Chain Saw Massacre", to: "/TheTexasChainSawMassacre", name: "The Texas Chain Saw Massacre", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjE1MGJkMjUtY2VkNi00N2U1LWI2NWEtMDExNGYzYjRkZTM0XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
@@ -305,7 +305,7 @@ function Home(props){
         <Route path="/Pearl" element={<Pearl name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/LastShift" element={<LastShift name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Exhuma" element={<Exhuma name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheWickerMan" element={<TheWickerMan name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheWickerMan2006" element={<TheWickerMan2006 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Fridaythe13th" element={<Fridaythe13th name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Identity" element={<Identity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheTexasChainSawMassacre" element={<TheTexasChainSawMassacre name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
