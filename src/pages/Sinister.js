@@ -21,9 +21,9 @@ function Sinister(props){
 
     const origMovName = props.origMovName;
     const movName = "Sinister";
-    const movVal = "Release Date: 2011\n\nRating: 9.5/10";
+    const movVal = "Release Date: 2012\n\nRating: 9.5/10";
     const movTier = "S";
-    const movYear = "2011";
+    const movYear = "2012";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -95,7 +95,7 @@ function Sinister(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjMzMTg5MTUzMF5BMl5BanBnXkFtZTgwMDk1NTA2MDE@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
