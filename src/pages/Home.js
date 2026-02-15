@@ -1,3 +1,4 @@
+import ThePurge from './ThePurge';
 import SawIII from './SawIII';
 import SawII from './SawII';
 import HellHouseLLCOriginsTheCarmichaelManor from './HellHouseLLCOriginsTheCarmichaelManor';
@@ -84,6 +85,7 @@ function Home(props){
       { id: 31, text: "Hell House LLC Origins: The Carmichael Manor", to: "/HellHouseLLCOriginsTheCarmichaelManor", name: "Hell House LLC Origins: The Carmichael Manor", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOWNkZmZhYTItMWE3Mi00ODA3LWI3NTItZGM3NDZjMTQ1YjRmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 32, text: "Saw II", to: "/SawII", name: "Saw II", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZGVlNjk3MmItZmUzNy00MzcyLWIzOTktZjllYWU5MDAyMjM1XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 33, text: "Saw III", to: "/SawIII", name: "Saw III", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODQ4YTAwZTItZGFjZi00YjNiLTllYzUtYWY3OWM2OTQzODVkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
+      { id: 34, text: "The Purge", to: "/ThePurge", name: "The Purge", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTQzNTcwODEyM15BMl5BanBnXkFtZTcwMjM1MDI0OQ@@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -135,6 +137,7 @@ function Home(props){
         <Route path="/HellHouseLLCOriginsTheCarmichaelManor" element={<HellHouseLLCOriginsTheCarmichaelManor name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/SawII" element={<SawII name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/SawIII" element={<SawIII name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/ThePurge" element={<ThePurge name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
