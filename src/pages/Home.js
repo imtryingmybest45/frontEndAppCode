@@ -1,3 +1,4 @@
+import InTheTallGrass from './InTheTallGrass';
 import Terrifier from './Terrifier';
 import Thesis from './Thesis';
 import UnfriendedDarkWeb from './UnfriendedDarkWeb';
@@ -162,6 +163,7 @@ function Home(props){
       { id: 70, text: "Unfriended: Dark Web", to: "/UnfriendedDarkWeb", name: "Unfriended: Dark Web", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNmYxNGZjY2ItOTg5YS00NzM0LWIxZjktMDFmOWM1MGZhOTNkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 71, text: "Thesis", to: "/Thesis", name: "Thesis", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGQwZWU4YTItMjZjYi00ZjNlLWI1ODctMjg2NzBhOGIwODAwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 72, text: "Terrifier", to: "/Terrifier", name: "Terrifier", moviePoster: boo, tier: 'B', longReview: 'N',},
+      { id: 73, text: "In The Tall Grass", to: "/InTheTallGrass", name: "In The Tall Grass", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2YyZTk3ZjUtMTgxYS00NGVlLThmNDQtMjRjNmMwOTc0MzdhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -252,6 +254,7 @@ function Home(props){
         <Route path="/UnfriendedDarkWeb" element={<UnfriendedDarkWeb name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Thesis" element={<Thesis name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Terrifier" element={<Terrifier name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/InTheTallGrass" element={<InTheTallGrass name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
