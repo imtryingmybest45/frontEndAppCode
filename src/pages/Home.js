@@ -1,3 +1,4 @@
+import TheExorcist from './TheExorcist';
 import TheGrudge from './TheGrudge';
 import ParanormalActivity from './ParanormalActivity';
 import AQuietPlaceDayOne from './AQuietPlaceDayOne';
@@ -254,6 +255,7 @@ function Home(props){
       { id: 120, text: "A Quiet Place: Day One", to: "/AQuietPlaceDayOne", name: "A Quiet Place: Day One", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMDdjZTljZWMtMDIwNi00MTA5LTkxZmItNmY0NDA3ZDM0N2M2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 121, text: "Paranormal Activity", to: "/ParanormalActivity", name: "Paranormal Activity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjY1NjcxODQ4MV5BMl5BanBnXkFtZTcwMzUxNjM4Mg@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 122, text: "The Grudge", to: "/TheGrudge", name: "The Grudge", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjIxODg1Nzc3NF5BMl5BanBnXkFtZTcwMjM0MjEzMw@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 123, text: "The Exorcist", to: "/TheExorcist", name: "The Exorcist", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -390,6 +392,7 @@ function Home(props){
         <Route path="/AQuietPlaceDayOne" element={<AQuietPlaceDayOne name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ParanormalActivity" element={<ParanormalActivity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheGrudge" element={<TheGrudge name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheExorcist" element={<TheExorcist name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
