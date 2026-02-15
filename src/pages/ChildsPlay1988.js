@@ -23,7 +23,7 @@ function ChildsPlay1988(props){
     const movName = "Child's Play (1988)";
     const movVal = "Release Date: 1988\n\nRating: 8/10";
     const movTier = "A";
-    const movYear = "1989";
+    const movYear = "1988";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function ChildsPlay1988(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BOTc2M2FjMDMtYzBmNS00ODMxLWJjOTYtZmNkMDYxMTU5ZTBhXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
