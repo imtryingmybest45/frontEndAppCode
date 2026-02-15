@@ -1,6 +1,6 @@
 import RosemarysBaby from './RosemarysBaby';
 import ChildsPlay1988 from './ChildsPlay1988';
-import ChildsPlay2018 from './ChildsPlay2018';
+import ChildsPlay2019 from './ChildsPlay2019';
 import TheBlackPhone from './TheBlackPhone';
 import Weapons from './Weapons';
 import BringHerBack from './BringHerBack';
@@ -203,7 +203,7 @@ function Home(props){
       { id: 93, text: "Bring Her Back", to: "/BringHerBack", name: "Bring Her Back", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTlhYTk1ZTEtOWY3NC00NWQ5LTlkOTctNjQ3ZDYyZGE5ZWNlXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 94, text: "Weapons", to: "/Weapons", name: "Weapons", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTBhNWJjZWItYzY3NS00M2NkLThmOWYtYTlmNzBmN2UxZWFjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 95, text: "The Black Phone", to: "/TheBlackPhone", name: "The Black Phone", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjFhZTcxOTktMzllMS00MzIzLWJhODEtZDU5YTFkNzRjZWQyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
-      { id: 96, text: "Child's Play (2018)", to: "/ChildsPlay2018", name: "Child's Play (2018)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM2YjJkYmYtOWZhNi00YmJhLWI2MTEtOTU2OWY4NGM2MTUwXkEyXkFqcGdeQXVyODgwNjcyMDU@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 96, text: "Child's Play (2019)", to: "/ChildsPlay2019", name: "Child's Play (2019)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzMwZTNkYzktM2EwYS00ZGZlLWJhNmQtZWNhMTBlMDUzOWRkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 97, text: "Child's Play (1988)", to: "/ChildsPlay1988", name: "Child's Play (1988)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTc2M2FjMDMtYzBmNS00ODMxLWJjOTYtZmNkMDYxMTU5ZTBhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 98, text: "Rosemary's Baby", to: "/RosemarysBaby", name: "Rosemary's Baby", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDlhMDI3OTQtNTBkYy00NWQ5LWJmNWEtZGQwYzZlMTQ4MDI1XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
@@ -315,7 +315,7 @@ function Home(props){
         <Route path="/BringHerBack" element={<BringHerBack name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Weapons" element={<Weapons name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheBlackPhone" element={<TheBlackPhone name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/ChildsPlay2018" element={<ChildsPlay2018 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/ChildsPlay2019" element={<ChildsPlay2019 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ChildsPlay1988" element={<ChildsPlay1988 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/RosemarysBaby" element={<RosemarysBaby name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>

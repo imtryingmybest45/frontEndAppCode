@@ -17,13 +17,13 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function ChildsPlay2018(props){
+function ChildsPlay2019(props){
 
     const origMovName = props.origMovName;
-    const movName = "Child's Play (2018)";
-    const movVal = "Release Date: 2018\n\nRating: 7.5/10";
+    const movName = "Child's Play (2019)";
+    const movVal = "Release Date: 2019\n\nRating: 7.5/10";
     const movTier = "B";
-    const movYear = "2018";
+    const movYear = "2019";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function ChildsPlay2018(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjM2YjJkYmYtOWZhNi00YmJhLWI2MTEtOTU2OWY4NGM2MTUwXkEyXkFqcGdeQXVyODgwNjcyMDU@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BNzMwZTNkYzktM2EwYS00ZGZlLWJhNmQtZWNhMTBlMDUzOWRkXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -126,4 +126,4 @@ function ChildsPlay2018(props){
     )
 }
 
-export default ChildsPlay2018;
+export default ChildsPlay2019;
