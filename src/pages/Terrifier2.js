@@ -17,13 +17,13 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function Terrifier22022(props){
+function Terrifier2(props){
 
     const origMovName = props.origMovName;
-    const movName = "Terrifier 2 (2022)";
+    const movName = "Terrifier 2";
     const movVal = "Release Date: 2022\n\nRating: 8.5/10";
     const movTier = "A";
-    const movYear = "2023";
+    const movYear = "2022";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function Terrifier22022(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BYTUyZWM1MDgtMGZiZi00OWZlLTgwNzItZGU3NTkwN2I4OWNiXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -126,4 +126,4 @@ function Terrifier22022(props){
     )
 }
 
-export default Terrifier22022;
+export default Terrifier2;

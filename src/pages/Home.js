@@ -1,4 +1,4 @@
-import Terrifier22022 from './Terrifier22022';
+import Terrifier2 from './Terrifier2';
 import RosemarysBaby from './RosemarysBaby';
 import ChildsPlay1988 from './ChildsPlay1988';
 import ChildsPlay2019 from './ChildsPlay2019';
@@ -207,7 +207,7 @@ function Home(props){
       { id: 96, text: "Child's Play (2019)", to: "/ChildsPlay2019", name: "Child's Play (2019)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzMwZTNkYzktM2EwYS00ZGZlLWJhNmQtZWNhMTBlMDUzOWRkXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 97, text: "Child's Play (1988)", to: "/ChildsPlay1988", name: "Child's Play (1988)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOTc2M2FjMDMtYzBmNS00ODMxLWJjOTYtZmNkMDYxMTU5ZTBhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 98, text: "Rosemary's Baby", to: "/RosemarysBaby", name: "Rosemary's Baby", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDlhMDI3OTQtNTBkYy00NWQ5LWJmNWEtZGQwYzZlMTQ4MDI1XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
-      { id: 99, text: "Terrifier 2 (2022)", to: "/Terrifier22022", name: "Terrifier 2 (2022)", moviePoster: boo, tier: 'A', longReview: 'N',},
+      { id: 99, text: "Terrifier 2", to: "/Terrifier2", name: "Terrifier 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTUyZWM1MDgtMGZiZi00OWZlLTgwNzItZGU3NTkwN2I4OWNiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -320,7 +320,7 @@ function Home(props){
         <Route path="/ChildsPlay2019" element={<ChildsPlay2019 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ChildsPlay1988" element={<ChildsPlay1988 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/RosemarysBaby" element={<RosemarysBaby name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Terrifier22022" element={<Terrifier22022 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Terrifier2" element={<Terrifier2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
