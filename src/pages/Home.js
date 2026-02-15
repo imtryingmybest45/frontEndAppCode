@@ -5,7 +5,7 @@ import Presence from './Presence';
 import TheMenu from './TheMenu';
 import Psycho from './Psycho';
 import RosemarysBaby from './RosemarysBaby';
-import TheTexasChainsawMassacre from './TheTexasChainsawMassacre';
+import TheTexasChainSawMassacre from './TheTexasChainSawMassacre';
 import Identity from './Identity';
 import Fridaythe13th from './Fridaythe13th';
 import TheWickerMan from './TheWickerMan';
@@ -196,7 +196,7 @@ function Home(props){
       { id: 85, text: "The Wicker Man", to: "/TheWickerMan", name: "The Wicker Man", moviePoster: 'https://m.media-amazon.com/images/M/MV5BOWM1MjYzM2MtY2RmNS00OGUxLTlkNGItZjM3YjdmMTk1YjQ4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 86, text: "Friday the 13th", to: "/Fridaythe13th", name: "Friday the 13th", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZjEwOTY5MjMtMTkzMi00Zjk1LThkM2QtZGZhMzQ3MzI3NDNhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 87, text: "Identity", to: "/Identity", name: "Identity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTg1YWUyODktMWY5MC00ZjliLTg3YmUtZDliMGZhZDZmMzU5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
-      { id: 88, text: "The Texas Chainsaw Massacre", to: "/TheTexasChainsawMassacre", name: "The Texas Chainsaw Massacre", moviePoster: boo, tier: 'B', longReview: 'N',},
+      { id: 88, text: "The Texas Chain Saw Massacre", to: "/TheTexasChainSawMassacre", name: "The Texas Chain Saw Massacre", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjE1MGJkMjUtY2VkNi00N2U1LWI2NWEtMDExNGYzYjRkZTM0XkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 89, text: "Rosemary's Baby", to: "/RosemarysBaby", name: "Rosemary's Baby", moviePoster: boo, tier: 'B', longReview: 'N',},
       { id: 90, text: "Psycho", to: "/Psycho", name: "Psycho", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjZhMzFiZjItODA3ZC00MmRhLWIzMGYtMmVjOWUwYTA3MTRjXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 91, text: "The Menu", to: "/TheMenu", name: "The Menu", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2Q0YWE1MjktODJlMi00NTRiLWI2ZTctZTAxNjkyODVjM2EyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
@@ -307,7 +307,7 @@ function Home(props){
         <Route path="/TheWickerMan" element={<TheWickerMan name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Fridaythe13th" element={<Fridaythe13th name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Identity" element={<Identity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/TheTexasChainsawMassacre" element={<TheTexasChainsawMassacre name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheTexasChainSawMassacre" element={<TheTexasChainSawMassacre name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/RosemarysBaby" element={<RosemarysBaby name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Psycho" element={<Psycho name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheMenu" element={<TheMenu name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />

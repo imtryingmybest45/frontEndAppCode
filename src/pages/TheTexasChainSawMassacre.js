@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function TheTexasChainsawMassacre(props){
+function TheTexasChainSawMassacre(props){
 
     const origMovName = props.origMovName;
-    const movName = "The Texas Chainsaw Massacre";
+    const movName = "The Texas Chain Saw Massacre";
     const movVal = "Release Date: 1974\n\nRating: 7.5/10";
     const movTier = "B";
     const movYear = "1974";
@@ -95,7 +95,7 @@ function TheTexasChainsawMassacre(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BYjE1MGJkMjUtY2VkNi00N2U1LWI2NWEtMDExNGYzYjRkZTM0XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -122,4 +122,4 @@ function TheTexasChainsawMassacre(props){
     )
 }
 
-export default TheTexasChainsawMassacre;
+export default TheTexasChainSawMassacre;
