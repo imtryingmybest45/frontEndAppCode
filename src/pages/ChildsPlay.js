@@ -21,9 +21,9 @@ function ChildsPlay(props){
 
     const origMovName = props.origMovName;
     const movName = "Child's Play";
-    const movVal = "Release Date: 1988\n\nRating: 8.5/10";
-    const movTier = "A";
-    const movYear = "1988";
+    const movVal = "Release Date: 2019\n\nRating: 7.5/10";
+    const movTier = "B";
+    const movYear = "2019";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
