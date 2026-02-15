@@ -54,6 +54,10 @@ function GoodBoy(props){
             }));
     };
 
+    const handleError = (e) => {
+        e.currentTarget.src = boo;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default form submission behavior (page reload)
         const allowedStrings = ['S', 'A', 'B', 'C', 'D', 'F', 'NO'];
@@ -90,7 +94,7 @@ function GoodBoy(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BODJhM2JhYjktN2JlMC00YzVjLWI3NjctMTgzYjhhZDk3ZjU2XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BODJhM2JhYjktN2JlMC00YzVjLWI3NjctMTgzYjhhZDk3ZjU2XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {!varVar &&<form onSubmit={handleSubmit}>
                 <label className="linkss">

@@ -58,6 +58,10 @@ function ChildsPlay2018(props){
             }));
     };
 
+    const handleError = (e) => {
+        e.currentTarget.src = boo;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default form submission behavior (page reload)
         const allowedStrings = ['S', 'A', 'B', 'C', 'D', 'F', 'NO'];
@@ -69,8 +73,8 @@ function ChildsPlay2018(props){
         }
         else{
         setMess("Please wait, your review is loading.");
-        //axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/editEndpoint',formData)
-        axios.post('http://localhost:8080/editEndpoint',formData)
+        axios.post('https://helpme-e5h7aua4bpcqchae.canadacentral-01.azurewebsites.net/editEndpoint',formData)
+        //axios.post('http://localhost:8080/editEndpoint',formData)
         .then(response => setMess(response.data))
         }
     };
@@ -95,7 +99,7 @@ function ChildsPlay2018(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjM2YjJkYmYtOWZhNi00YmJhLWI2MTEtOTU2OWY4NGM2MTUwXkEyXkFqcGdeQXVyODgwNjcyMDU@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMjM2YjJkYmYtOWZhNi00YmJhLWI2MTEtOTU2OWY4NGM2MTUwXkEyXkFqcGdeQXVyODgwNjcyMDU@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
