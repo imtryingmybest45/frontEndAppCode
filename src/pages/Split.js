@@ -21,9 +21,9 @@ function Split(props){
 
     const origMovName = props.origMovName;
     const movName = "Split";
-    const movVal = "Release Date: 2017\n\nRating: 8.5/10";
+    const movVal = "Release Date: 2016\n\nRating: 8.5/10";
     const movTier = "A";
-    const movYear = "2017";
+    const movYear = "2016";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -95,7 +95,7 @@ function Split(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BNTZjNmVjMzAtZjg2Mi00MWNmLTk5NTItOTExZDYwNTE2YmExXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
