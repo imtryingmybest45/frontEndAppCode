@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import {useEffect} from 'react';
+import boo from './boo.png';
 
 function TierList(props){
 
@@ -10,6 +11,10 @@ function TierList(props){
  const handleImageClick = () => {
     setTFVar(false);
   };
+
+  const handleError = (e) => {
+        e.currentTarget.src = boo;
+    };
 
  useEffect(() => {
      setPrevPath("/TierList");
@@ -29,14 +34,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview2'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview2' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
@@ -58,14 +63,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview1'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview1' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
@@ -87,14 +92,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview2'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview2' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
@@ -116,14 +121,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview1'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview1' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
@@ -145,14 +150,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview2'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview2' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
@@ -174,14 +179,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview1'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview1' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
@@ -203,14 +208,14 @@ function TierList(props){
                     if (item.longReview ==='Y'){
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview'></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} className = 'longReview' onError={handleError}></img>
                         </Link>
                         );
                     }
                     else{
                         return (
                         <Link to={item.to}>
-                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick}></img>
+                            <img src={item.moviePoster} alt={"hello"} onClick={handleImageClick} onError={handleError}></img>
                         </Link>
                         );
                     }
