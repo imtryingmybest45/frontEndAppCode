@@ -1,3 +1,4 @@
+import Oddity from './Oddity';
 import TheFirstOmen from './TheFirstOmen';
 import TheOmen from './TheOmen';
 import Mama from './Mama';
@@ -150,6 +151,7 @@ function Home(props){
       { id: 64, text: "Mama", to: "/Mama", name: "Mama", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTM5MjIwNDAwMl5BMl5BanBnXkFtZTcwNzQyOTY0OA@@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 65, text: "The Omen", to: "/TheOmen", name: "The Omen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNDhhMTBlODEtMGIxOC00MzVjLTllMzctY2NkMWNmODY3MWZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 66, text: "The First Omen", to: "/TheFirstOmen", name: "The First Omen", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNWU0ZjM1YjYtMGZkZi00NTBiLTgxMGItMzVhZDgyZTkyY2ZhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
+      { id: 67, text: "Oddity", to: "/Oddity", name: "Oddity", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMWU5Yjc0N2MtZjhlYS00MTM3LWI5YWUtZDg5MzcxZjEyZWJmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -234,6 +236,7 @@ function Home(props){
         <Route path="/Mama" element={<Mama name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheOmen" element={<TheOmen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheFirstOmen" element={<TheFirstOmen name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Oddity" element={<Oddity name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
