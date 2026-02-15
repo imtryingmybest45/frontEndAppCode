@@ -21,9 +21,9 @@ function Terrifier(props){
 
     const origMovName = props.origMovName;
     const movName = "Terrifier";
-    const movVal = "Release Date: 2018\n\nRating: 8/10";
+    const movVal = "Release Date: 2016\n\nRating: 8/10";
     const movTier = "B";
-    const movYear = "2018";
+    const movYear = "2016";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -95,7 +95,7 @@ function Terrifier(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie."/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BN2M5MzJlYzctNmZhOC00MTFmLWIxZmUtN2I4NzY5MTlmNDdmXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie."/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
