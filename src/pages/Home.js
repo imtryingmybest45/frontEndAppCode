@@ -1,3 +1,4 @@
+import Life from './Life';
 import TheStrangers from './TheStrangers';
 import InsidiousTheRedDoor from './InsidiousTheRedDoor';
 import Apollo18 from './Apollo18';
@@ -238,6 +239,7 @@ function Home(props){
       { id: 112, text: "Apollo 18", to: "/Apollo18", name: "Apollo 18", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTk5MTk3OTk3OV5BMl5BanBnXkFtZTcwMzg4MzgxNg@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 113, text: "Insidious: The Red Door", to: "/InsidiousTheRedDoor", name: "Insidious: The Red Door", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYWMwMmY2MzUtZDc1Ni00MDlmLThhOWUtYjVlNmQzMGFkMzZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 114, text: "The Strangers", to: "/TheStrangers", name: "The Strangers", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTkxODAyODMwNV5BMl5BanBnXkFtZTcwNzk5Nzk2MQ@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 115, text: "Life", to: "/Life", name: "Life", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNWNkYWYzNGUtOWVjNS00MGY0LWIyY2YtODllNGIxOGRlOTgyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -366,6 +368,7 @@ function Home(props){
         <Route path="/Apollo18" element={<Apollo18 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/InsidiousTheRedDoor" element={<InsidiousTheRedDoor name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheStrangers" element={<TheStrangers name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Life" element={<Life name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
