@@ -1,3 +1,4 @@
+import SawIV from './SawIV';
 import BlairWitch from './BlairWitch';
 import TheBlairWitchProject from './TheBlairWitchProject';
 import InsidiousTheLastKey from './InsidiousTheLastKey';
@@ -270,6 +271,7 @@ function Home(props){
       { id: 128, text: "Insidious: The Last Key", to: "/InsidiousTheLastKey", name: "Insidious: The Last Key", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUxODU0NjQ2Nl5BMl5BanBnXkFtZTgwMTc4NDQ0MzI@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 129, text: "The Blair Witch Project", to: "/TheBlairWitchProject", name: "The Blair Witch Project", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGFmYzA5NzktOTc1Ni00YTIxLWJiZTEtNmEyZjBjNDM2MjRlXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 130, text: "Blair Witch", to: "/BlairWitch", name: "Blair Witch", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjI0NTEyMjA3NV5BMl5BanBnXkFtZTgwODk5OTU4OTE@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 131, text: "Saw IV", to: "/SawIV", name: "Saw IV", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjc0NjUyNzg3MF5BMl5BanBnXkFtZTYwODMxOTM3._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -414,6 +416,7 @@ function Home(props){
         <Route path="/InsidiousTheLastKey" element={<InsidiousTheLastKey name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheBlairWitchProject" element={<TheBlairWitchProject name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/BlairWitch" element={<BlairWitch name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/SawIV" element={<SawIV name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
