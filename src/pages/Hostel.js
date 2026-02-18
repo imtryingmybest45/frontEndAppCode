@@ -21,9 +21,9 @@ function Hostel(props){
 
     const origMovName = props.origMovName;
     const movName = "Hostel";
-    const movVal = "Release Date: 2006\n\nRating: 7/10";
+    const movVal = "Release Date: 2005\n\nRating: 7/10";
     const movTier = "B";
-    const movYear = "2006";
+    const movYear = "2005";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function Hostel(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BODI5YmRjMDItZGNhNi00NzEwLWFiYmYtM2ZiOGI1YjliYmE5XkEyXkFqcGdeQXVyMzExMjM0Nw@@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMTY1NDA3ODM1OV5BMl5BanBnXkFtZTcwMDM5NzEzMQ@@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
