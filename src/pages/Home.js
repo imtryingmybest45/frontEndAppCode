@@ -1,3 +1,4 @@
+import Rec from './Rec';
 import TheOrphanage from './TheOrphanage';
 import TheExorcismofEmilyRose from './TheExorcismofEmilyRose';
 import TheStrangersChapter1 from './TheStrangersChapter1';
@@ -290,6 +291,7 @@ function Home(props){
       { id: 138, text: "The Strangers: Chapter 1", to: "/TheStrangersChapter1", name: "The Strangers: Chapter 1", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjkxMDFlNjctZmEzYS00NjA3LWExNDUtNmI4ZDM2ZGQyNzYzXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 139, text: "The Exorcism of Emily Rose", to: "/TheExorcismofEmilyRose", name: "The Exorcism of Emily Rose", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTI2NTM5MjQ0Nl5BMl5BanBnXkFtZTcwNDAxNjAzMQ@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 140, text: "The Orphanage", to: "/TheOrphanage", name: "The Orphanage", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTE3ZDYxMjctZDJhOC00NDY4LTgwMjYtOTZiNTYwM2Y1N2VhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 141, text: "Rec", to: "/Rec", name: "Rec", moviePoster: boo, tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -444,6 +446,7 @@ function Home(props){
         <Route path="/TheStrangersChapter1" element={<TheStrangersChapter1 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheExorcismofEmilyRose" element={<TheExorcismofEmilyRose name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheOrphanage" element={<TheOrphanage name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Rec" element={<Rec name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
