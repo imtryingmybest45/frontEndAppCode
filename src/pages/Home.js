@@ -1,3 +1,4 @@
+import TheOrphanage from './TheOrphanage';
 import TheExorcismofEmilyRose from './TheExorcismofEmilyRose';
 import TheStrangersChapter1 from './TheStrangersChapter1';
 import X30DaysofNight from './X30DaysofNight';
@@ -288,6 +289,7 @@ function Home(props){
       { id: 137, text: "30 Days of Night", to: "/X30DaysofNight", name: "30 Days of Night", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZWVjOTM3NmItZjU1Mi00YTVjLTlkM2YtNTJlYjI2YzUyNmUxXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 138, text: "The Strangers: Chapter 1", to: "/TheStrangersChapter1", name: "The Strangers: Chapter 1", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjkxMDFlNjctZmEzYS00NjA3LWExNDUtNmI4ZDM2ZGQyNzYzXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 139, text: "The Exorcism of Emily Rose", to: "/TheExorcismofEmilyRose", name: "The Exorcism of Emily Rose", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTI2NTM5MjQ0Nl5BMl5BanBnXkFtZTcwNDAxNjAzMQ@@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 140, text: "The Orphanage", to: "/TheOrphanage", name: "The Orphanage", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTE3ZDYxMjctZDJhOC00NDY4LTgwMjYtOTZiNTYwM2Y1N2VhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -441,6 +443,7 @@ function Home(props){
         <Route path="/X30DaysofNight" element={<X30DaysofNight name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheStrangersChapter1" element={<TheStrangersChapter1 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheExorcismofEmilyRose" element={<TheExorcismofEmilyRose name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheOrphanage" element={<TheOrphanage name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
