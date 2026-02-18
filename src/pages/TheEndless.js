@@ -21,9 +21,9 @@ function TheEndless(props){
 
     const origMovName = props.origMovName;
     const movName = "The Endless";
-    const movVal = "Release Date: 2018\n\nRating: 5.5/10";
+    const movVal = "Release Date: 2017\n\nRating: 5.5/10";
     const movTier = "C";
-    const movYear = "2018";
+    const movYear = "2017";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function TheEndless(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BOGY2NDA3N2MtNmNkMC00ZmM2LWJkMjYtMDkwYWQ2MmYyNjZmXkEyXkFqcGdeQXVyNDk5MTYyMjc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BNjA5OTI1MjgwMl5BMl5BanBnXkFtZTgwMDU2NzY2NDM@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
