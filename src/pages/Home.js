@@ -1,3 +1,4 @@
+import TheStrangersChapter1 from './TheStrangersChapter1';
 import X30DaysofNight from './X30DaysofNight';
 import TheEndless from './TheEndless';
 import Terrifier2 from './Terrifier2';
@@ -284,6 +285,7 @@ function Home(props){
       { id: 135, text: "Terrifier 2", to: "/Terrifier2", name: "Terrifier 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTUyZWM1MDgtMGZiZi00OWZlLTgwNzItZGU3NTkwN2I4OWNiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 136, text: "The Endless", to: "/TheEndless", name: "The Endless", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjA5OTI1MjgwMl5BMl5BanBnXkFtZTgwMDU2NzY2NDM@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 137, text: "30 Days of Night", to: "/X30DaysofNight", name: "30 Days of Night", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZWVjOTM3NmItZjU1Mi00YTVjLTlkM2YtNTJlYjI2YzUyNmUxXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 138, text: "The Strangers: Chapter 1", to: "/TheStrangersChapter1", name: "The Strangers: Chapter 1", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjkxMDFlNjctZmEzYS00NjA3LWExNDUtNmI4ZDM2ZGQyNzYzXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -435,6 +437,7 @@ function Home(props){
         <Route path="/Terrifier2" element={<Terrifier2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheEndless" element={<TheEndless name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/X30DaysofNight" element={<X30DaysofNight name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheStrangersChapter1" element={<TheStrangersChapter1 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
