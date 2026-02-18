@@ -21,9 +21,9 @@ function Rec(props){
 
     const origMovName = props.origMovName;
     const movName = "Rec";
-    const movVal = "Release Date: 2008\n\nRating: 6/10";
+    const movVal = "Release Date: 2007\n\nRating: 6/10";
     const movTier = "C";
-    const movYear = "2008";
+    const movYear = "2007";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function Rec(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BMDEzNDc5ODMtZTAyNi00MTNkLThkNGUtZGE2MDY0MjBiYjMzXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
