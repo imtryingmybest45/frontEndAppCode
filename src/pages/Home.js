@@ -1,3 +1,4 @@
+import TheExorcismofGod from './TheExorcismofGod';
 import Poltergeist from './Poltergeist';
 import WhereEvilLurks from './WhereEvilLurks';
 import ADarkSong from './ADarkSong';
@@ -338,6 +339,7 @@ function Home(props){
       { id: 162, text: "A Dark Song", to: "/ADarkSong", name: "A Dark Song", moviePoster: boo, tier: 'D', longReview: 'N',},
       { id: 163, text: "Where Evil Lurks", to: "/WhereEvilLurks", name: "Where Evil Lurks", moviePoster: boo, tier: 'D', longReview: 'N',},
       { id: 164, text: "Poltergeist", to: "/Poltergeist", name: "Poltergeist", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzY4MGZkYjgtYTQ2YS00YTlhLWEyMjAtMjZhYzczNTRlM2ZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
+      { id: 165, text: "The Exorcism of God", to: "/TheExorcismofGod", name: "The Exorcism of God", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -516,6 +518,7 @@ function Home(props){
         <Route path="/ADarkSong" element={<ADarkSong name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/WhereEvilLurks" element={<WhereEvilLurks name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Poltergeist" element={<Poltergeist name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheExorcismofGod" element={<TheExorcismofGod name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
