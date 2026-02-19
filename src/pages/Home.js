@@ -1,3 +1,4 @@
+import Polaroid from './Polaroid';
 import Sinners from './Sinners';
 import Nosferatu from './Nosferatu';
 import TheWailing from './TheWailing';
@@ -298,6 +299,7 @@ function Home(props){
       { id: 142, text: "The Wailing", to: "/TheWailing", name: "The Wailing", moviePoster: 'https://m.media-amazon.com/images/M/MV5BODkwMTgxNjA2NF5BMl5BanBnXkFtZTgwMDc0OTcwOTE@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 143, text: "Nosferatu", to: "/Nosferatu", name: "Nosferatu", moviePoster: 'https://m.media-amazon.com/images/M/MV5BY2FhZGE3NmEtNWJjOC00NDI1LWFhMTQtMjcxNmQzZmEwNGIzXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 144, text: "Sinners", to: "/Sinners", name: "Sinners", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 145, text: "Polaroid", to: "/Polaroid", name: "Polaroid", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTU2MDI0NDYxNl5BMl5BanBnXkFtZTgwMDAxOTQxMjI@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -456,6 +458,7 @@ function Home(props){
         <Route path="/TheWailing" element={<TheWailing name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Nosferatu" element={<Nosferatu name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Sinners" element={<Sinners name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Polaroid" element={<Polaroid name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
