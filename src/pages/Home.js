@@ -7,7 +7,7 @@ import TheHumanCentipedeFirstSequence from './TheHumanCentipedeFirstSequence';
 import Skinamarink from './Skinamarink';
 import ISawtheTVGlow from './ISawtheTVGlow';
 import TheExorcismofGod from './TheExorcismofGod';
-import Poltergeist from './Poltergeist';
+import Poltergeist1982 from './Poltergeist1982';
 import WhenEvilLurks from './WhenEvilLurks';
 import ADarkSong from './ADarkSong';
 import TheVoid from './TheVoid';
@@ -338,7 +338,7 @@ function Home(props){
       { id: 161, text: "The Void", to: "/TheVoid", name: "The Void", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMDMwYTU4YjItYjI1Yy00NDY2LTlmMDMtNTQ4OTM5MjZiMzBiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 162, text: "A Dark Song", to: "/ADarkSong", name: "A Dark Song", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTEzNDk1MzM4MDleQTJeQWpwZ15BbWU4MDM2NTI4ODEy._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 163, text: "When Evil Lurks", to: "/WhenEvilLurks", name: "When Evil Lurks", moviePoster: 'https://m.media-amazon.com/images/M/MV5BY2UxZWExMTYtMzIzYy00NGUxLTk4Y2QtNTUxNWEyNWYxMWYzXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
-      { id: 164, text: "Poltergeist", to: "/Poltergeist", name: "Poltergeist", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzY4MGZkYjgtYTQ2YS00YTlhLWEyMjAtMjZhYzczNTRlM2ZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
+      { id: 164, text: "Poltergeist (1982)", to: "/Poltergeist1982", name: "Poltergeist (1982)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzY4MGZkYjgtYTQ2YS00YTlhLWEyMjAtMjZhYzczNTRlM2ZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 165, text: "The Exorcism of God", to: "/TheExorcismofGod", name: "The Exorcism of God", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
       { id: 166, text: "I Saw the TV Glow", to: "/ISawtheTVGlow", name: "I Saw the TV Glow", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTA2MGM5M2ItNDBjYi00OWJhLTk1MTMtMGIzMDZlYzg1N2Q3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
       { id: 167, text: "Skinamarink", to: "/Skinamarink", name: "Skinamarink", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTY5OWUwZTUtMzUwZi00MmUwLThiMGItNWJkODE2MjY4MTkyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
@@ -521,7 +521,7 @@ function Home(props){
         <Route path="/TheVoid" element={<TheVoid name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ADarkSong" element={<ADarkSong name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/WhenEvilLurks" element={<WhenEvilLurks name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Poltergeist" element={<Poltergeist name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Poltergeist1982" element={<Poltergeist1982 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheExorcismofGod" element={<TheExorcismofGod name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ISawtheTVGlow" element={<ISawtheTVGlow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Skinamarink" element={<Skinamarink name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />

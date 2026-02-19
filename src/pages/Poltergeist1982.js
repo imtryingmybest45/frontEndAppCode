@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function Poltergeist(props){
+function Poltergeist1982(props){
 
     const origMovName = props.origMovName;
-    const movName = "Poltergeist";
+    const movName = "Poltergeist (1982)";
     const movVal = "Release Date: 1982\n\nRating: 3.5/10";
     const movTier = "D";
     const movYear = "1982";
@@ -126,4 +126,4 @@ function Poltergeist(props){
     )
 }
 
-export default Poltergeist;
+export default Poltergeist1982;
