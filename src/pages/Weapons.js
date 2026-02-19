@@ -21,8 +21,8 @@ function Weapons(props){
 
     const origMovName = props.origMovName;
     const movName = "Weapons";
-    const movVal = "Release Date: 2025\n\nRating: 7.5/10";
-    const movTier = "B";
+    const movVal = "Release Date: 2025\n\nRating: 6/10";
+    const movTier = "C";
     const movYear = "2025";
 
     const [varVar, setVarVar] = useState(true);
