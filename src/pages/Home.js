@@ -1,3 +1,4 @@
+import TheGirlNextDoor from './TheGirlNextDoor';
 import TheHumanCentipedeFirstSequence from './TheHumanCentipedeFirstSequence';
 import Skinamarink from './Skinamarink';
 import ISawtheTVGlow from './ISawtheTVGlow';
@@ -346,6 +347,7 @@ function Home(props){
       { id: 166, text: "I Saw the TV Glow", to: "/ISawtheTVGlow", name: "I Saw the TV Glow", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZTA2MGM5M2ItNDBjYi00OWJhLTk1MTMtMGIzMDZlYzg1N2Q3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
       { id: 167, text: "Skinamarink", to: "/Skinamarink", name: "Skinamarink", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNTY5OWUwZTUtMzUwZi00MmUwLThiMGItNWJkODE2MjY4MTkyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
       { id: 168, text: "The Human Centipede (First Sequence)", to: "/TheHumanCentipedeFirstSequence", name: "The Human Centipede (First Sequence)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
+      { id: 169, text: "The Girl Next Door", to: "/TheGirlNextDoor", name: "The Girl Next Door", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUwMDcyNjE1MF5BMl5BanBnXkFtZTcwOTA1Njg0MQ@@._V1_SX300.jpg', tier: 'NO', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -528,6 +530,7 @@ function Home(props){
         <Route path="/ISawtheTVGlow" element={<ISawtheTVGlow name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Skinamarink" element={<Skinamarink name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheHumanCentipedeFirstSequence" element={<TheHumanCentipedeFirstSequence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheGirlNextDoor" element={<TheGirlNextDoor name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
