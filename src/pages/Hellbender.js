@@ -21,9 +21,9 @@ function Hellbender(props){
 
     const origMovName = props.origMovName;
     const movName = "Hellbender";
-    const movVal = "Release Date: 2022\n\nRating: 5.5/10";
+    const movVal = "Release Date: 2021\n\nRating: 5.5/10";
     const movTier = "C";
-    const movYear = "2022";
+    const movYear = "2021";
 
     const [varVar, setVarVar] = useState(true);
     let prevPath = props.name;
@@ -99,7 +99,7 @@ function Hellbender(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BYjczZDY2NzItZDJhZi00MWEwLWI2YWUtMTY2ZTViMDM1NmZiXkEyXkFqcGdeQXVyMTMxNjczOTQx._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BOGFiNDM5NzAtM2QzNy00ODhmLWFkYWUtODNkNDZmNWQzYjg4XkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
