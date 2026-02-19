@@ -336,7 +336,7 @@ function Home(props){
       { id: 159, text: "Evil Dead", to: "/EvilDead", name: "Evil Dead", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjkwODM5ZWUtMjI2Ni00Y2RiLWJkNDYtZWQ2ZTRhMjI1N2FmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 160, text: "The Haunting", to: "/TheHaunting", name: "The Haunting", moviePoster: 'https://m.media-amazon.com/images/M/MV5BN2E0OWZlNDAtODQxOS00ZjIwLTlhOTMtM2ZhNzZmYWVmOWQxXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 161, text: "The Void", to: "/TheVoid", name: "The Void", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMDMwYTU4YjItYjI1Yy00NDY2LTlmMDMtNTQ4OTM5MjZiMzBiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
-      { id: 162, text: "A Dark Song", to: "/ADarkSong", name: "A Dark Song", moviePoster: boo, tier: 'D', longReview: 'N',},
+      { id: 162, text: "A Dark Song", to: "/ADarkSong", name: "A Dark Song", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTEzNDk1MzM4MDleQTJeQWpwZ15BbWU4MDM2NTI4ODEy._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 163, text: "Where Evil Lurks", to: "/WhereEvilLurks", name: "Where Evil Lurks", moviePoster: boo, tier: 'D', longReview: 'N',},
       { id: 164, text: "Poltergeist", to: "/Poltergeist", name: "Poltergeist", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzY4MGZkYjgtYTQ2YS00YTlhLWEyMjAtMjZhYzczNTRlM2ZmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 165, text: "The Exorcism of God", to: "/TheExorcismofGod", name: "The Exorcism of God", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjJmNGMwMWYtZDEwNC00N2IyLTg5MDAtZGQ0MTFmNDJjNzk2XkEyXkFqcGc@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
