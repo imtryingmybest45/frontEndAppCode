@@ -1,3 +1,4 @@
+import Hellbender from './Hellbender';
 import X28DaysLater from './X28DaysLater';
 import Stopmotion from './Stopmotion';
 import ChildrenoftheCorn from './ChildrenoftheCorn';
@@ -314,6 +315,7 @@ function Home(props){
       { id: 150, text: "Children of the Corn", to: "/ChildrenoftheCorn", name: "Children of the Corn", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjFmZjhkNDYtZThjZi00YWY4LWFkYjMtNDM3YjkyODMxZDNmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 151, text: "Stopmotion", to: "/Stopmotion", name: "Stopmotion", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMDE3NTYwNDYtZDY4MS00MmY1LWIzYzItYTcxMGVlYTI1YjQyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 152, text: "28 Days Later", to: "/X28DaysLater", name: "28 Days Later", moviePoster: 'https://m.media-amazon.com/images/M/MV5BM2I4NTI0ZGQtNGQ2ZC00ODIxLWI2N2QtMDBkNzI1NDhjYjE5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 153, text: "Hellbender", to: "/Hellbender", name: "Hellbender", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjczZDY2NzItZDJhZi00MWEwLWI2YWUtMTY2ZTViMDM1NmZiXkEyXkFqcGdeQXVyMTMxNjczOTQx._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -480,6 +482,7 @@ function Home(props){
         <Route path="/ChildrenoftheCorn" element={<ChildrenoftheCorn name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Stopmotion" element={<Stopmotion name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/X28DaysLater" element={<X28DaysLater name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/Hellbender" element={<Hellbender name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
