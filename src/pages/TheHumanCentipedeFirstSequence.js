@@ -22,7 +22,7 @@ function TheHumanCentipedeFirstSequence(props){
     const origMovName = props.origMovName;
     const movName = "The Human Centipede (First Sequence)";
     const movVal = "Release Date: 2009\n\nRating: -10/10\n\nAbsolute monstrosity of a movie, do not watch. For a brief synopsis, watch the following clip:\n\nhttps://youtu.be/Gxb3YOZrPP0?si=RgTJywStpN8Qm3BM";
-    const movTier = "F";
+    const movTier = "NO";
     const movYear = "2009";
 
     const [varVar, setVarVar] = useState(true);
