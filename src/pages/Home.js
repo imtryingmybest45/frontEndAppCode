@@ -1,3 +1,4 @@
+import SaintMaud from './SaintMaud';
 import TalktoMe from './TalktoMe';
 import Polaroid from './Polaroid';
 import Sinners from './Sinners';
@@ -302,6 +303,7 @@ function Home(props){
       { id: 144, text: "Sinners", to: "/Sinners", name: "Sinners", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 145, text: "Polaroid", to: "/Polaroid", name: "Polaroid", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTU2MDI0NDYxNl5BMl5BanBnXkFtZTgwMDAxOTQxMjI@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 146, text: "Talk to Me", to: "/TalktoMe", name: "Talk to Me", moviePoster: 'https://m.media-amazon.com/images/M/MV5BY2I2NzJmY2YtYTM3Ni00ZGJhLThkZTItODFhMzhlZjZkMDQ5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 147, text: "Saint Maud", to: "/SaintMaud", name: "Saint Maud", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzIwMjVlMWMtMGRiYi00OTQyLThhYjEtMDQxMThjMmQ2ODBiXkEyXkFqcGc@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -462,6 +464,7 @@ function Home(props){
         <Route path="/Sinners" element={<Sinners name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Polaroid" element={<Polaroid name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TalktoMe" element={<TalktoMe name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/SaintMaud" element={<SaintMaud name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
