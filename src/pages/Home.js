@@ -1,3 +1,4 @@
+import X28DaysLater from './X28DaysLater';
 import Stopmotion from './Stopmotion';
 import ChildrenoftheCorn from './ChildrenoftheCorn';
 import AClockworkOrange from './AClockworkOrange';
@@ -312,6 +313,7 @@ function Home(props){
       { id: 149, text: "A Clockwork Orange", to: "/AClockworkOrange", name: "A Clockwork Orange", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 150, text: "Children of the Corn", to: "/ChildrenoftheCorn", name: "Children of the Corn", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNjFmZjhkNDYtZThjZi00YWY4LWFkYjMtNDM3YjkyODMxZDNmXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 151, text: "Stopmotion", to: "/Stopmotion", name: "Stopmotion", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMDE3NTYwNDYtZDY4MS00MmY1LWIzYzItYTcxMGVlYTI1YjQyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
+      { id: 152, text: "28 Days Later", to: "/X28DaysLater", name: "28 Days Later", moviePoster: 'https://m.media-amazon.com/images/M/MV5BM2I4NTI0ZGQtNGQ2ZC00ODIxLWI2N2QtMDBkNzI1NDhjYjE5XkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -477,6 +479,7 @@ function Home(props){
         <Route path="/AClockworkOrange" element={<AClockworkOrange name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/ChildrenoftheCorn" element={<ChildrenoftheCorn name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Stopmotion" element={<Stopmotion name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/X28DaysLater" element={<X28DaysLater name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
