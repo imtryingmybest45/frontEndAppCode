@@ -1,3 +1,4 @@
+import TheThing1982 from './TheThing1982';
 import TheWomanintheYard from './TheWomanintheYard';
 import TheGirlNextDoor from './TheGirlNextDoor';
 import TheHumanCentipedeFirstSequence from './TheHumanCentipedeFirstSequence';
@@ -342,6 +343,7 @@ function Home(props){
       { id: 168, text: "The Human Centipede (First Sequence)", to: "/TheHumanCentipedeFirstSequence", name: "The Human Centipede (First Sequence)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', tier: 'F', longReview: 'N',},
       { id: 169, text: "The Girl Next Door", to: "/TheGirlNextDoor", name: "The Girl Next Door", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTUwMDcyNjE1MF5BMl5BanBnXkFtZTcwOTA1Njg0MQ@@._V1_SX300.jpg', tier: 'NO', longReview: 'N',},
       { id: 170, text: "The Woman in the Yard", to: "/TheWomanintheYard", name: "The Woman in the Yard", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNmZjZTA2ZmQtMDhiYS00NTlmLTk2NTctNTZlMzVhZmVjYTYyXkEyXkFqcGc@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
+      { id: 171, text: "The Thing (1982)", to: "/TheThing1982", name: "The Thing (1982)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTA3NDU5MWEtNTk4Yy00ZDNkLThmZTQtMjU3ZGVhYzAyMzU4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -522,6 +524,7 @@ function Home(props){
         <Route path="/TheHumanCentipedeFirstSequence" element={<TheHumanCentipedeFirstSequence name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheGirlNextDoor" element={<TheGirlNextDoor name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheWomanintheYard" element={<TheWomanintheYard name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
+        <Route path="/TheThing1982" element={<TheThing1982 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
