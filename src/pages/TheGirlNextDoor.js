@@ -21,7 +21,7 @@ function TheGirlNextDoor(props){
 
     const origMovName = props.origMovName;
     const movName = "The Girl Next Door";
-    const movVal = "Release Date: 2007\n\nRating: 0.5/10";
+    const movVal = "Release Date: 2007\n\nRating: 0.5/10\n\nThis movie is based on a true story, and watching it will darken your soul. Do not watch…I felt worse about the world after seeing this movie.";
     const movTier = "NO";
     const movYear = "2007";
 
