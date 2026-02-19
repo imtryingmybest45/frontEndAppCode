@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function WhereEvilLurks(props){
+function WhenEvilLurks(props){
 
     const origMovName = props.origMovName;
-    const movName = "Where Evil Lurks";
+    const movName = "When Evil Lurks";
     const movVal = "Release Date: 2023\n\nRating: 4/10";
     const movTier = "D";
     const movYear = "2023";
@@ -99,7 +99,7 @@ function WhereEvilLurks(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BY2UxZWExMTYtMzIzYy00NGUxLTk4Y2QtNTUxNWEyNWYxMWYzXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -126,4 +126,4 @@ function WhereEvilLurks(props){
     )
 }
 
-export default WhereEvilLurks;
+export default WhenEvilLurks;
