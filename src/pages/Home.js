@@ -1,4 +1,3 @@
-import JurassicPark from './JurassicPark';
 import TheNun from './TheNun';
 import TheThing2011 from './TheThing2011';
 import TheThing1982 from './TheThing1982';
@@ -349,7 +348,6 @@ function Home(props){
       { id: 171, text: "The Thing (1982)", to: "/TheThing1982", name: "The Thing (1982)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYTA3NDU5MWEtNTk4Yy00ZDNkLThmZTQtMjU3ZGVhYzAyMzU4XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 172, text: "The Thing (2011)", to: "/TheThing2011", name: "The Thing (2011)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMTMxMjI0MzUyNl5BMl5BanBnXkFtZTcwNjc1NzE5NQ@@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
       { id: 173, text: "The Nun", to: "/TheNun", name: "The Nun", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_SX300.jpg', tier: 'D', longReview: 'N',},
-      { id: 174, text: "Jurassic Park", to: "/JurassicPark", name: "Jurassic Park", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg', tier: 'S', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -533,7 +531,6 @@ function Home(props){
         <Route path="/TheThing1982" element={<TheThing1982 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheThing2011" element={<TheThing2011 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/TheNun" element={<TheNun name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/JurassicPark" element={<JurassicPark name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
