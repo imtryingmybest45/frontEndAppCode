@@ -11,7 +11,7 @@ function Admin(){
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevents default form submission behavior (page reload)
-    if (inputValue === 'password'){
+    if (inputValue === 'passworddd'){
       navigate("/OptionsPage"); 
     }
     else{
