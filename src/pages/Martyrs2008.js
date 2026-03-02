@@ -17,12 +17,12 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function Martyrs(props){
+function Martyrs2008(props){
 
     const origMovName = props.origMovName;
-    const movName = "Martyrs";
-    const movVal = "Release Date: 2008\n\nRating: 7/10";
-    const movTier = "B";
+    const movName = "Martyrs (2008)";
+    const movVal = "Release Date: 2008\n\nRating: 7.5/10";
+    const movTier = "A";
     const movYear = "2008";
 
     const [varVar, setVarVar] = useState(true);
@@ -126,4 +126,4 @@ function Martyrs(props){
     )
 }
 
-export default Martyrs;
+export default Martyrs2008;
