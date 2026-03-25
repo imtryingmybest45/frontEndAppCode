@@ -17,10 +17,10 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
-function Fridaythe13thPartII(props){
+function Fridaythe13thPart2(props){
 
     const origMovName = props.origMovName;
-    const movName = "Friday the 13th Part II";
+    const movName = "Friday the 13th Part 2";
     const movVal = "Release Date: 1981\n\nRating: 5/10";
     const movTier = "C";
     const movYear = "1981";
@@ -99,7 +99,7 @@ function Fridaythe13thPartII(props){
     return(
         <div>
             {varVar && <h1>{movName}</h1>}
-            {varVar && <img src={boo} alt="This is the movie poster for this movie." onError={handleError}/>}
+            {varVar && <img src={'https://m.media-amazon.com/images/M/MV5BYjBkMGM2MDAtMjUwYS00ZjVlLWEzNGItZDJmOTA2YmE2NjRhXkEyXkFqcGc@._V1_SX300.jpg'} alt="This is the movie poster for this movie." onError={handleError}/>}
             {varVar && <pre className = "paragraphStylin">{movVal}</pre>}
             {false && <img src={boo} alt="hello"/>}
             {!varVar &&<form onSubmit={handleSubmit}>
@@ -126,4 +126,4 @@ function Fridaythe13thPartII(props){
     )
 }
 
-export default Fridaythe13thPartII;
+export default Fridaythe13thPart2;
