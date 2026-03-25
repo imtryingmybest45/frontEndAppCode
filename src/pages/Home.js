@@ -1,5 +1,4 @@
 import Fridaythe13thPart2 from './Fridaythe13thPart2';
-import Undertone from './Undertone';
 import DreamEater from './DreamEater';
 import Martyrs2015 from './Martyrs2015';
 import Hellraiser from './Hellraiser';
@@ -356,7 +355,6 @@ function Home(props){
       { id: 174, text: "Hellraiser", to: "/Hellraiser", name: "Hellraiser", moviePoster: 'https://m.media-amazon.com/images/M/MV5BZGI4MzkzNzQtYjA3MC00ZjE1LWI0NWUtMDdjNWQ3OTgxZTkwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
       { id: 175, text: "Martyrs (2015)", to: "/Martyrs2015", name: "Martyrs (2015)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjYyOTM2MjcyOF5BMl5BanBnXkFtZTgwMzAwMTA1NzE@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 176, text: "Dream Eater", to: "/DreamEater", name: "Dream Eater", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzhlYzNiYWEtYjhjNi00MzM5LWE5ZjctNDMwYmYxM2Q5ZTA3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
-      { id: 177, text: "Undertone", to: "/Undertone", name: "Undertone", moviePoster: boo, tier: 'S', longReview: 'N',},
       { id: 178, text: "Friday the 13th Part 2", to: "/Fridaythe13thPart2", name: "Friday the 13th Part 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjBkMGM2MDAtMjUwYS00ZjVlLWEzNGItZDJmOTA2YmE2NjRhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
@@ -544,7 +542,6 @@ function Home(props){
         <Route path="/Hellraiser" element={<Hellraiser name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Martyrs2015" element={<Martyrs2015 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/DreamEater" element={<DreamEater name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Undertone" element={<Undertone name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Fridaythe13thPart2" element={<Fridaythe13thPart2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
