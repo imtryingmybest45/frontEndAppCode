@@ -1,4 +1,3 @@
-import Grease from './Grease';
 import Fridaythe13thPart2 from './Fridaythe13thPart2';
 import DreamEater from './DreamEater';
 import Martyrs2015 from './Martyrs2015';
@@ -357,7 +356,6 @@ function Home(props){
       { id: 175, text: "Martyrs (2015)", to: "/Martyrs2015", name: "Martyrs (2015)", moviePoster: 'https://m.media-amazon.com/images/M/MV5BMjYyOTM2MjcyOF5BMl5BanBnXkFtZTgwMzAwMTA1NzE@._V1_SX300.jpg', tier: 'B', longReview: 'N',},
       { id: 176, text: "Dream Eater", to: "/DreamEater", name: "Dream Eater", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNzhlYzNiYWEtYjhjNi00MzM5LWE5ZjctNDMwYmYxM2Q5ZTA3XkEyXkFqcGc@._V1_SX300.jpg', tier: 'A', longReview: 'N',},
       { id: 178, text: "Friday the 13th Part 2", to: "/Fridaythe13thPart2", name: "Friday the 13th Part 2", moviePoster: 'https://m.media-amazon.com/images/M/MV5BYjBkMGM2MDAtMjUwYS00ZjVlLWEzNGItZDJmOTA2YmE2NjRhXkEyXkFqcGc@._V1_SX300.jpg', tier: 'C', longReview: 'N',},
-      { id: 179, text: "Grease", to: "/Grease", name: "Grease", moviePoster: 'https://m.media-amazon.com/images/M/MV5BNGY0NzE0ZTctN2YzNC00M2IwLWI0OWYtMTAwZWU2NjZhMTQwXkEyXkFqcGc@._V1_SX300.jpg', tier: 'S', longReview: 'N',},
     ];
   const linksDataSorted = [...linksDataUnsorted].sort((a, b) => {
       return a.name.localeCompare(b.name);
@@ -545,7 +543,6 @@ function Home(props){
         <Route path="/Martyrs2015" element={<Martyrs2015 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/DreamEater" element={<DreamEater name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
         <Route path="/Fridaythe13thPart2" element={<Fridaythe13thPart2 name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
-        <Route path="/Grease" element={<Grease name = {props.prevPath} age={props.setPrevPath} reinit={props.reinit} origMovName={origMovName}/>} />
       </Routes>
       <nav>
         <ul style={{listStyleType: 'none',  padding: "0", margin: "0"}}>
