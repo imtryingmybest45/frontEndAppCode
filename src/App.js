@@ -23,6 +23,7 @@ function usePersistedState(key, defaultValue) {
 
   // Update localStorage whenever the state changes
   useEffect(() => {
+    //console.log("hello")
     sessionStorage.setItem(key, JSON.stringify(state));
   }, [key, state]);
 
